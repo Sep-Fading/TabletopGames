@@ -43,6 +43,10 @@ import games.resistance.ResForwardModel;
 import games.resistance.ResGameState;
 import games.resistance.ResParameters;
 import games.resistance.gui.ResGUIManager;
+import games.talesofvalor.TOVForwardModel;
+import games.talesofvalor.TOVGUIManager;
+import games.talesofvalor.TOVGameState;
+import games.talesofvalor.TOVParameters;
 import games.terraformingmars.*;
 import games.terraformingmars.gui.TMGUI;
 import games.poker.*;
@@ -214,7 +218,13 @@ public enum GameType {
     WarOfTheToads(2, 2,
             Arrays.asList(Strategy, Abstract, Cards),
             Collections.singletonList(TrickTaking),
-            ToadGameState.class, ToadForwardModel.class, ToadParameters.class, ToadGUIManager.class);
+            ToadGameState.class, ToadForwardModel.class, ToadParameters.class, ToadGUIManager.class),
+    TalesOfValor(1, 3,
+            Arrays.asList(Strategy, Dice, Cards, Fantasy),
+            Arrays.asList(GridMovement, Cooperative, DiceRolling,
+                    Campaign, DeckManagement),
+            TOVGameState.class, TOVForwardModel.class,
+            TOVParameters.class, TOVGUIManager.class);
 
 
     // Core classes where the game is defined

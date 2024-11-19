@@ -7,8 +7,6 @@ import games.GameType;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.BiFunction;
-import java.util.function.Function;
 
 /**
  * <p>The game state encapsulates all game information. It is a data-only class, with game functionality present
