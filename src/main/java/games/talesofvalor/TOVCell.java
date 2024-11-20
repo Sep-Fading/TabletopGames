@@ -18,7 +18,7 @@ public class TOVCell extends Component {
      * @param y - y coordinate of the cell.
      */
     public TOVCell(int x, int y) {
-        super(CoreConstants.ComponentType.BOARD_NODE, "Box");
+        super(CoreConstants.ComponentType.BOARD_NODE, "Tile");
         // Completely random right now, but supposed to use some more nuanced generation later.
         hasEncounter = setRandomEncounter();
         if (hasEncounter){
@@ -35,10 +35,9 @@ public class TOVCell extends Component {
      * @param encounter - The encounter in the cell.
      */
     private TOVCell(int componentID, Vector2D position, boolean hasEncounter, TOVEncounter encounter) {
-        super(CoreConstants.ComponentType.BOARD_NODE, "Box", componentID);
+        super(CoreConstants.ComponentType.BOARD_NODE, "Tile", componentID);
         this.position = position;
         this.hasEncounter = hasEncounter;
-
     }
 
     // Randomly assigns an encounter to the cell.

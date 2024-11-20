@@ -13,6 +13,7 @@ import java.util.Objects;
 public class TOVGameState extends AbstractGameState {
 
     GridBoard<TOVCell> grid;
+    int encountersRemaining; // Used to determine a win condition.
 
     /**
      * @param gameParameters - game parameters.

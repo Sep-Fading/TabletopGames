@@ -15,11 +15,14 @@ public class TOVForwardModel extends StandardForwardModel {
         TOVGameState tovgs = (TOVGameState) firstState;
         TOVParameters tovp = (TOVParameters) tovgs.getGameParameters();
 
-        // Create the map
+        // Create the map, counting the encounters as we go.
         tovgs.grid = new GridBoard<TOVCell>(tovp.gridWidth, tovp.gridHeight);
         for (int i = 0; i < tovp.gridHeight; i++) {
             for (int j = 0; j < tovp.gridWidth; j++) {
                 tovgs.grid.setElement(j, i, new TOVCell(j, i));
+                if (tovgs.grid.getElement(j, i).hasEncounter) {
+                    tovgs.encountersRemaining++;
+                }
             }
         }
     }
