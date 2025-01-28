@@ -21,8 +21,8 @@ public class TOVCard extends Card {
     }
 
     // Placeholder for attacks
-    // Needs Encounter to contain Enemies.
+    // Needs Encounter to contain Enemies. But Perhaps this should be an action?
     public void useCard(TOVEnemy enemy){
-
+        enemy.takeDamage(attack);
     }
 }

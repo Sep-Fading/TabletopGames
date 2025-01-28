@@ -6,6 +6,7 @@ import core.components.Component;
 public class TOVEnemy extends Component {
     int attack;
     int health;
+    boolean isDead = false;
 
     /**
      * @param attack - How hard the enemy hits.
@@ -21,6 +22,16 @@ public class TOVEnemy extends Component {
         super(CoreConstants.ComponentType.TOVENEMY, "Enemy", componentID);
         this.attack = attack;
         this.health = health;
+    }
+
+    public void takeDamage(int damage){
+        if (isDead){
+            return;
+        }
+        health -= damage;
+        if (health <= 0){
+            isDead = true;
+        }
     }
 
     public TOVEnemy copy() {

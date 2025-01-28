@@ -6,14 +6,16 @@ import core.components.Component;
 import core.components.GridBoard;
 import games.GameType;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class TOVGameState extends AbstractGameState {
-
-    GridBoard<TOVCell> grid;
+    ArrayList<TOVPlayer> players;
+    public GridBoard<TOVCell> grid;
     int encountersRemaining; // Used to determine a win condition.
+    int totalEncounters; // Total encounters in the map when initialized.
 
     /**
      * @param gameParameters - game parameters.
@@ -21,6 +23,7 @@ public class TOVGameState extends AbstractGameState {
      */
     public TOVGameState(AbstractParameters gameParameters, int nPlayers) {
         super(gameParameters, nPlayers);
+        players = new ArrayList<>();
     }
 
     @Override
@@ -37,7 +40,16 @@ public class TOVGameState extends AbstractGameState {
     protected AbstractGameState _copy(int playerId) {
         TOVGameState copy = new TOVGameState(gameParameters, getNPlayers());
         copy.grid = deepCopyGrid();
+        copy.players = copyPlayers();
         return copy;
+    }
+
+    private ArrayList<TOVPlayer> copyPlayers(){
+        ArrayList<TOVPlayer> copyPlayers = new ArrayList<>();
+        for (TOVPlayer player : players){
+            copyPlayers.add(player.copy());
+        }
+        return copyPlayers;
     }
 
     private GridBoard<TOVCell> deepCopyGrid(){
@@ -50,9 +62,20 @@ public class TOVGameState extends AbstractGameState {
         return gridCopy;
     }
 
+    // Assigns a heuristic score based on the number of encounters completed by the player(s).
     @Override
     protected double _getHeuristicScore(int playerId) {
-        return 0; // TODO
+        if (isNotTerminal()){
+            return (double) (totalEncounters - encountersRemaining) / totalEncounters;
+        }
+        else{
+            if (encountersRemaining == 0){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        }
     }
 
     @Override
@@ -62,7 +85,7 @@ public class TOVGameState extends AbstractGameState {
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), grid);
+        return Objects.hash(grid);
     }
 
     @Override
@@ -72,5 +95,18 @@ public class TOVGameState extends AbstractGameState {
         if (!super.equals(o)) return false;
         TOVGameState that = (TOVGameState) o;
         return Objects.equals(grid, that.grid);
+    }
+
+    public GridBoard<TOVCell> getGridBoard() {
+        return grid;
+    }
+
+    public TOVPlayer getTOVPlayerByID(int playerID) {
+        for (TOVPlayer player : players) {
+            if (player.getPlayerID() == playerID) {
+                return player;
+            }
+        }
+        return null;
     }
 }

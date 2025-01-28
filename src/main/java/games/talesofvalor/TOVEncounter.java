@@ -4,6 +4,7 @@ import core.CoreConstants;
 import core.components.Component;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class TOVEncounter extends Component {
     int encounterLevel;
@@ -31,6 +32,7 @@ public class TOVEncounter extends Component {
         super(CoreConstants.ComponentType.BOARD_NODE, "Encounter", componentID);
         this.encounterLevel = encounterLevel;
         this.enemyCount = enemyCount;
+        this.enemies = enemies;
     }
 
     public TOVEncounter copy() {
@@ -43,11 +45,24 @@ public class TOVEncounter extends Component {
     }
 
     // Initializes the enemies for the encounter.
-    // Currently, assigns them random health and attack values from 0-10;
+    // Currently, assigns them random health and attack values from 0-10 to be expanded later.
     // TODO: Implement a scaling function based on the encounter level.
     private void InitializeEnemies(int enemyCount){
         for (int i = 0; i < enemyCount; i++){
-            enemies.add(new TOVEnemy((int) (Math.random()*10), (int) (Math.random()*10)));
+            enemies.add(new TOVEnemy((int) (Math.random()*10)+1, (int) (Math.random()*10)+1));
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        TOVEncounter that = (TOVEncounter) o;
+        return encounterLevel == that.encounterLevel && enemyCount == that.enemyCount && Objects.equals(enemies, that.enemies);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(encounterLevel, enemyCount, enemies);
     }
 }

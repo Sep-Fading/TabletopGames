@@ -5,11 +5,15 @@ import core.AbstractGameState;
 import core.StandardForwardModel;
 import core.actions.AbstractAction;
 import core.components.GridBoard;
+import games.talesofvalor.actions.TOVPlayerMove;
 import tech.tablesaw.plotly.components.Grid;
+import utilities.Vector2D;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TOVForwardModel extends StandardForwardModel {
+
     @Override
     protected void _setup(AbstractGameState firstState) {
         TOVGameState tovgs = (TOVGameState) firstState;
@@ -21,14 +25,35 @@ public class TOVForwardModel extends StandardForwardModel {
             for (int j = 0; j < tovp.gridWidth; j++) {
                 tovgs.grid.setElement(j, i, new TOVCell(j, i));
                 if (tovgs.grid.getElement(j, i).hasEncounter) {
-                    tovgs.encountersRemaining++;
+                    tovgs.totalEncounters++;
                 }
             }
+        }
+        tovgs.encountersRemaining = tovgs.totalEncounters;
+
+        // Create & place TOVPlayer instances for each player.
+        for (int i = 0; i < tovgs.getNPlayers(); i++) {
+            TOVPlayer player = new TOVPlayer(i);
+            tovgs.players.add(player);
+            tovgs.grid.getElement(0, 0).SetPlayerCount(
+                    tovgs.grid.getElement(0, 0).GetPlayerCount() + 1);
         }
     }
 
     @Override
     protected List<AbstractAction> _computeAvailableActions(AbstractGameState gameState) {
-        return List.of();
+        List<AbstractAction> actions = new ArrayList<>();
+        TOVGameState tovgs = (TOVGameState) gameState;
+        TOVPlayerMove move = new TOVPlayerMove(new Vector2D(1, 0));
+        actions.add(move);
+        return actions;
+    }
+
+    @Override
+    protected void _afterAction(AbstractGameState gameState, AbstractAction action) {
+        System.out.println("After action");
+        TOVGameState tovgs = (TOVGameState) gameState;
+        TOVPlayerMove move = (TOVPlayerMove) action;
+        endPlayerTurn(tovgs);
     }
 }
