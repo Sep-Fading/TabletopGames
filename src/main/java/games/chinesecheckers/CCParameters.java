@@ -2,7 +2,6 @@ package games.chinesecheckers;
 
 import core.AbstractParameters;
 import games.chinesecheckers.components.Peg;
-import gametemplate.GTParameters;
 
 import java.util.HashMap;
 import java.util.Map;

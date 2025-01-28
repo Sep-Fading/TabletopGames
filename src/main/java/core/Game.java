@@ -838,7 +838,7 @@ public class Game {
         ArrayList<AbstractPlayer> players = new ArrayList<>();
         players.add(new RandomPlayer());
         players.add(new RandomPlayer());
-        players.add(new BasicMCTSPlayer());
+//        players.add(new BasicMCTSPlayer());
 
 //        RMHCParams params = new RMHCParams();
 //        params.horizon = 15;
@@ -860,13 +860,12 @@ public class Game {
         String gameParams = null;
 
         /* Run! */
-        runOne(GameType.valueOf(gameType), gameParams, players, seed, false, null, useGUI ? ac : null, turnPause);
+//        runOne(GameType.valueOf(gameType), gameParams, players, seed, false, null, useGUI ? ac : null, turnPause);
 
         /* Run multiple games */
-//        ArrayList<GameType> games = new ArrayList<>();
-//        games.add(Connect4);
-//        runMany(games, players, 100L, 5, false, false, null, turnPause);
-//        runMany(new ArrayList<GameType>() {{add(Uno);}}, players, 100L, 100, false, false, null, turnPause);
+        ArrayList<GameType> games = new ArrayList<>();
+        games.add(Connect4);
+        runMany(games, players, 100L, 5, false, false, null, turnPause);
+        //runMany(new ArrayList<GameType>() {{add(Uno);}}, players, 100L, 100, false, false, null, turnPause);
     }
-
 }
