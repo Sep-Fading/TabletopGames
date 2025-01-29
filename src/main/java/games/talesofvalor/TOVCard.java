@@ -16,6 +16,10 @@ public class TOVCard extends Card {
         this.health = health;
     }
 
+    /**
+     * Creates a hard copy of this card.
+     * @return copy of this card.
+     */
     public TOVCard copy() {
         return new TOVCard(componentName, attack, armor, health);
     }

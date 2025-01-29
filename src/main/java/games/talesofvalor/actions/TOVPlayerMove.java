@@ -25,11 +25,6 @@ public class TOVPlayerMove extends AbstractAction {
         Vector2D newPos = player.Move(direction);
         tovgs.grid.getElement(newPos).SetPlayerCount(tovgs.grid.getElement(newPos).GetPlayerCount() + 1);
 
-        System.out.println(getString(gs));
-        System.out.println(!oldPos.equals(newPos));
-        System.out.println(oldPos);
-        System.out.println(newPos);
-
         return !oldPos.equals(newPos);
     }
 

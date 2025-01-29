@@ -101,6 +101,7 @@ public class TOVGUIManager extends AbstractGUIManager {
     @Override
     protected void _update(AbstractPlayer player, AbstractGameState gameState) {
         TOVGameState tovgs = (TOVGameState) gameState;
+
         // Update the grid with the new game state
         for (int i = 0; i < tovgs.grid.getHeight(); i++) {
             for (int j = 0; j < tovgs.grid.getWidth(); j++) {
@@ -110,6 +111,8 @@ public class TOVGUIManager extends AbstractGUIManager {
                 StringBuilder labelText = new StringBuilder();
                 Color backgroundColor = Color.LIGHT_GRAY;
 
+                // Build out encounter info and color the cell Red
+                // If the cell has an encounter.
                 if (cell.hasEncounter) {
                     labelText.append(cell.encounter.enemyCount).append("E");
                     backgroundColor = defaultEncounterColor;
@@ -123,10 +126,14 @@ public class TOVGUIManager extends AbstractGUIManager {
                     }
                     tooltipText.append("</html>");
                     cellLabel.setToolTipText(tooltipText.toString());
-                } else {
+                }
+                // Else resort to default tooltip message.
+                else {
                     cellLabel.setToolTipText("No encounter in this cell.");
                 }
-                System.out.println("Cell " + j + ", " + i + " has " + cell.GetPlayerCount() + " players.");
+
+                // Build out player info and color the cell Blue
+                // If the cell has players.
                 if (cell.GetPlayerCount() > 0) {
 
                     if (labelText.length() > 0) labelText.append(" | ");

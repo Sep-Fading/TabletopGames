@@ -97,10 +97,17 @@ public class TOVGameState extends AbstractGameState {
         return Objects.equals(grid, that.grid);
     }
 
+
+    /* Getters and Setters */
     public GridBoard<TOVCell> getGridBoard() {
         return grid;
     }
 
+    /**
+     * Returns the player with the given ID.
+     * @param playerID
+     * @return - Corresponding TOVPlayer.
+     */
     public TOVPlayer getTOVPlayerByID(int playerID) {
         for (TOVPlayer player : players) {
             if (player.getPlayerID() == playerID) {

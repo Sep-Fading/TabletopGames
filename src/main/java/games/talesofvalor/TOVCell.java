@@ -24,7 +24,7 @@ public class TOVCell extends Component {
         // Completely random right now, but supposed to use some more nuanced generation later.
 
         if (x != 0 && y != 0) {
-            hasEncounter = setRandomEncounter();
+            hasEncounter = ChanceEncounter();
             if (hasEncounter) {
                 encounter = InitializeEncounter();
             }
@@ -46,16 +46,36 @@ public class TOVCell extends Component {
         this.encounter = encounter;
     }
 
-    // Randomly assigns an encounter to the cell.
-    private boolean setRandomEncounter(){
+    /**
+     * Decides via an implemented algorithm whether the cell has an encounter.
+     * @return - True if the cell has an encounter, false otherwise.
+     */
+    private boolean ChanceEncounter(){
         return Math.random() < 0.2;
     }
 
-    // Initializes an encounter for the cell.
+    /**
+     * Initializes an encounter for the cell.
+     * @return - The initialized encounter.
+     */
     private TOVEncounter InitializeEncounter(){
         return new TOVEncounter(1, (int) (Math.random()*3)+1);
     }
 
+    // Creates a hard copy of the cell to return.
+    public TOVCell copy(){
+        TOVEncounter encounterCopy;
+        if (hasEncounter){
+            encounterCopy = encounter.copy();
+        } else {
+            encounterCopy = null;
+        }
+        TOVCell copyCell = new TOVCell(componentID, position.copy(), hasEncounter, encounterCopy);
+        copyCell.SetPlayerCount(playerCount);
+        return copyCell;
+    }
+
+    /* HashCode and Equals */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -69,18 +89,15 @@ public class TOVCell extends Component {
         return Objects.hash(hasEncounter, position);
     }
 
-    public TOVCell copy(){
-        TOVEncounter encounterCopy;
-        if (hasEncounter){
-            encounterCopy = encounter.copy();
-        } else {
-            encounterCopy = null;
-        }
-        TOVCell copyCell = new TOVCell(componentID, position.copy(), hasEncounter, encounterCopy);
-        copyCell.SetPlayerCount(playerCount);
-        return copyCell;
-    }
 
+    /* Getters and Setters */
+
+    /**
+     * Sets the player count for the cell.
+     * Update PlayerCount after a player moves into or out of the cell,
+     * for an accurate representation of the grid on the GUI.
+     * @param n - The number of players in the cell.
+     */
     public void SetPlayerCount(int n){
         if (n >= 0){
             playerCount = n;

@@ -12,6 +12,7 @@ public class TOVEncounter extends Component {
     ArrayList<TOVEnemy> enemies = new ArrayList<TOVEnemy>();
 
     /**
+     * Creates an encounter, which should be placed within a cell.
      * @param encounterLevel - The level of the encounter (Determines difficulty).
      * @param enemyCount     - Number of enemies in the encounter.
      */
@@ -23,6 +24,8 @@ public class TOVEncounter extends Component {
     }
 
     /**
+     * Alternative constructor, used primarily in the copy method to
+     * instantiate hard copies with ease.
      * @param componentID
      * @param encounterLevel
      * @param enemyCount
@@ -35,6 +38,10 @@ public class TOVEncounter extends Component {
         this.enemies = enemies;
     }
 
+    /**
+     * Creates a hard copy of this encounter.
+     * @return - copy of this encounter.
+     */
     public TOVEncounter copy() {
         ArrayList<TOVEnemy> copyEnemies = new ArrayList<TOVEnemy>();
         // Get information from enemies to clone them.
@@ -44,15 +51,18 @@ public class TOVEncounter extends Component {
         return new TOVEncounter(componentID, encounterLevel, enemyCount, copyEnemies);
     }
 
-    // Initializes the enemies for the encounter.
-    // Currently, assigns them random health and attack values from 0-10 to be expanded later.
-    // TODO: Implement a scaling function based on the encounter level.
+    /**
+     * Initializes the enemies in the encounter via an implemented algorithm.
+     * It should decide how many enemies should exist in the encounter and generate them.
+     * @param enemyCount - Number of enemies in the encounter.
+     */
     private void InitializeEnemies(int enemyCount){
         for (int i = 0; i < enemyCount; i++){
             enemies.add(new TOVEnemy((int) (Math.random()*10)+1, (int) (Math.random()*10)+1));
         }
     }
 
+    /* Hashcode and equals */
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;

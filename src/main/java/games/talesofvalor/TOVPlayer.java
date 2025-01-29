@@ -21,15 +21,24 @@ public class TOVPlayer{
         position = new Vector2D(0,0);
     }
 
+    /**
+     * Changes the position of the player by a given vector.
+     * @param direction - The direction to move the player.
+     * @return The new position of the player.
+     */
     public Vector2D Move(Vector2D direction){
         Vector2D newPosition = position.add(direction);
-        if (newPosition.getX() >= 0 && newPosition.getX() < 10 &&
-                newPosition.getY() >= 0 && newPosition.getY() < 10){
+        if (newPosition.getX() >= 0 && newPosition.getX() < 12 &&
+                newPosition.getY() >= 0 && newPosition.getY() < 12){
             position = newPosition;
         }
         return position;
     }
 
+    /**
+     * Creates a hard copy of this player.
+     * @return copy of this player.
+     */
     public TOVPlayer copy(){
         TOVPlayer copy = new TOVPlayer(getPlayerID());
         copy.position = position.copy();
@@ -40,6 +49,8 @@ public class TOVPlayer{
         return copy;
     }
 
+
+    /* Getters */
     public Vector2D getPosition() {
         return position;
     }
