@@ -44,7 +44,7 @@ import games.resistance.ResGameState;
 import games.resistance.ResParameters;
 import games.resistance.gui.ResGUIManager;
 import games.talesofvalor.TOVForwardModel;
-import games.talesofvalor.TOVGUIManager;
+import games.talesofvalor.gui.TOVGUIManager;
 import games.talesofvalor.TOVGameState;
 import games.talesofvalor.TOVParameters;
 import games.terraformingmars.*;

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class TOVCell extends Component {
-    boolean hasEncounter; // To determine if the cell has an encounter.
+    public boolean hasEncounter; // To determine if the cell has an encounter.
     private int playerCount;
     Vector2D position; // The position of the cell.
     TOVEncounter encounter;

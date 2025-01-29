@@ -49,6 +49,23 @@ public class TOVForwardModel extends StandardForwardModel {
         return actions;
     }
 
+    /* --- ROUND START --- */
+    /**
+     * OUT_OF_COMBAT:
+     * 1. Dice roll to determine the current player's movement capabilities. Dexterity affects the roll.
+     * ----------------------------------------
+     * IN_COMBAT_INITIAL:
+     * 1. Dice roll to determine the turn orders. Dexterity affects the roll.
+     * ----------------------------------------
+     * IN_COMBAT:
+     *
+     */
+    @Override
+    protected void _beforeAction(AbstractGameState gameState, AbstractAction action) {
+        System.out.println("Before action");
+    }
+    /* -------------------- */
+
     @Override
     protected void _afterAction(AbstractGameState gameState, AbstractAction action) {
         System.out.println("After action");

@@ -1,12 +1,15 @@
-package games.talesofvalor;
+package games.talesofvalor.gui;
 
 import core.AbstractGameState;
 import core.AbstractPlayer;
 import core.Game;
+import games.talesofvalor.TOVCell;
+import games.talesofvalor.TOVEnemy;
+import games.talesofvalor.TOVForwardModel;
+import games.talesofvalor.TOVGameState;
 import gui.AbstractGUIManager;
 import gui.GamePanel;
 import players.human.ActionController;
-import utilities.Vector2D;
 
 import javax.swing.*;
 import java.awt.*;
