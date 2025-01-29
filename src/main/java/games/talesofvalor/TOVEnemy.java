@@ -55,4 +55,13 @@ public class TOVEnemy extends Component {
     public TOVEnemy copy() {
         return new TOVEnemy(componentID, attack, health);
     }
+
+    /* Getters & Setters */
+    public int getAttack() {
+        return attack;
+    }
+
+    public int getHealth() {
+        return health;
+    }
 }

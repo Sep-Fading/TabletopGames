@@ -9,7 +9,7 @@ import java.util.Objects;
 public class TOVEncounter extends Component {
     int encounterLevel;
     int enemyCount;
-    ArrayList<TOVEnemy> enemies = new ArrayList<TOVEnemy>();
+    public ArrayList<TOVEnemy> enemies = new ArrayList<TOVEnemy>();
 
     /**
      * Creates an encounter, which should be placed within a cell.
@@ -74,5 +74,10 @@ public class TOVEncounter extends Component {
     @Override
     public int hashCode() {
         return Objects.hash(encounterLevel, enemyCount, enemies);
+    }
+
+    /* Getters & Setters */
+    public int getEnemyCount() {
+        return enemyCount;
     }
 }

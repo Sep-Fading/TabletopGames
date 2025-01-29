@@ -16,6 +16,7 @@ public class TOVGameState extends AbstractGameState {
     public GridBoard<TOVCell> grid;
     int encountersRemaining; // Used to determine a win condition.
     int totalEncounters; // Total encounters in the map when initialized.
+    private TOVRoundTypes roundType;
 
     /**
      * @param gameParameters - game parameters.
@@ -41,6 +42,7 @@ public class TOVGameState extends AbstractGameState {
         TOVGameState copy = new TOVGameState(gameParameters, getNPlayers());
         copy.grid = deepCopyGrid();
         copy.players = copyPlayers();
+        copy.setRoundType(roundType);
         return copy;
     }
 
@@ -78,11 +80,23 @@ public class TOVGameState extends AbstractGameState {
         }
     }
 
-    @Override
-    public double getGameScore(int playerId) {
-        return 0; // TODO
+    /**
+     * Sets a round type after checking for conditions:
+     * If players entered a cell with an encounter -> IN_COMBAT_INITIAL - TODO
+     * If players are in a cell with an encounter -> IN_COMBAT
+     * If players are not in/defeated a cell with an encounter -> OUT_OF_COMBAT
+     */
+    public void UpdateRoundType(){
+        TOVRoundTypes newRoundType = TOVRoundTypes.OUT_OF_COMBAT;
+        for (TOVPlayer player : players){
+            if (grid.getElement(player.position).hasEncounter){
+                newRoundType = TOVRoundTypes.IN_COMBAT;
+            }
+        }
+        setRoundType(newRoundType);
     }
 
+    /* HashCode and Equals */
     @Override
     public int hashCode() {
         return Objects.hash(grid);
@@ -115,5 +129,18 @@ public class TOVGameState extends AbstractGameState {
             }
         }
         return null;
+    }
+
+    public TOVRoundTypes getRoundType() {
+        return roundType;
+    }
+
+    public void setRoundType(TOVRoundTypes roundType) {
+        this.roundType = roundType;
+    }
+
+    @Override
+    public double getGameScore(int playerId) {
+        return 0; // TODO
     }
 }

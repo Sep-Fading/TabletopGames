@@ -5,8 +5,8 @@ import core.components.Dice;
 import java.util.Random;
 
 public class TOVDice extends Dice {
-    public TOVDice(int faces) {
-        super(faces);
+    public TOVDice(Type type) {
+        super(type);
     }
 
     /**
@@ -15,8 +15,8 @@ public class TOVDice extends Dice {
      * @param faces - The number of faces on the dice.
      * @param id - The id of the dice.
      */
-    public TOVDice(int faces, int id) {
-        super(faces);
+    public TOVDice(Type type, int id) {
+        super(type);
     }
 
     /**
@@ -26,13 +26,14 @@ public class TOVDice extends Dice {
     public void Roll(int modifier){
         Random rand = new Random();
         roll(rand);
+        System.out.println("Rolled a " + getValue());
         setValue(getValue() + modifier);
     }
 
 
     @Override
     public TOVDice copy() {
-        TOVDice copyDie = new TOVDice(nSides, componentID);
+        TOVDice copyDie = new TOVDice(this.type, componentID);
         copyDie.setValue(getValue());
         return copyDie;
     }

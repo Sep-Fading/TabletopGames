@@ -12,8 +12,9 @@ import java.util.Vector;
 
 public class TOVPlayer{
     Vector2D position;
-    int health = 100;
-    int id;
+    private int health = 100;
+    private int dexterity = 0;
+    private int id;
     ArrayList<TOVCard> hand = new ArrayList<TOVCard>();
 
     public TOVPlayer(int id){
@@ -57,5 +58,9 @@ public class TOVPlayer{
 
     public int getPlayerID(){
         return id;
+    }
+
+    public int getDexterity() {
+        return dexterity;
     }
 }

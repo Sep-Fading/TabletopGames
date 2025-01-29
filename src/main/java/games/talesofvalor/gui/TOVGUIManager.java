@@ -67,7 +67,7 @@ public class TOVGUIManager extends AbstractGUIManager {
                 JLabel cellLabel = new JLabel("", SwingConstants.CENTER);
 
                 if (cell.hasEncounter) {
-                    cellLabel.setText(String.valueOf(cell.encounter.enemies.size())); // Display number of enemies
+                    cellLabel.setText(String.valueOf(cell.GetEncounter().enemies.size())); // Display number of enemies
                     cellLabel.setOpaque(true);
                     cellLabel.setBackground(defaultEncounterColor);
                     cellLabel.setForeground(defaultTextColor);
@@ -75,12 +75,12 @@ public class TOVGUIManager extends AbstractGUIManager {
                     // Generate tooltip text with detailed enemy info
                     StringBuilder tooltipText = new StringBuilder("<html>"); // HTML allows multiline tooltips
                     tooltipText.append("Encounter!<br>");
-                    List<TOVEnemy> enemies = cell.encounter.enemies; // Assuming `enemies` is a List<Enemy>
+                    List<TOVEnemy> enemies = cell.GetEncounter().enemies; // Assuming `enemies` is a List<Enemy>
                     for (int k = 0; k < enemies.size(); k++) {
                         TOVEnemy enemy = enemies.get(k);
                         tooltipText.append("Enemy ").append(k + 1).append(":<br>");
-                        tooltipText.append("&nbsp;&nbsp;Health: ").append(enemy.attack).append("<br>");
-                        tooltipText.append("&nbsp;&nbsp;Attack: ").append(enemy.health).append("<br>");
+                        tooltipText.append("&nbsp;&nbsp;Health: ").append(enemy.getAttack()).append("<br>");
+                        tooltipText.append("&nbsp;&nbsp;Attack: ").append(enemy.getHealth()).append("<br>");
                     }
                     tooltipText.append("</html>");
                     cellLabel.setToolTipText(tooltipText.toString());
@@ -117,15 +117,15 @@ public class TOVGUIManager extends AbstractGUIManager {
                 // Build out encounter info and color the cell Red
                 // If the cell has an encounter.
                 if (cell.hasEncounter) {
-                    labelText.append(cell.encounter.enemyCount).append("E");
+                    labelText.append(cell.GetEncounter().getEnemyCount()).append("E");
                     backgroundColor = defaultEncounterColor;
 
                     StringBuilder tooltipText = new StringBuilder("<html>Encounter:<br>");
-                    for(int k=0; k < cell.encounter.enemies.size(); k++){
-                        TOVEnemy enemy = cell.encounter.enemies.get(k);
+                    for(int k=0; k < cell.GetEncounter().enemies.size(); k++){
+                        TOVEnemy enemy = cell.GetEncounter().enemies.get(k);
                         tooltipText.append("Enemy ").append(k+1).append(":<br>");
-                        tooltipText.append("Health: ").append(enemy.health).append("<br>");
-                        tooltipText.append("Attack: ").append(enemy.attack).append("<br>");
+                        tooltipText.append("Health: ").append(enemy.getHealth()).append("<br>");
+                        tooltipText.append("Attack: ").append(enemy.getAttack()).append("<br>");
                     }
                     tooltipText.append("</html>");
                     cellLabel.setToolTipText(tooltipText.toString());

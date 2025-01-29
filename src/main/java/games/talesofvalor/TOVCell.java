@@ -107,4 +107,8 @@ public class TOVCell extends Component {
     public int GetPlayerCount(){
         return playerCount;
     }
+
+    public TOVEncounter GetEncounter(){
+        return encounter;
+    }
 }
