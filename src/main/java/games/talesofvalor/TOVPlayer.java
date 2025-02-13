@@ -12,14 +12,41 @@ import java.util.Vector;
 
 public class TOVPlayer{
     Vector2D position;
+    private TOVClasses playerClass; // TODO: Implement parameters for this and make it final.
     private int health = 100;
     private int dexterity = 0;
+    private int damage = 2;
     private int id;
     ArrayList<TOVCard> hand = new ArrayList<TOVCard>();
 
     public TOVPlayer(int id){
         this.id = id;
         position = new Vector2D(0,0);
+
+        // Adjust stats as you like here:
+        // TODO - Card sets, more stats + special ability.
+        if (playerClass != null) {
+            switch (playerClass) {
+                case DPS:
+                    dexterity = 6;
+                    break;
+                case TANK:
+                    dexterity = 4;
+                    break;
+                case HEALER:
+                    dexterity = 2;
+                    break;
+            }
+        }
+    }
+
+    public TOVPlayer(int id, Vector2D position, TOVClasses playerClass, int health, int dexterity, int damage){
+        this.id = id;
+        this.position = position;
+        this.playerClass = playerClass;
+        this.health = health;
+        this.dexterity = dexterity;
+        this.damage = damage;
     }
 
     /**
@@ -37,13 +64,36 @@ public class TOVPlayer{
     }
 
     /**
+     * Moves the player to a given cell.
+     * @param cell - The cell to move the player to.
+     */
+    public void MoveToCell(Vector2D cell){
+        position = cell;
+    }
+
+
+    /**
+     * Attacks a given enemy with the player's damage.
+     * @param enemy
+     */
+    public void Attack(TOVEnemy enemy){
+        if (enemy != null){
+            enemy.takeDamage(damage);
+        }
+        else{
+            System.out.println("No enemy to attack. (Passed argument was null)");
+        }
+    }
+
+
+    /**
      * Creates a hard copy of this player.
      * @return copy of this player.
      */
     public TOVPlayer copy(){
-        TOVPlayer copy = new TOVPlayer(getPlayerID());
-        copy.position = position.copy();
-        copy.health = health;
+        // TODO: ENSURE INCLUSION OF PLAYER CLASS AFTER IT IS IMPLEMENTED.
+        TOVPlayer copy = new TOVPlayer(getPlayerID(),
+                position.copy(), playerClass, health, dexterity, damage);
         for (TOVCard card : hand){
             copy.hand.add(card.copy());
         }

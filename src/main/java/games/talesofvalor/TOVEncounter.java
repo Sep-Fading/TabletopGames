@@ -8,8 +8,7 @@ import java.util.Objects;
 
 public class TOVEncounter extends Component {
     int encounterLevel;
-    int enemyCount;
-    public ArrayList<TOVEnemy> enemies = new ArrayList<TOVEnemy>();
+    public ArrayList<TOVEnemy> enemies;
 
     /**
      * Creates an encounter, which should be placed within a cell.
@@ -19,7 +18,7 @@ public class TOVEncounter extends Component {
     public TOVEncounter(int encounterLevel, int enemyCount) {
         super(CoreConstants.ComponentType.BOARD_NODE, "Encounter");
         this.encounterLevel = encounterLevel;
-        this.enemyCount = enemyCount;
+        this.enemies = new ArrayList<>();
         InitializeEnemies(enemyCount);
     }
 
@@ -28,14 +27,11 @@ public class TOVEncounter extends Component {
      * instantiate hard copies with ease.
      * @param componentID
      * @param encounterLevel
-     * @param enemyCount
      */
-    public TOVEncounter(int componentID, int encounterLevel, int enemyCount,
-                        ArrayList<TOVEnemy> enemies) {
+    public TOVEncounter(int componentID, int encounterLevel, int enemyCount) {
         super(CoreConstants.ComponentType.BOARD_NODE, "Encounter", componentID);
         this.encounterLevel = encounterLevel;
-        this.enemyCount = enemyCount;
-        this.enemies = enemies;
+        this.enemies = new ArrayList<>();
     }
 
     /**
@@ -48,7 +44,9 @@ public class TOVEncounter extends Component {
         for (TOVEnemy enemy : enemies){
             copyEnemies.add(enemy.copy());
         }
-        return new TOVEncounter(componentID, encounterLevel, enemyCount, copyEnemies);
+        TOVEncounter encounterCopy = new TOVEncounter(componentID, encounterLevel, copyEnemies.size());
+        encounterCopy.enemies = copyEnemies;
+        return encounterCopy;
     }
 
     /**
@@ -62,22 +60,31 @@ public class TOVEncounter extends Component {
         }
     }
 
+    public boolean isCleared(){
+        for (TOVEnemy enemy : enemies){
+            if (!enemy.isDead){
+                return false;
+            }
+        }
+        return true;
+    }
+
     /* Hashcode and equals */
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         TOVEncounter that = (TOVEncounter) o;
-        return encounterLevel == that.encounterLevel && enemyCount == that.enemyCount && Objects.equals(enemies, that.enemies);
+        return encounterLevel == that.encounterLevel && Objects.equals(enemies, that.enemies);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(encounterLevel, enemyCount, enemies);
+        return Objects.hash(encounterLevel, enemies);
     }
 
     /* Getters & Setters */
     public int getEnemyCount() {
-        return enemyCount;
+        return enemies.size();
     }
 }

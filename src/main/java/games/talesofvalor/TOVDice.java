@@ -34,7 +34,13 @@ public class TOVDice extends Dice {
     @Override
     public TOVDice copy() {
         TOVDice copyDie = new TOVDice(this.type, componentID);
-        copyDie.setValue(getValue());
+        int val = getValue();
+        if (val != 0){
+            copyDie.setValue(val);
+        }
+        else{
+            copyDie.setValue(1);
+        }
         return copyDie;
     }
 

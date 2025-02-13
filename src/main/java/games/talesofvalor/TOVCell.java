@@ -25,6 +25,7 @@ public class TOVCell extends Component {
 
         if (x != 0 && y != 0) {
             hasEncounter = ChanceEncounter();
+            System.out.println("Encounter at " + x + ", " + y + ": " + hasEncounter);
             if (hasEncounter) {
                 encounter = InitializeEncounter();
             }
@@ -36,14 +37,13 @@ public class TOVCell extends Component {
      * Copy constructor for the TOVCell class:
      * @param componentID - ID of the component.
      * @param position - Position of the cell.
-     * @param hasEncounter - Whether the cell has an encounter.
-     * @param encounter - The encounter in the cell.
      */
-    private TOVCell(int componentID, Vector2D position, boolean hasEncounter, TOVEncounter encounter) {
+    private TOVCell(int componentID, Vector2D position,
+                    TOVEncounter encounter, boolean hasEncounter) {
         super(CoreConstants.ComponentType.BOARD_NODE, "Tile", componentID);
         this.position = position;
-        this.hasEncounter = hasEncounter;
         this.encounter = encounter;
+        this.hasEncounter = hasEncounter;
     }
 
     /**
@@ -64,15 +64,29 @@ public class TOVCell extends Component {
 
     // Creates a hard copy of the cell to return.
     public TOVCell copy(){
-        TOVEncounter encounterCopy;
-        if (hasEncounter){
-            encounterCopy = encounter.copy();
-        } else {
-            encounterCopy = null;
+        TOVCell copyCell = new TOVCell(componentID, position,
+                (encounter != null) ? encounter.copy() : null, hasEncounter);
+        if (encounter != null && copyCell.encounter == null){
+            System.out.println("Encounter is lost during copy!!!");
         }
-        TOVCell copyCell = new TOVCell(componentID, position.copy(), hasEncounter, encounterCopy);
         copyCell.SetPlayerCount(playerCount);
         return copyCell;
+    }
+
+
+    /* Checks to see if the encounter still has enemies that are alive to update hasEncounter */
+    public void updateHasEncounter(){
+        if (encounter == null){
+            System.out.println("Encounter is null.");
+            return;
+        }
+        if (encounter.isCleared()){
+            hasEncounter = false;
+            System.out.println("Encounter cleared.");
+        }
+        else{
+            hasEncounter = true;
+        }
     }
 
     /* HashCode and Equals */

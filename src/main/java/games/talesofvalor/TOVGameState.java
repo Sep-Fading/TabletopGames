@@ -3,6 +3,7 @@ package games.talesofvalor;
 import core.AbstractGameState;
 import core.AbstractParameters;
 import core.components.Component;
+import core.components.Dice;
 import core.components.GridBoard;
 import games.GameType;
 
@@ -17,6 +18,10 @@ public class TOVGameState extends AbstractGameState {
     int encountersRemaining; // Used to determine a win condition.
     int totalEncounters; // Total encounters in the map when initialized.
     private TOVRoundTypes roundType;
+    private TOVRoundTypes previousRoundType;
+
+    TOVDice d6f = new TOVDice(Dice.Type.d6);
+    ArrayList<TOVOrderWrapper> combatTurnOrder = new ArrayList<>();
 
     /**
      * @param gameParameters - game parameters.
@@ -39,11 +44,24 @@ public class TOVGameState extends AbstractGameState {
 
     @Override
     protected AbstractGameState _copy(int playerId) {
+        System.out.println("Copying GameState...");
         TOVGameState copy = new TOVGameState(gameParameters, getNPlayers());
         copy.grid = deepCopyGrid();
         copy.players = copyPlayers();
         copy.setRoundType(roundType);
+        copy.setPreviousRoundType(previousRoundType);
+        copy.d6f = d6f.copy();
+        copy.combatTurnOrder = copyTurnOrder();
+
         return copy;
+    }
+
+    private ArrayList<TOVOrderWrapper> copyTurnOrder(){
+        ArrayList<TOVOrderWrapper> copyOrder = new ArrayList<>();
+        for (TOVOrderWrapper order : combatTurnOrder){
+            copyOrder.add(order.copy());
+        }
+        return copyOrder;
     }
 
     private ArrayList<TOVPlayer> copyPlayers(){
@@ -62,6 +80,32 @@ public class TOVGameState extends AbstractGameState {
             }
         }
         return gridCopy;
+    }
+
+
+
+    /**
+     * Roll some initiative scores for the players and enemies in combat.
+     * And wrap them in TOVOrderWrapper instances for ForwardModel to use.
+     *
+     * @param players - The players in combat.
+     * @param enemies - The enemies in combat.
+     */
+    public ArrayList<TOVOrderWrapper> SetupCombatTurnOrder(ArrayList<TOVPlayer> players,
+                                                         ArrayList<TOVEnemy> enemies){
+        combatTurnOrder.clear();
+        for (int i = 0; i < players.size(); i++){
+            d6f.Roll(players.get(i).getDexterity());
+            combatTurnOrder.add(new TOVOrderWrapper(d6f.getValue(), players.get(i)));
+        }
+
+        for (int i = 0; i < enemies.size(); i++){
+            d6f.Roll(enemies.get(i).getDexterity());
+            combatTurnOrder.add(new TOVOrderWrapper(d6f.getValue(), enemies.get(i)));
+        }
+
+        combatTurnOrder.sort((o1, o2) -> o2.getInitiative() - o1.getInitiative());
+        return combatTurnOrder;
     }
 
     // Assigns a heuristic score based on the number of encounters completed by the player(s).
@@ -89,7 +133,9 @@ public class TOVGameState extends AbstractGameState {
     public void UpdateRoundType(){
         TOVRoundTypes newRoundType = TOVRoundTypes.OUT_OF_COMBAT;
         for (TOVPlayer player : players){
+            grid.getElement(player.getPosition()).updateHasEncounter();
             if (grid.getElement(player.position).hasEncounter){
+                System.out.println("Player " + player.getPlayerID() + " is in combat.");
                 newRoundType = TOVRoundTypes.IN_COMBAT;
             }
         }
@@ -135,12 +181,24 @@ public class TOVGameState extends AbstractGameState {
         return roundType;
     }
 
+    public TOVRoundTypes getPreviousRoundType() {
+        return previousRoundType;
+    }
+
     public void setRoundType(TOVRoundTypes roundType) {
         this.roundType = roundType;
+    }
+
+    public void setPreviousRoundType(TOVRoundTypes tovRoundTypes) {
+        this.previousRoundType = tovRoundTypes;
     }
 
     @Override
     public double getGameScore(int playerId) {
         return 0; // TODO
+    }
+
+    public ArrayList<TOVOrderWrapper> getCombatOrder(){
+        return combatTurnOrder;
     }
 }

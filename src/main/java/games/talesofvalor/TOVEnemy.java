@@ -3,9 +3,12 @@ package games.talesofvalor;
 import core.CoreConstants;
 import core.components.Component;
 
+import java.util.Objects;
+
 public class TOVEnemy extends Component {
     int attack;
     int health;
+    int dexterity = 0;
     boolean isDead = false;
 
     /**
@@ -26,10 +29,11 @@ public class TOVEnemy extends Component {
      * @param attack
      * @param health
      */
-    public TOVEnemy(int componentID, int attack, int health) {
+    public TOVEnemy(int componentID, int attack, int health, int dexterity) {
         super(CoreConstants.ComponentType.TOVENEMY, "Enemy", componentID);
         this.attack = attack;
         this.health = health;
+        this.dexterity = dexterity;
     }
 
     /**
@@ -40,11 +44,13 @@ public class TOVEnemy extends Component {
      */
     public void takeDamage(int damage){
         if (isDead){
+            System.out.println("Enemy is already dead.");
             return;
         }
-        health -= damage;
+        health = health - damage;
         if (health <= 0){
             isDead = true;
+            System.out.println("Enemy is dead from taking damage.");
         }
     }
 
@@ -53,7 +59,7 @@ public class TOVEnemy extends Component {
      * @return - copy of this enemy.
      */
     public TOVEnemy copy() {
-        return new TOVEnemy(componentID, attack, health);
+        return new TOVEnemy(componentID, attack, health, dexterity);
     }
 
     /* Getters & Setters */
@@ -63,5 +69,30 @@ public class TOVEnemy extends Component {
 
     public int getHealth() {
         return health;
+    }
+
+    public boolean isDead() {
+        return isDead;
+    }
+
+    public int getDexterity() {
+        return dexterity;
+    }
+
+    /* Hashcode and equals */
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        TOVEnemy tovEnemy = (TOVEnemy) o;
+        return getAttack() == tovEnemy.getAttack() && getHealth() == tovEnemy.getHealth() &&
+                getDexterity() == tovEnemy.getDexterity() && isDead() == tovEnemy.isDead();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), getAttack(), getHealth(), getDexterity(), isDead());
     }
 }

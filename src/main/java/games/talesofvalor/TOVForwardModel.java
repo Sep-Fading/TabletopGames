@@ -6,6 +6,7 @@ import core.StandardForwardModel;
 import core.actions.AbstractAction;
 import core.components.Dice;
 import core.components.GridBoard;
+import games.talesofvalor.actions.TOVPlayerAttack;
 import games.talesofvalor.actions.TOVPlayerMove;
 import tech.tablesaw.plotly.components.Grid;
 import utilities.Vector2D;
@@ -13,8 +14,6 @@ import utilities.Vector2D;
 import java.util.*;
 
 public class TOVForwardModel extends StandardForwardModel {
-
-    TOVDice d6f = new TOVDice(Dice.Type.d6);
 
     @Override
     protected void _setup(AbstractGameState firstState) {
@@ -43,21 +42,26 @@ public class TOVForwardModel extends StandardForwardModel {
 
         // Initialize the roundType.
         tovgs.setRoundType(TOVRoundTypes.OUT_OF_COMBAT);
+        tovgs.setPreviousRoundType(TOVRoundTypes.OUT_OF_COMBAT);
     }
 
     @Override
     protected List<AbstractAction> _computeAvailableActions(AbstractGameState gameState) {
         List<AbstractAction> actions = new ArrayList<>();
         TOVGameState tovgs = (TOVGameState) gameState;
-        System.out.println("Current round type: " + tovgs.getRoundType());
-        if (tovgs.getRoundType() == TOVRoundTypes.OUT_OF_COMBAT) {
-            TOVPlayer currentPlayer = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer());
-            Vector2D currentPosition = currentPlayer.getPosition();
-            int x = currentPosition.getX();
-            int y = currentPosition.getY();
-            d6f.Roll(currentPlayer.getDexterity());
-            int d6Roll = d6f.getValue();
+        TOVPlayer currentPlayer = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer());
+        Vector2D currentPosition = currentPlayer.getPosition();
+        int x = currentPosition.getX();
+        int y = currentPosition.getY();
 
+        System.out.println("Current round type: " + tovgs.getRoundType());
+
+        // If out of combat, roll a d6 and calculate all reachable cells.
+        // else if in combat, add possible combat actions to the list.
+        if (tovgs.getRoundType() == TOVRoundTypes.OUT_OF_COMBAT) {
+
+            tovgs.d6f.Roll(currentPlayer.getDexterity());
+            int d6Roll = tovgs.d6f.getValue();
             System.out.println("Player " + tovgs.getCurrentPlayer() + " rolled a " + d6Roll);
 
             // A BFS implementation to calculate all reachable cells to multi-directional movement.
@@ -119,12 +123,17 @@ public class TOVForwardModel extends StandardForwardModel {
                     }
                 }
             }
-
-
         }
-
-        // Do nothing option
-        actions.add(new TOVPlayerMove(new Vector2D(0, 0)));
+        else if (tovgs.getRoundType() == TOVRoundTypes.IN_COMBAT){
+            // TODO : Implement combat actions, then updating the UI and also updating
+            //  encounters remaining if defeated.
+            System.out.println(tovgs.grid.getElement(x, y).hasEncounter);
+            for (TOVEnemy target : tovgs.grid.getElement(x, y).encounter.enemies){
+                if (!target.isDead) {
+                    actions.add(new TOVPlayerAttack(target));
+                }
+            }
+        }
 
         return actions;
     }
@@ -134,11 +143,10 @@ public class TOVForwardModel extends StandardForwardModel {
      * OUT_OF_COMBAT:
      * 1. Dice roll to determine the current player's movement capabilities. Dexterity affects the roll.
      * ----------------------------------------
-     * IN_COMBAT_INITIAL:
-     * 1. Dice roll to determine the turn orders. Dexterity affects the roll.
-     * ----------------------------------------
      * IN_COMBAT:
-     *
+     *  1. if its the first round of combat, calculate the turn order.
+     *  2. Move all players into the encounter cell.
+     *  3. If the encounter is defeated, update the round type and end the player's turn.
      */
     @Override
     protected void _beforeAction(AbstractGameState gameState, AbstractAction action) {
@@ -146,22 +154,77 @@ public class TOVForwardModel extends StandardForwardModel {
         TOVRoundTypes round = tovgs.getRoundType();
         switch (round){
             case OUT_OF_COMBAT:
-                d6f.Roll(tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getDexterity());
+                tovgs.d6f.Roll(tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getDexterity());
                 break;
+
+            case IN_COMBAT:
+                if (tovgs.getPreviousRoundType() == TOVRoundTypes.OUT_OF_COMBAT) {
+                    ArrayList<TOVPlayer> players = tovgs.players;
+                    ArrayList<TOVEnemy> enemies = tovgs.grid.getElement(
+                            tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition()).encounter.enemies;
+                    tovgs.SetupCombatTurnOrder(players, enemies);
+                    Vector2D encounterPos = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition();
+
+                    // Move all players into the encounter cell.
+                    for (TOVPlayer player : tovgs.players){
+                        System.out.println("Player " + player.getPlayerID() + " same pos as encounter: " +
+                                player.getPosition().equals(encounterPos));
+                        System.out.println("Player " + player.getPlayerID() + " pos: " + player.getPosition());
+                        if (!player.getPosition().equals(encounterPos)){
+                            tovgs.grid.getElement(player.getPosition()).SetPlayerCount(
+                                    tovgs.grid.getElement(player.getPosition()).GetPlayerCount() - 1);
+                            player.MoveToCell(encounterPos);
+                            tovgs.grid.getElement(player.getPosition()).SetPlayerCount(
+                                    tovgs.grid.getElement(player.getPosition()).GetPlayerCount() + 1);
+                            System.out.println("Player " + player.getPlayerID() + " moved to encounter cell." +
+                                    " Position: " + player.getPosition());
+                        }
+                    }
+                    tovgs.UpdateRoundType();
+
+                }
         }
     }
+
     /* -------------------- */
 
     /* --- ROUND END --- */
     /**
      * 1. Update roundType in TOVGameState.
+     * 2. If in combat, check if encounter is defeated and update state accordingly.
      */
     @Override
     protected void _afterAction(AbstractGameState gameState, AbstractAction action) {
         System.out.println("After action");
         TOVGameState tovgs = (TOVGameState) gameState;
-        TOVPlayerMove move = (TOVPlayerMove) action;
+        TOVCell combatCell = tovgs.grid.getElement(tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition());
+        tovgs.setPreviousRoundType(tovgs.getRoundType());
+        // Check if the encounter is defeated.
+        combatCell.updateHasEncounter();
         tovgs.UpdateRoundType();
-        endPlayerTurn(tovgs);
+
+        // If in combat, find the next player to act according to the custom turn order.
+        // Else, use the regular turn order.
+        if (tovgs.getRoundType() == TOVRoundTypes.IN_COMBAT){
+            ArrayList<TOVOrderWrapper> turnOrder = tovgs.getCombatOrder();
+            for (int i = 0; i < turnOrder.size(); i++){
+                if (turnOrder.get(i).isPlayer()){
+                    endPlayerTurn(tovgs, turnOrder.get(i).getPlayer().getPlayerID());
+                    System.out.println("Player " + turnOrder.get(i).getPlayer().getPlayerID() + " turn. In combat.");
+                }
+            }
+
+
+            if (!combatCell.hasEncounter){
+                tovgs.encountersRemaining--;
+                tovgs.UpdateRoundType();
+                endPlayerTurn(tovgs);
+                System.out.println("Encounter defeated. Remaining: " + tovgs.encountersRemaining);
+            }
+        }
+        else{
+            endPlayerTurn(tovgs);
+            System.out.println("Player " + tovgs.getCurrentPlayer() + " turn. Out of combat.");
+        }
     }
 }
