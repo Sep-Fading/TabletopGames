@@ -1,14 +1,11 @@
 package games.talesofvalor;
 
-import core.AbstractForwardModel;
 import core.AbstractGameState;
 import core.StandardForwardModel;
 import core.actions.AbstractAction;
-import core.components.Dice;
 import core.components.GridBoard;
 import games.talesofvalor.actions.TOVPlayerAttack;
 import games.talesofvalor.actions.TOVPlayerMove;
-import tech.tablesaw.plotly.components.Grid;
 import utilities.Vector2D;
 
 import java.util.*;
@@ -22,7 +19,7 @@ public class TOVForwardModel extends StandardForwardModel {
 
         // Create the map, counting the encounters as we go.
         tovgs.totalEncounters = 0;
-        tovgs.grid = new GridBoard<TOVCell>(tovp.gridWidth, tovp.gridHeight);
+        tovgs.grid = new GridBoard<>(tovp.gridWidth, tovp.gridHeight);
         for (int i = 0; i < tovp.gridHeight; i++) {
             for (int j = 0; j < tovp.gridWidth; j++) {
                 tovgs.grid.setElement(j, i, new TOVCell(j, i));
@@ -67,7 +64,7 @@ public class TOVForwardModel extends StandardForwardModel {
             System.out.println("Player " + tovgs.getCurrentPlayer() + " rolled a " + d6Roll);
 
             // A BFS implementation to calculate all reachable cells to multi-directional movement.
-            boolean visited[][] = new boolean[tovgs.grid.getWidth()][tovgs.grid.getHeight()];
+            boolean[][] visited = new boolean[tovgs.grid.getWidth()][tovgs.grid.getHeight()];
             int[][] distance = new int[tovgs.grid.getWidth()][tovgs.grid.getHeight()];
 
             // Initialise all possible movements.
@@ -127,8 +124,6 @@ public class TOVForwardModel extends StandardForwardModel {
             }
         }
         else if (tovgs.getRoundType() == TOVRoundTypes.IN_COMBAT && tovgs.grid.getElement(x, y).hasEncounter){
-            // TODO : Implement combat actions, then updating the UI and also updating
-            //  encounters remaining if defeated.
             System.out.println(tovgs.grid.getElement(x, y).hasEncounter);
             for (TOVEnemy target : tovgs.grid.getElement(x, y).encounter.enemies){
                 System.out.println("COMPONENT ID: " + target.getComponentID());
@@ -150,7 +145,7 @@ public class TOVForwardModel extends StandardForwardModel {
      * 1. Dice roll to determine the current player's movement capabilities. Dexterity affects the roll.
      * ----------------------------------------
      * IN_COMBAT:
-     *  1. if its the first round of combat, calculate the turn order.
+     *  1. if it's the first round of combat, calculate the turn order.
      *  2. Move all players into the encounter cell.
      *  3. If the encounter is defeated, update the round type and end the player's turn.
      */
@@ -162,6 +157,10 @@ public class TOVForwardModel extends StandardForwardModel {
             case OUT_OF_COMBAT:
                 tovgs.d6f.Roll(tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getDexterity());
                 break;
+            case IN_COMBAT:
+                // TODO
+            default:
+                throw new IllegalStateException("Unexpected value: " + round);
         }
     }
 
@@ -211,10 +210,10 @@ public class TOVForwardModel extends StandardForwardModel {
                 tovgs.UpdateRoundType();
             }
             ArrayList<TOVOrderWrapper> turnOrder = tovgs.getCombatOrder();
-            for (int i = 0; i < turnOrder.size(); i++){
-                if (turnOrder.get(i).isPlayer()){
-                    endPlayerTurn(tovgs, turnOrder.get(i).getPlayer().getPlayerID());
-                    System.out.println("Player " + turnOrder.get(i).getPlayer().getPlayerID() + " turn. In combat.");
+            for (TOVOrderWrapper tovOrderWrapper : turnOrder) {
+                if (tovOrderWrapper.isPlayer()) {
+                    endPlayerTurn(tovgs, tovOrderWrapper.getPlayer().getPlayerID());
+                    System.out.println("Player " + tovOrderWrapper.getPlayer().getPlayerID() + " turn. In combat.");
                 }
             }
         }
