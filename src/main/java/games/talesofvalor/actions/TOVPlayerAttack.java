@@ -8,21 +8,26 @@ import games.talesofvalor.TOVGameState;
 import java.util.Objects;
 
 public class TOVPlayerAttack extends AbstractAction {
-
-    TOVEnemy target;
-
-    public TOVPlayerAttack(TOVEnemy target) {
-        this.target = target;
+    int compid = -1;
+    public TOVPlayerAttack(int compid) {
+        this.compid = compid;
     }
 
     @Override
     public boolean execute(AbstractGameState gs) {
         System.out.println(getString(gs));
         TOVGameState tovgs = (TOVGameState) gs;
-        if (target.isDead()) {
+        System.out.println("ENEMY COMP ID IN EXECUTE FUNCTION: " + compid);
+        TOVEnemy target = (TOVEnemy) tovgs.getComponentById(compid);
+        if (target == null) {
+            System.out.println("No target to attack.");
+            return true;
+        }
+        else if (target.isDead()) {
             System.out.println("Target is already dead.");
             return false;
         }
+        System.out.println("Player attacking target with health: " + target.getHealth());
         tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).Attack(target);
         System.out.println("Player attacked" + target.getHealth());
         return true;
@@ -35,22 +40,22 @@ public class TOVPlayerAttack extends AbstractAction {
      */
     @Override
     public AbstractAction copy() {
-        return new TOVPlayerAttack(target.copy());
+        return new TOVPlayerAttack(compid);
     }
 
     /* Hashcode and equals */
     @Override
     public int hashCode() {
-        return Objects.hash(target);
+        return Objects.hash(compid);
     }
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-        TOVPlayerAttack that = (TOVPlayerAttack) obj;
-        return Objects.equals(target, that.target);
+        return compid == ((TOVPlayerAttack) obj).compid;
     }
+
 
     @Override
     public String getString(AbstractGameState gameState) {

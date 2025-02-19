@@ -39,7 +39,18 @@ public class TOVGameState extends AbstractGameState {
 
     @Override
     protected List<Component> _getAllComponents() {
-        return new ArrayList<Component>() {{add(grid);}};
+        ArrayList<Component> returnList = new ArrayList<>();
+        returnList.add(grid);
+        for (int i = 0; i < grid.getWidth(); i++){
+            for (int j = 0; j < grid.getHeight(); j++){
+                returnList.add(grid.getElement(i,j));
+                if (grid.getElement(i,j).hasEncounter){
+                    returnList.add(grid.getElement(i,j).encounter);
+                    returnList.addAll(grid.getElement(i, j).encounter.enemies);
+                }
+            }
+        }
+        return returnList;
     }
 
     @Override

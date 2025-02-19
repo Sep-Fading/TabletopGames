@@ -33,6 +33,7 @@ public class TOVForwardModel extends StandardForwardModel {
         tovgs.encountersRemaining = tovgs.totalEncounters;
 
         // Create & place TOVPlayer instances for each player.
+        tovgs.players.clear();
         for (int i = 0; i < tovgs.getNPlayers(); i++) {
             TOVPlayer player = new TOVPlayer(i);
             tovgs.players.add(player);
@@ -124,15 +125,19 @@ public class TOVForwardModel extends StandardForwardModel {
                 }
             }
         }
-        else if (tovgs.getRoundType() == TOVRoundTypes.IN_COMBAT){
+        else if (tovgs.getRoundType() == TOVRoundTypes.IN_COMBAT && tovgs.grid.getElement(x, y).hasEncounter){
             // TODO : Implement combat actions, then updating the UI and also updating
             //  encounters remaining if defeated.
             System.out.println(tovgs.grid.getElement(x, y).hasEncounter);
             for (TOVEnemy target : tovgs.grid.getElement(x, y).encounter.enemies){
-                if (!target.isDead) {
-                    actions.add(new TOVPlayerAttack(target));
-                }
+                System.out.println("COMPONENT ID: " + target.getComponentID());
+                System.out.println("TARGET SET TO COMPONENT ID: " + target.getComponentID());
+                actions.add(new TOVPlayerAttack(target.getComponentID()));
             }
+        }
+        else{
+            System.out.println("No actions available.");
+            actions.add(new TOVPlayerMove(new Vector2D(0, 0)));
         }
 
         return actions;
@@ -181,6 +186,15 @@ public class TOVForwardModel extends StandardForwardModel {
                         }
                     }
                     tovgs.UpdateRoundType();
+
+                    // TODO:
+                    /* Move all players into the encounter cell, this should be in after action
+                     Working something like:
+                     player 0 moves into an encounter cell and ends turn.
+                     check happens to see if any player is in an encounter cell.
+                     Update combat status.
+                     Move the rest of the players in and go to player 1 (e.g. next player).
+                     */
 
                 }
         }
