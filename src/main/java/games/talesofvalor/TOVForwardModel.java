@@ -21,6 +21,7 @@ public class TOVForwardModel extends StandardForwardModel {
         TOVParameters tovp = (TOVParameters) tovgs.getGameParameters();
 
         // Create the map, counting the encounters as we go.
+        tovgs.totalEncounters = 0;
         tovgs.grid = new GridBoard<TOVCell>(tovp.gridWidth, tovp.gridHeight);
         for (int i = 0; i < tovp.gridHeight; i++) {
             for (int j = 0; j < tovp.gridWidth; j++) {
@@ -161,42 +162,6 @@ public class TOVForwardModel extends StandardForwardModel {
             case OUT_OF_COMBAT:
                 tovgs.d6f.Roll(tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getDexterity());
                 break;
-
-            case IN_COMBAT:
-                if (tovgs.getPreviousRoundType() == TOVRoundTypes.OUT_OF_COMBAT) {
-                    ArrayList<TOVPlayer> players = tovgs.players;
-                    ArrayList<TOVEnemy> enemies = tovgs.grid.getElement(
-                            tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition()).encounter.enemies;
-                    tovgs.SetupCombatTurnOrder(players, enemies);
-                    Vector2D encounterPos = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition();
-
-                    // Move all players into the encounter cell.
-                    for (TOVPlayer player : tovgs.players){
-                        System.out.println("Player " + player.getPlayerID() + " same pos as encounter: " +
-                                player.getPosition().equals(encounterPos));
-                        System.out.println("Player " + player.getPlayerID() + " pos: " + player.getPosition());
-                        if (!player.getPosition().equals(encounterPos)){
-                            tovgs.grid.getElement(player.getPosition()).SetPlayerCount(
-                                    tovgs.grid.getElement(player.getPosition()).GetPlayerCount() - 1);
-                            player.MoveToCell(encounterPos);
-                            tovgs.grid.getElement(player.getPosition()).SetPlayerCount(
-                                    tovgs.grid.getElement(player.getPosition()).GetPlayerCount() + 1);
-                            System.out.println("Player " + player.getPlayerID() + " moved to encounter cell." +
-                                    " Position: " + player.getPosition());
-                        }
-                    }
-                    tovgs.UpdateRoundType();
-
-                    // TODO:
-                    /* Move all players into the encounter cell, this should be in after action
-                     Working something like:
-                     player 0 moves into an encounter cell and ends turn.
-                     check happens to see if any player is in an encounter cell.
-                     Update combat status.
-                     Move the rest of the players in and go to player 1 (e.g. next player).
-                     */
-
-                }
         }
     }
 
@@ -220,6 +185,31 @@ public class TOVForwardModel extends StandardForwardModel {
         // If in combat, find the next player to act according to the custom turn order.
         // Else, use the regular turn order.
         if (tovgs.getRoundType() == TOVRoundTypes.IN_COMBAT){
+            if (tovgs.getPreviousRoundType() == TOVRoundTypes.OUT_OF_COMBAT){
+                ArrayList<TOVPlayer> players = tovgs.players;
+                ArrayList<TOVEnemy> enemies = tovgs.grid.getElement(
+                        tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition()).encounter.enemies;
+                tovgs.SetupCombatTurnOrder(players, enemies);
+                Vector2D encounterPos = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition();
+
+                // Move all players to the encounter.
+                for (TOVPlayer player : tovgs.players){
+                    System.out.println("Player " + player.getPlayerID() + " same pos as encounter: " +
+                            player.getPosition().equals(encounterPos));
+                    System.out.println("Player " + player.getPlayerID() + " pos: " + player.getPosition());
+                    if (!player.getPosition().equals(encounterPos)){
+                        tovgs.grid.getElement(player.getPosition()).SetPlayerCount(
+                                tovgs.grid.getElement(player.getPosition()).GetPlayerCount() - 1);
+                        player.MoveToCell(encounterPos);
+                        tovgs.grid.getElement(player.getPosition()).SetPlayerCount(
+                                tovgs.grid.getElement(player.getPosition()).GetPlayerCount() + 1);
+                        System.out.println("Player " + player.getPlayerID() + " moved to encounter cell." +
+                                " Position: " + player.getPosition());
+                    }
+                }
+
+                tovgs.UpdateRoundType();
+            }
             ArrayList<TOVOrderWrapper> turnOrder = tovgs.getCombatOrder();
             for (int i = 0; i < turnOrder.size(); i++){
                 if (turnOrder.get(i).isPlayer()){
@@ -227,13 +217,14 @@ public class TOVForwardModel extends StandardForwardModel {
                     System.out.println("Player " + turnOrder.get(i).getPlayer().getPlayerID() + " turn. In combat.");
                 }
             }
-
-
-            if (!combatCell.hasEncounter){
-                tovgs.encountersRemaining--;
-                tovgs.UpdateRoundType();
-                endPlayerTurn(tovgs);
-                System.out.println("Encounter defeated. Remaining: " + tovgs.encountersRemaining);
+        }
+        else if (tovgs.getRoundType() == TOVRoundTypes.OUT_OF_COMBAT &&
+                tovgs.getPreviousRoundType() == TOVRoundTypes.IN_COMBAT){
+            tovgs.encountersRemaining --;
+            System.out.println("Encounter defeated. Remaining: " + tovgs.encountersRemaining);
+            endPlayerTurn(tovgs);
+            if (tovgs.encountersRemaining == 0){
+                endGame(tovgs);
             }
         }
         else{

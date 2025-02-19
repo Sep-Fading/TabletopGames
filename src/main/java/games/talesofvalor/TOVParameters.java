@@ -6,8 +6,8 @@ import java.util.Objects;
 
 public class TOVParameters extends AbstractParameters {
     // Grid dimensions.
-    int gridWidth = 12;
-    int gridHeight = 12;
+    int gridWidth = 10;
+    int gridHeight = 10;
 
     public TOVParameters() {
     }
