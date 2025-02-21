@@ -160,7 +160,7 @@ public class TOVForwardModel extends StandardForwardModel {
             case IN_COMBAT:
                 // TODO
             default:
-                throw new IllegalStateException("Unexpected value: " + round);
+                //throw new IllegalStateException("Unexpected value: " + round);
         }
     }
 
@@ -210,12 +210,54 @@ public class TOVForwardModel extends StandardForwardModel {
                 tovgs.UpdateRoundType();
             }
             ArrayList<TOVOrderWrapper> turnOrder = tovgs.getCombatOrder();
+            if (turnOrder.isEmpty()){
+                tovgs.SetupCombatTurnOrder(tovgs.players, tovgs.grid.getElement(
+                        tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition()).encounter.enemies);
+            }
+
+            ArrayList<TOVOrderWrapper> completedTurns = new ArrayList<>();
             for (TOVOrderWrapper tovOrderWrapper : turnOrder) {
                 if (tovOrderWrapper.isPlayer()) {
                     endPlayerTurn(tovgs, tovOrderWrapper.getPlayer().getPlayerID());
+                    completedTurns.add(tovOrderWrapper);
                     System.out.println("Player " + tovOrderWrapper.getPlayer().getPlayerID() + " turn. In combat.");
+                    break;
+                    // TODO:
+                    /*
+                    redo this part to:
+                    Take the first entry of turnOrder,
+                    if it's a player, set them as next in playerturn and remove them from turnOrder.
+                    if it's an enemy, perform their action and remove them from turnOrder.
+                     */
+                }
+                else if (tovOrderWrapper.isEnemy()) {
+                    ArrayList<TOVPlayer> alivePlayers = tovgs.getAlivePlayers();
+                    if (alivePlayers.isEmpty()){
+                        endGame(tovgs);
+                    }
+                    // Pick a random player to attack, if any left, if one player alive just pick that player.
+                    TOVPlayer target = null;
+                    if (alivePlayers.size() == 1){
+                        target = alivePlayers.get(0);
+                    }
+                    else if (alivePlayers.size() > 1){
+                        System.out.println(alivePlayers.size() + " Players left alive");
+                        int randomIndex = (int) (Math.random() * alivePlayers.size());
+                        System.out.println("Random index: " + randomIndex);
+                        target = alivePlayers.get(randomIndex);
+                    }
+                    if (target == null){
+                        System.out.println("No players to attack.");
+                        endGame(tovgs);
+                    }
+                    else {
+                        tovOrderWrapper.getEnemy().Attack(target);
+                        completedTurns.add(tovOrderWrapper);
+                        System.out.println("Enemy turn.");
+                    }
                 }
             }
+            turnOrder.removeAll(completedTurns);
         }
         else if (tovgs.getRoundType() == TOVRoundTypes.OUT_OF_COMBAT &&
                 tovgs.getPreviousRoundType() == TOVRoundTypes.IN_COMBAT){

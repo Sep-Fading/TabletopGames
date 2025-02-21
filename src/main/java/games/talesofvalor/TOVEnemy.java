@@ -54,6 +54,24 @@ public class TOVEnemy extends Component {
         }
     }
 
+
+    /**
+     * When the method is called, the enemy attacks the target.
+     * e.g. if the enemy has an attack of 5 and the target has 10 health,
+     * the target will have 5 health after the attack. target must be a TOVPlayer.
+     * @param target
+     */
+    public void Attack(TOVPlayer target){
+        target.setHealth(
+                target.getHealth() - attack
+        );
+
+        System.out.println(target.getPlayerID() + " Player attacked by enemy. Health: " + target.getHealth());
+        if (target.getHealth() <= 0){
+            target.setDead(true);
+        }
+    }
+
     /**
      * Creates a hard copy of this enemy.
      * @return - copy of this enemy.

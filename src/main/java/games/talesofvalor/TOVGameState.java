@@ -212,4 +212,14 @@ public class TOVGameState extends AbstractGameState {
     public ArrayList<TOVOrderWrapper> getCombatOrder(){
         return combatTurnOrder;
     }
+
+    public ArrayList<TOVPlayer> getAlivePlayers() {
+        ArrayList<TOVPlayer> alivePlayers = new ArrayList<>();
+        for (TOVPlayer player : players) {
+            if (!player.isDead()) {
+                alivePlayers.add(player);
+            }
+        }
+        return alivePlayers;
+    }
 }

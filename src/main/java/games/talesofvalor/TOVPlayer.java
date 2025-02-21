@@ -13,10 +13,11 @@ import java.util.Vector;
 public class TOVPlayer{
     Vector2D position;
     private TOVClasses playerClass; // TODO: Implement parameters for this and make it final.
-    private int health = 100;
+    private int health = 1000;
     private int dexterity = 0;
     private int damage = 2;
     private int id;
+    private boolean isDead = false;
     ArrayList<TOVCard> hand = new ArrayList<TOVCard>();
 
     public TOVPlayer(int id){
@@ -106,11 +107,26 @@ public class TOVPlayer{
         return position;
     }
 
-    public int getPlayerID(){
+    public int getPlayerID (){
         return id;
     }
 
     public int getDexterity() {
         return dexterity;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+    public boolean isDead() {
+        return isDead;
+    }
+
+    /* Setters */
+    public void setHealth(int newHealth) {
+        health = newHealth;
+    }
+    public void setDead(boolean dead) {
+        isDead = dead;
     }
 }
