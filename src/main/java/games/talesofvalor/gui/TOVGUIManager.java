@@ -3,12 +3,14 @@ package games.talesofvalor.gui;
 import core.AbstractGameState;
 import core.AbstractPlayer;
 import core.Game;
-import games.talesofvalor.TOVCell;
-import games.talesofvalor.TOVEnemy;
+import games.talesofvalor.TOVPlayer;
+import games.talesofvalor.components.TOVCell;
+import games.talesofvalor.components.TOVEnemy;
 import games.talesofvalor.TOVForwardModel;
 import games.talesofvalor.TOVGameState;
 import gui.AbstractGUIManager;
 import gui.GamePanel;
+import gui.IScreenHighlight;
 import players.human.ActionController;
 
 import javax.swing.*;
@@ -37,6 +39,7 @@ public class TOVGUIManager extends AbstractGUIManager {
         TOVGameState gameState = (TOVGameState) game.getGameState();
 
         DrawGrid(gameState, (TOVForwardModel) game.getForwardModel());
+        CreateAndAddActionPanel();
         _update(null, gameState);
     }
 
@@ -46,11 +49,6 @@ public class TOVGUIManager extends AbstractGUIManager {
         UIManager.put("ToolTip.background", Color.YELLOW);
         UIManager.put("ToolTip.foreground", Color.BLACK);
         UIManager.put("ToolTip.font", new Font("SansSerif", Font.BOLD, 12));
-
-        // Create JFrame for the grid visualization
-        JFrame frame = new JFrame("Tales of Valor - Test UI");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(defaultDisplayWidth, defaultInfoPanelHeight);
 
         // Grid dimensions
         int gridWidth = tovgs.grid.getWidth();
@@ -97,8 +95,10 @@ public class TOVGUIManager extends AbstractGUIManager {
         }
 
         // Add the grid panel to the frame and make it visible
-        frame.add(gridPanel);
-        frame.setVisible(true);
+        parent.setLayout(new BorderLayout());
+        parent.add(gridPanel, BorderLayout.CENTER);
+        parent.revalidate();
+        parent.repaint();
     }
 
     @Override
@@ -152,8 +152,51 @@ public class TOVGUIManager extends AbstractGUIManager {
         }
     }
 
+    private void CreateAndAddActionPanel() {
+        JComponent actionPanel = createActionPanel(new IScreenHighlight[0],
+                defaultDisplayWidth, 120);
+        parent.add(actionPanel, BorderLayout.SOUTH);
+    }
+
+    @Override
+    protected JComponent createActionPanel(IScreenHighlight[] highlights, int width, int height){
+        JPanel actionPanel = new JPanel();
+        actionPanel.setOpaque(false);
+        actionPanel.setLayout(new BoxLayout(actionPanel, BoxLayout.Y_AXIS));
+        actionButtons = new ActionButton[getMaxActionSpace()];
+
+        for (int i = 0; i < getMaxActionSpace(); i++) {
+            ActionButton ab = new ActionButton(ac, highlights);
+            actionButtons[i] = ab;
+            actionButtons[i].setVisible(false);
+            actionPanel.add(actionButtons[i]);
+        }
+
+        for (ActionButton actionButton : actionButtons){
+            actionButton.informAllActionButtons(actionButtons);
+        }
+
+        JScrollPane pane = new JScrollPane(actionPanel);
+        pane.setOpaque(false);
+        pane.getViewport().setOpaque(false);
+        pane.setPreferredSize(new Dimension(width, height));
+        pane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        return pane;
+    }
+
+    private void highlightTraversableCells(){
+        TOVGameState tovgs = (TOVGameState) game.getGameState();
+        TOVPlayer currentPlayer = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer());
+
+    }
+
     @Override
     public int getMaxActionSpace() {
-        return 0;
+        //int maxMoveActions = 12;
+        // Really they have 12 but since we just want
+        // to have 1 move button we keep it as 1.
+        int maxMoveActions = 1;
+        int maxAttackActions = 3;
+        return maxMoveActions + maxAttackActions;
     }
 }

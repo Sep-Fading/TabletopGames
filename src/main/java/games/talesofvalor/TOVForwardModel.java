@@ -6,6 +6,8 @@ import core.actions.AbstractAction;
 import core.components.GridBoard;
 import games.talesofvalor.actions.TOVPlayerAttack;
 import games.talesofvalor.actions.TOVPlayerMove;
+import games.talesofvalor.components.TOVCell;
+import games.talesofvalor.components.TOVEnemy;
 import utilities.Vector2D;
 
 import java.util.*;
@@ -59,7 +61,7 @@ public class TOVForwardModel extends StandardForwardModel {
         // else if in combat, add possible combat actions to the list.
         if (tovgs.getRoundType() == TOVRoundTypes.OUT_OF_COMBAT) {
 
-            tovgs.d6f.Roll(currentPlayer.getDexterity());
+
             int d6Roll = tovgs.d6f.getValue();
             System.out.println("Player " + tovgs.getCurrentPlayer() + " rolled a " + d6Roll);
 
@@ -222,13 +224,6 @@ public class TOVForwardModel extends StandardForwardModel {
                     completedTurns.add(tovOrderWrapper);
                     System.out.println("Player " + tovOrderWrapper.getPlayer().getPlayerID() + " turn. In combat.");
                     break;
-                    // TODO:
-                    /*
-                    redo this part to:
-                    Take the first entry of turnOrder,
-                    if it's a player, set them as next in playerturn and remove them from turnOrder.
-                    if it's an enemy, perform their action and remove them from turnOrder.
-                     */
                 }
                 else if (tovOrderWrapper.isEnemy()) {
                     ArrayList<TOVPlayer> alivePlayers = tovgs.getAlivePlayers();

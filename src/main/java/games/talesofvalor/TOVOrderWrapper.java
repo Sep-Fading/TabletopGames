@@ -1,5 +1,7 @@
 package games.talesofvalor;
 
+import games.talesofvalor.components.TOVEnemy;
+
 import java.util.Objects;
 
 /**

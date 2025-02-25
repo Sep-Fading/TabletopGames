@@ -1,23 +1,24 @@
 package games.talesofvalor;
 
-import core.AbstractGameState;
-import core.AbstractPlayer;
-import core.actions.AbstractAction;
-import players.PlayerParameters;
+import games.talesofvalor.components.TOVCard;
+import games.talesofvalor.components.TOVEnemy;
 import utilities.Vector2D;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Vector;
 
 public class TOVPlayer{
     Vector2D position;
     private TOVClasses playerClass; // TODO: Implement parameters for this and make it final.
     private int health = 1000;
     private int dexterity = 0;
-    private int damage = 2;
+    private int damage = 5;
     private int id;
     private boolean isDead = false;
+    private int damageDealt = 0;
+    private int healthHealed = 0;
+    private int killingBlows = 0;
+    private int deathCount = 0;
+
     ArrayList<TOVCard> hand = new ArrayList<TOVCard>();
 
     public TOVPlayer(int id){
@@ -80,12 +81,17 @@ public class TOVPlayer{
     public void Attack(TOVEnemy enemy){
         if (enemy != null){
             enemy.takeDamage(damage);
+            damageDealt += damage;
+            if (enemy.isDead()){
+                System.out.println("Enemy is killed.");
+                killingBlows++;
+            }
+
         }
         else{
             System.out.println("No enemy to attack. (Passed argument was null)");
         }
     }
-
 
     /**
      * Creates a hard copy of this player.
@@ -122,6 +128,22 @@ public class TOVPlayer{
         return isDead;
     }
 
+    public int getDamageDealt() {
+        return damageDealt;
+    }
+
+    public int getHealthHealed() {
+        return healthHealed;
+    }
+
+    public int getDeathCount(){
+        return deathCount;
+    }
+
+    public int getKillingBlows(){
+        return killingBlows;
+    }
+
     /* Setters */
     public void setHealth(int newHealth) {
         health = newHealth;
@@ -129,4 +151,13 @@ public class TOVPlayer{
     public void setDead(boolean dead) {
         isDead = dead;
     }
+
+    public void setHealthHealed(int healthHealed) {
+        this.healthHealed = healthHealed;
+    }
+
+    public void setDeathCount(int count){
+        deathCount = count;
+    }
+
 }

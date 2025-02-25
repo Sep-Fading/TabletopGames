@@ -48,6 +48,11 @@ public class TOVPlayerMove extends AbstractAction {
     @Override
     public String getString(AbstractGameState gameState) {
         TOVGameState tovgs = (TOVGameState) gameState;
-        return "Attempting to make the move for player " + tovgs.getCurrentPlayer() + " in direction " + direction;
+        return "Move";
+    }
+
+    /* getter for the vector */
+    public Vector2D getDirection() {
+        return direction;
     }
 }

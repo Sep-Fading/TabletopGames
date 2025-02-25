@@ -2,6 +2,7 @@ package games.talesofvalor;
 
 import core.CoreConstants;
 import core.components.Component;
+import games.talesofvalor.components.TOVEnemy;
 
 import java.util.ArrayList;
 import java.util.Objects;

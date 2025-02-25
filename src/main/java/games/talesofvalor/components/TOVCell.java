@@ -1,18 +1,17 @@
-package games.talesofvalor;
+package games.talesofvalor.components;
 
 import core.CoreConstants;
 import core.components.Component;
-import org.checkerframework.checker.units.qual.C;
+import games.talesofvalor.TOVEncounter;
 import utilities.Vector2D;
 
-import java.util.ArrayList;
 import java.util.Objects;
 
 public class TOVCell extends Component {
     public boolean hasEncounter; // To determine if the cell has an encounter.
     private int playerCount;
     Vector2D position; // The position of the cell.
-    TOVEncounter encounter;
+    public TOVEncounter encounter;
 
     /**
      * Constructor for the TOVCell class:

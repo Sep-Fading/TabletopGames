@@ -1,4 +1,4 @@
-package games.talesofvalor;
+package games.talesofvalor.components;
 
 import core.components.Card;
 

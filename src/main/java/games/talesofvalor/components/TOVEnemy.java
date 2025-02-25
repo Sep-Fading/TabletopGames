@@ -1,7 +1,8 @@
-package games.talesofvalor;
+package games.talesofvalor.components;
 
 import core.CoreConstants;
 import core.components.Component;
+import games.talesofvalor.TOVPlayer;
 
 import java.util.Objects;
 
@@ -9,7 +10,7 @@ public class TOVEnemy extends Component {
     int attack;
     int health;
     int dexterity = 0;
-    boolean isDead = false;
+    public boolean isDead = false;
 
     /**
      * Creates an enemy, which should be placed within an encounter.
@@ -69,6 +70,7 @@ public class TOVEnemy extends Component {
         System.out.println(target.getPlayerID() + " Player attacked by enemy. Health: " + target.getHealth());
         if (target.getHealth() <= 0){
             target.setDead(true);
+            target.setDeathCount(target.getDeathCount() + 1);
         }
     }
 

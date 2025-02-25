@@ -6,8 +6,10 @@ import core.components.Component;
 import core.components.Dice;
 import core.components.GridBoard;
 import games.GameType;
+import games.talesofvalor.components.TOVCell;
+import games.talesofvalor.components.TOVDice;
+import games.talesofvalor.components.TOVEnemy;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -50,6 +52,8 @@ public class TOVGameState extends AbstractGameState {
                 }
             }
         }
+
+
         return returnList;
     }
 
@@ -122,17 +126,7 @@ public class TOVGameState extends AbstractGameState {
     // Assigns a heuristic score based on the number of encounters completed by the player(s).
     @Override
     protected double _getHeuristicScore(int playerId) {
-        if (isNotTerminal()){
-            return (double) (totalEncounters - encountersRemaining) / totalEncounters;
-        }
-        else{
-            if (encountersRemaining == 0){
-                return 1;
-            }
-            else{
-                return 0;
-            }
-        }
+        return new TOVHeuristics().evaluateState(this, playerId);
     }
 
     /**
@@ -143,14 +137,15 @@ public class TOVGameState extends AbstractGameState {
      */
     public void UpdateRoundType(){
         TOVRoundTypes newRoundType = TOVRoundTypes.OUT_OF_COMBAT;
+        TOVRoundTypes previousRoundType = getRoundType();
         for (TOVPlayer player : players){
-            grid.getElement(player.getPosition()).updateHasEncounter();
             if (grid.getElement(player.position).hasEncounter){
                 System.out.println("Player " + player.getPlayerID() + " is in combat.");
                 newRoundType = TOVRoundTypes.IN_COMBAT;
             }
         }
         setRoundType(newRoundType);
+        setPreviousRoundType(previousRoundType);
     }
 
     /* HashCode and Equals */

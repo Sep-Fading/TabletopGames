@@ -2,7 +2,7 @@ package games.talesofvalor.actions;
 
 import core.AbstractGameState;
 import core.actions.AbstractAction;
-import games.talesofvalor.TOVEnemy;
+import games.talesofvalor.components.TOVEnemy;
 import games.talesofvalor.TOVGameState;
 
 import java.util.Objects;
@@ -17,7 +17,7 @@ public class TOVPlayerAttack extends AbstractAction {
     public boolean execute(AbstractGameState gs) {
         System.out.println(getString(gs));
         TOVGameState tovgs = (TOVGameState) gs;
-        System.out.println("ENEMY COMP ID IN EXECUTE FUNCTION: " + compid);
+        System.out.println("ENEMY COMP ID IN EXECUTE METHOD: " + compid);
         TOVEnemy target = (TOVEnemy) tovgs.getComponentById(compid);
         if (target == null) {
             System.out.println("No target to attack.");
@@ -61,6 +61,6 @@ public class TOVPlayerAttack extends AbstractAction {
     public String getString(AbstractGameState gameState) {
         // TODO - More sophisticated string representation with name/id of the enemy targeted.
         TOVGameState tovgs = (TOVGameState) gameState;
-        return "Attempting to attack for player " + tovgs.getCurrentPlayer();
+        return "Default Player Attack";
     }
 }
