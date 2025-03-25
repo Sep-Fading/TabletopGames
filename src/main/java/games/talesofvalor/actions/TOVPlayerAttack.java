@@ -33,7 +33,6 @@ public class TOVPlayerAttack extends AbstractAction {
         return true;
     }
 
-
     /**
      * Creates a hard copy of this action.
      * @return - copy of this action.
@@ -56,11 +55,10 @@ public class TOVPlayerAttack extends AbstractAction {
         return compid == ((TOVPlayerAttack) obj).compid;
     }
 
-
     @Override
     public String getString(AbstractGameState gameState) {
         // TODO - More sophisticated string representation with name/id of the enemy targeted.
         TOVGameState tovgs = (TOVGameState) gameState;
-        return "Default Player Attack";
+        return "Default Attack against " + compid;
     }
 }

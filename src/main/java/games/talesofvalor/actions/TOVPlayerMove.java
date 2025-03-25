@@ -48,7 +48,7 @@ public class TOVPlayerMove extends AbstractAction {
     @Override
     public String getString(AbstractGameState gameState) {
         TOVGameState tovgs = (TOVGameState) gameState;
-        return "Move";
+        return "Move " + direction;
     }
 
     /* getter for the vector */

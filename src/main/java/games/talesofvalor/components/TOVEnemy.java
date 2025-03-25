@@ -11,6 +11,8 @@ public class TOVEnemy extends Component {
     int health;
     int dexterity = 0;
     public boolean isDead = false;
+    TOVPlayer tauntedBy = null;
+    boolean stunned = false;
 
     /**
      * Creates an enemy, which should be placed within an encounter.
@@ -44,13 +46,12 @@ public class TOVEnemy extends Component {
      * @param damage
      */
     public void takeDamage(int damage){
-        if (isDead){
+        if (isDead()){
             System.out.println("Enemy is already dead.");
             return;
         }
         health = health - damage;
         if (health <= 0){
-            isDead = true;
             System.out.println("Enemy is dead from taking damage.");
         }
     }
@@ -92,6 +93,12 @@ public class TOVEnemy extends Component {
     }
 
     public boolean isDead() {
+        if (health <= 0){
+            isDead = true;
+        }
+        else{
+            isDead = false;
+        }
         return isDead;
     }
 
@@ -114,5 +121,25 @@ public class TOVEnemy extends Component {
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), getAttack(), getHealth(), getDexterity(), isDead());
+    }
+
+    public void SetTauntedBy(TOVPlayer target) {
+        tauntedBy = target;
+    }
+
+    public TOVPlayer getTauntedBy() {
+        return tauntedBy;
+    }
+
+    public void setStunned(boolean b) {
+        stunned = b;
+    }
+
+    public boolean getStunned() {
+        return stunned;
+    }
+
+    public void setHealth(int i) {
+        health = i;
     }
 }

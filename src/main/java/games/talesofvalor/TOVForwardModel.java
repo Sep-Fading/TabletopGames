@@ -6,14 +6,14 @@ import core.actions.AbstractAction;
 import core.components.GridBoard;
 import games.talesofvalor.actions.TOVPlayerAttack;
 import games.talesofvalor.actions.TOVPlayerMove;
-import games.talesofvalor.components.TOVCell;
-import games.talesofvalor.components.TOVEnemy;
+import games.talesofvalor.actions.TOVPlayerUseCard;
+import games.talesofvalor.components.*;
+import games.talesofvalor.utilities.TOVUtilities;
 import utilities.Vector2D;
 
 import java.util.*;
 
 public class TOVForwardModel extends StandardForwardModel {
-
     @Override
     protected void _setup(AbstractGameState firstState) {
         TOVGameState tovgs = (TOVGameState) firstState;
@@ -34,8 +34,11 @@ public class TOVForwardModel extends StandardForwardModel {
 
         // Create & place TOVPlayer instances for each player.
         tovgs.players.clear();
+        TOVClasses[] classes = TOVClasses.values();
         for (int i = 0; i < tovgs.getNPlayers(); i++) {
-            TOVPlayer player = new TOVPlayer(i);
+            TOVPlayer player = new TOVPlayer(i, classes[i]);
+            TOVUtilities.DrawCard(player);
+            TOVUtilities.DrawCard(player);
             tovgs.players.add(player);
             tovgs.grid.getElement(0, 0).SetPlayerCount(
                     tovgs.grid.getElement(0, 0).GetPlayerCount() + 1);
@@ -61,8 +64,7 @@ public class TOVForwardModel extends StandardForwardModel {
         // else if in combat, add possible combat actions to the list.
         if (tovgs.getRoundType() == TOVRoundTypes.OUT_OF_COMBAT) {
 
-
-            int d6Roll = tovgs.d6f.getValue();
+            int d6Roll = tovgs.d6f.getFinalVal();
             System.out.println("Player " + tovgs.getCurrentPlayer() + " rolled a " + d6Roll);
 
             // A BFS implementation to calculate all reachable cells to multi-directional movement.
@@ -127,11 +129,73 @@ public class TOVForwardModel extends StandardForwardModel {
         }
         else if (tovgs.getRoundType() == TOVRoundTypes.IN_COMBAT && tovgs.grid.getElement(x, y).hasEncounter){
             System.out.println(tovgs.grid.getElement(x, y).hasEncounter);
+            // Default attack options
             for (TOVEnemy target : tovgs.grid.getElement(x, y).encounter.enemies){
                 System.out.println("COMPONENT ID: " + target.getComponentID());
-                System.out.println("TARGET SET TO COMPONENT ID: " + target.getComponentID());
+                System.out.println("TARGET SET TO COMPONENT ID: " + target.getComponentID() + " " + target.isDead());
                 actions.add(new TOVPlayerAttack(target.getComponentID()));
             }
+            // TODO:Playing cards if the player has any.
+            if (!currentPlayer.getHand().isEmpty()){
+                for (int i = 0; i < currentPlayer.getHand().size(); i++){
+                    TOVCard card = currentPlayer.getHand().get(i);
+
+                    if (card instanceof TOVCardCleave){
+                        for (TOVEnemy target : tovgs.grid.getElement(x, y).encounter.enemies){
+                            if (!target.isDead()){
+                                ArrayList<Integer> secondaryTargets = new ArrayList<>();
+                                for (TOVEnemy secondaryTarget : tovgs.grid.getElement(x, y).encounter.enemies){
+                                    if (!secondaryTarget.isDead() && secondaryTarget != target){
+                                        secondaryTargets.add(secondaryTarget.getComponentID());
+                                    }
+                                }
+                                actions.add(new TOVPlayerUseCard(i, target.getComponentID(), secondaryTargets));
+                            }
+                        }
+                    }
+
+                    else if (card instanceof TOVCardEmpower) {
+                        for (TOVPlayer player : tovgs.players){
+                            if (player != currentPlayer){
+                                actions.add(new TOVPlayerUseCard(i, player.getPlayerID(), true));
+                            }
+                        }
+                    }
+
+                    else if (card instanceof TOVCardHeal){
+                        for (TOVPlayer player : tovgs.players) {
+                            if (!player.isDead()){
+                                actions.add(new TOVPlayerUseCard(i, player.getPlayerID(), true));
+                            }
+                        }
+                    }
+
+                    else if (card instanceof TOVCardLifeTap){
+                        for (TOVPlayer player : tovgs.players) {
+                            if (!player.isDead()){
+                                actions.add(new TOVPlayerUseCard(i, player.getPlayerID(), true));
+                            }
+                        }
+                    }
+
+                    else if (card instanceof TOVCardTaunt){
+                        for (TOVEnemy target : tovgs.grid.getElement(x, y).encounter.enemies){
+                            if (!target.isDead()){
+                                actions.add(new TOVPlayerUseCard(i, target.getComponentID(), false));
+                            }
+                        }
+                    }
+
+                    else if (card instanceof TOVCardDazzle){
+                        for (TOVEnemy target : tovgs.grid.getElement(x, y).encounter.enemies){
+                            if (!target.isDead()){
+                                actions.add(new TOVPlayerUseCard(i, target.getComponentID(), false));
+                            }
+                        }
+                    }
+                }
+            }
+
         }
         else{
             System.out.println("No actions available.");
@@ -211,6 +275,8 @@ public class TOVForwardModel extends StandardForwardModel {
 
                 tovgs.UpdateRoundType();
             }
+
+            // Turn order
             ArrayList<TOVOrderWrapper> turnOrder = tovgs.getCombatOrder();
             if (turnOrder.isEmpty()){
                 tovgs.SetupCombatTurnOrder(tovgs.players, tovgs.grid.getElement(
@@ -230,6 +296,13 @@ public class TOVForwardModel extends StandardForwardModel {
                     if (alivePlayers.isEmpty()){
                         endGame(tovgs);
                     }
+
+                    // Check to see if the enemy is stunned.
+                    if (tovOrderWrapper.getEnemy().getStunned()){
+                        System.out.println("Stunned enemy.");
+                        continue;
+                    }
+
                     // Pick a random player to attack, if any left, if one player alive just pick that player.
                     TOVPlayer target = null;
                     if (alivePlayers.size() == 1){
@@ -237,10 +310,22 @@ public class TOVForwardModel extends StandardForwardModel {
                     }
                     else if (alivePlayers.size() > 1){
                         System.out.println(alivePlayers.size() + " Players left alive");
-                        int randomIndex = (int) (Math.random() * alivePlayers.size());
-                        System.out.println("Random index: " + randomIndex);
-                        target = alivePlayers.get(randomIndex);
+
+                            int randomIndex = (int) (Math.random() * alivePlayers.size());
+                            System.out.println("Random index: " + randomIndex);
+                            target = alivePlayers.get(randomIndex);
+
                     }
+
+                    // Check to see if the enemy is taunted.
+                    if (tovOrderWrapper.getEnemy().getTauntedBy() != null){
+
+                        System.out.println("Taunted by player" +
+                                tovOrderWrapper.getEnemy().getTauntedBy().getPlayerID());
+
+                        target = tovOrderWrapper.getEnemy().getTauntedBy();
+                    }
+
                     if (target == null){
                         System.out.println("No players to attack.");
                         endGame(tovgs);
@@ -248,6 +333,8 @@ public class TOVForwardModel extends StandardForwardModel {
                     else {
                         tovOrderWrapper.getEnemy().Attack(target);
                         completedTurns.add(tovOrderWrapper);
+                        // Reset the taunt after the enemy has attacked.
+                        tovOrderWrapper.getEnemy().SetTauntedBy(null);
                         System.out.println("Enemy turn.");
                     }
                 }

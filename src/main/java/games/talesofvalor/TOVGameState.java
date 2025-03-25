@@ -22,7 +22,7 @@ public class TOVGameState extends AbstractGameState {
     private TOVRoundTypes roundType;
     private TOVRoundTypes previousRoundType;
 
-    TOVDice d6f = new TOVDice(Dice.Type.d6);
+    public TOVDice d6f = new TOVDice(Dice.Type.d6);
     ArrayList<TOVOrderWrapper> combatTurnOrder = new ArrayList<>();
 
     /**
@@ -111,12 +111,12 @@ public class TOVGameState extends AbstractGameState {
         combatTurnOrder.clear();
         for (int i = 0; i < players.size(); i++){
             d6f.Roll(players.get(i).getDexterity());
-            combatTurnOrder.add(new TOVOrderWrapper(d6f.getValue(), players.get(i)));
+            combatTurnOrder.add(new TOVOrderWrapper(d6f.getFinalVal(), players.get(i)));
         }
 
         for (int i = 0; i < enemies.size(); i++){
             d6f.Roll(enemies.get(i).getDexterity());
-            combatTurnOrder.add(new TOVOrderWrapper(d6f.getValue(), enemies.get(i)));
+            combatTurnOrder.add(new TOVOrderWrapper(d6f.getFinalVal(), enemies.get(i)));
         }
 
         combatTurnOrder.sort((o1, o2) -> o2.getInitiative() - o1.getInitiative());

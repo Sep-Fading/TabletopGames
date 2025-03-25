@@ -12,6 +12,7 @@ public class TOVHeuristics implements IStateHeuristic {
         TOVGameState tovgs = (TOVGameState) gs;
         TOVPlayer player = tovgs.getTOVPlayerByID(playerId);
         double score = 0;
+        double distanceScore = 0;
 
         // A loss of 0.1 points per death.
         score -= (player.getDeathCount() * 0.1);
@@ -25,7 +26,7 @@ public class TOVHeuristics implements IStateHeuristic {
         // 0.075 points per killing blow.
         score += (player.getKillingBlows() * 0.075);
 
-        // 0.0001 points for getting closer to an encounter.
+        /* 0.0001 points for getting closer to an encounter.
         double minDistanceToEncounter = Double.MAX_VALUE;
         for (int i = 0; i < tovgs.grid.getHeight(); i++){
             for (int j = 0; j < tovgs.grid.getWidth(); j++){
@@ -33,15 +34,19 @@ public class TOVHeuristics implements IStateHeuristic {
                 if (cell.hasEncounter){
                     double distance = Math.sqrt(Math.pow(player.getPosition().getX() - j, 2)
                             + Math.pow(player.getPosition().getY() - i, 2));
-                    if (distance < minDistanceToEncounter) {
+                    if (distance <= minDistanceToEncounter) {
                         minDistanceToEncounter = distance;
                     }
                 }
             }
         }
         if (minDistanceToEncounter != Double.MAX_VALUE){
-            score += (1 / minDistanceToEncounter) * 0.0001;
-        }
+            if (minDistanceToEncounter == 0){
+                minDistanceToEncounter = 0.0000001;
+                score += 1;
+            }
+            distanceScore = (1 / minDistanceToEncounter) * 0.0001;
+        } */
 
         // If all dead, game is lost.
         ArrayList<TOVPlayer> alivePlayers = tovgs.getAlivePlayers();
@@ -49,6 +54,7 @@ public class TOVHeuristics implements IStateHeuristic {
             score = -1;
         }
 
+        score += distanceScore;
         System.out.println("Player " + playerId + " has a score of " + score);
         return score;
     }

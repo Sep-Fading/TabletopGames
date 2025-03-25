@@ -5,6 +5,7 @@ import core.components.Dice;
 import java.util.Random;
 
 public class TOVDice extends Dice {
+    int val = 1;
     public TOVDice(Type type) {
         super(type);
     }
@@ -12,7 +13,6 @@ public class TOVDice extends Dice {
     /**
      * Alternative constructor for the TOVDice class.
      * Used primarily in the copy method to instantiate hard copies with ease.
-     * @param faces - The number of faces on the dice.
      * @param id - The id of the dice.
      */
     public TOVDice(Type type, int id) {
@@ -27,7 +27,12 @@ public class TOVDice extends Dice {
         Random rand = new Random();
         roll(rand);
         System.out.println("Rolled a " + getValue());
-        setValue(getValue() + modifier);
+        setValue(getValue());
+        val = getValue() + modifier;
+    }
+
+    public int getFinalVal(){
+        return val;
     }
 
 

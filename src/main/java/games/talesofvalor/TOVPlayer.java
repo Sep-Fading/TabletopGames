@@ -1,54 +1,75 @@
 package games.talesofvalor;
 
-import games.talesofvalor.components.TOVCard;
-import games.talesofvalor.components.TOVEnemy;
+import games.talesofvalor.components.*;
+import games.talesofvalor.utilities.TOVCardTypes;
 import utilities.Vector2D;
 
 import java.util.ArrayList;
 
 public class TOVPlayer{
     Vector2D position;
-    private TOVClasses playerClass; // TODO: Implement parameters for this and make it final.
+    private final TOVClasses playerClass; // TODO: Implement parameters for this and make it final.
     private int health = 1000;
     private int dexterity = 0;
+    private int strength = 0;
+    private int intelligence = 0;
     private int damage = 5;
-    private int id;
+    private final int id;
     private boolean isDead = false;
     private int damageDealt = 0;
     private int healthHealed = 0;
     private int killingBlows = 0;
     private int deathCount = 0;
+    private boolean empowered = false;
 
-    ArrayList<TOVCard> hand = new ArrayList<TOVCard>();
+    ArrayList<TOVCard> hand = new ArrayList<>();
 
-    public TOVPlayer(int id){
+    public TOVPlayer(int id, TOVClasses playerClass){
         this.id = id;
         position = new Vector2D(0,0);
+        this.playerClass = playerClass;
 
         // Adjust stats as you like here:
         // TODO - Card sets, more stats + special ability.
         if (playerClass != null) {
             switch (playerClass) {
                 case DPS:
-                    dexterity = 6;
+                    dexterity = 3;
+                    strength = 2;
+                    intelligence = 1;
                     break;
                 case TANK:
-                    dexterity = 4;
+                    strength = 3;
+                    dexterity = 1;
+                    intelligence = 1;
                     break;
                 case HEALER:
+                    intelligence = 3;
                     dexterity = 2;
+                    strength = 1;
                     break;
             }
         }
     }
 
-    public TOVPlayer(int id, Vector2D position, TOVClasses playerClass, int health, int dexterity, int damage){
+    public TOVPlayer(int id, Vector2D position, TOVClasses playerClass, int health,
+                     int strength, int dexterity, int intelligence, int damage,
+                     int damageDealt, int healthHealed, int killingBlows, int deathCount,
+                     boolean empowered, ArrayList<TOVCard> hand){
         this.id = id;
         this.position = position;
         this.playerClass = playerClass;
         this.health = health;
         this.dexterity = dexterity;
+        this.strength = strength;
+        this.intelligence = intelligence;
         this.damage = damage;
+        this.damageDealt = damageDealt;
+        this.healthHealed = healthHealed;
+        this.killingBlows = killingBlows;
+        this.deathCount = deathCount;
+        this.empowered = empowered;
+        this.hand = hand;
     }
 
     /**
@@ -76,20 +97,53 @@ public class TOVPlayer{
 
     /**
      * Attacks a given enemy with the player's damage.
-     * @param enemy
+     * @param enemy - The enemy to attack.
      */
     public void Attack(TOVEnemy enemy){
         if (enemy != null){
-            enemy.takeDamage(damage);
+            if (empowered) {
+                enemy.takeDamage((int) Math.round(damage * 1.25));
+            }
+            else{
+                enemy.takeDamage(damage);
+            }
             damageDealt += damage;
             if (enemy.isDead()){
                 System.out.println("Enemy is killed.");
                 killingBlows++;
             }
-
         }
         else{
             System.out.println("No enemy to attack. (Passed argument was null)");
+        }
+    }
+
+    /**
+     * Adds a given card to the player's hand.
+     * Should be used mainly through TOVUtilities.DrawCard().
+     * @param card - The card to add to the player's hand.
+     */
+    public void drawCard(TOVCardTypes card){
+        switch(card)
+        {
+            case CLEAVE:
+                hand.add(new TOVCardCleave());
+                break;
+            case DAZZLE:
+                hand.add(new TOVCardDazzle());
+                break;
+            case LIFETAP:
+                hand.add(new TOVCardLifeTap());
+                break;
+            case TAUNT:
+                hand.add(new TOVCardTaunt());
+                break;
+            case EMPOWER:
+                hand.add(new TOVCardEmpower());
+                break;
+            case HEAL:
+                hand.add(new TOVCardHeal());
+                break;
         }
     }
 
@@ -98,17 +152,20 @@ public class TOVPlayer{
      * @return copy of this player.
      */
     public TOVPlayer copy(){
-        // TODO: ENSURE INCLUSION OF PLAYER CLASS AFTER IT IS IMPLEMENTED.
-        TOVPlayer copy = new TOVPlayer(getPlayerID(),
-                position.copy(), playerClass, health, dexterity, damage);
-        for (TOVCard card : hand){
-            copy.hand.add(card.copy());
+
+        ArrayList<TOVCard> handCopy = new ArrayList<>();
+
+        for (TOVCard card : this.hand){
+            handCopy.add(card.copy());
         }
-        return copy;
+
+        return new TOVPlayer(getPlayerID(),
+                position.copy(), playerClass, health, strength, intelligence, dexterity, damage
+                , damageDealt, healthHealed, killingBlows, deathCount, empowered, handCopy);
     }
 
 
-    /* Getters */
+    /* Getters & Setters */
     public Vector2D getPosition() {
         return position;
     }
@@ -144,7 +201,6 @@ public class TOVPlayer{
         return killingBlows;
     }
 
-    /* Setters */
     public void setHealth(int newHealth) {
         health = newHealth;
     }
@@ -160,4 +216,31 @@ public class TOVPlayer{
         deathCount = count;
     }
 
+    public int getIntelligence() {
+        return intelligence;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public void setEmpowered(boolean b) {
+        empowered = b;
+    }
+
+    public ArrayList<TOVCard> getHand() {
+        return hand;
+    }
+
+    public void setHand(ArrayList<TOVCard> hand) {
+        this.hand = hand;
+    }
+
+    public TOVClasses getPlayerClass() {
+        return playerClass;
+    }
 }

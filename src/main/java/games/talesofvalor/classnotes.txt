@@ -1,0 +1,14 @@
+Healer
+- Heal: Heal x health -> friendly target
+- Life Tap: Take damage and draw an additional card for a target -> self & friendly targets
+Tank
+- Taunt: Redirect incoming attacks to you -> self cast (implemented)
+- Dazzle: Skip the target's turn -> hostile target
+Combatant:
+- Cleave: Deal attack damage to all targets -> all hostile targets nearby
+- Empower: Empower a target's next attack to do 25% increased damage -> self & friendly targets
+
+POIs:
+- Shrine of ressurection -> Ressurect a dead player
+- Shrine of Stats -> The player gets +2 to their primary stat, others get +1.
+- Jester -> Draws a card for all players

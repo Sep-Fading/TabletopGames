@@ -63,7 +63,7 @@ public class TOVEncounter extends Component {
 
     public boolean isCleared(){
         for (TOVEnemy enemy : enemies){
-            if (!enemy.isDead){
+            if (!enemy.isDead()){
                 return false;
             }
         }
