@@ -4,6 +4,7 @@ import core.AbstractGameState;
 import core.actions.AbstractAction;
 import games.talesofvalor.components.TOVEnemy;
 import games.talesofvalor.TOVGameState;
+import games.talesofvalor.utilities.TOVEvaluation;
 
 import java.util.Objects;
 
@@ -17,19 +18,27 @@ public class TOVPlayerAttack extends AbstractAction {
     public boolean execute(AbstractGameState gs) {
         System.out.println(getString(gs));
         TOVGameState tovgs = (TOVGameState) gs;
-        System.out.println("ENEMY COMP ID IN EXECUTE METHOD: " + compid);
+        //System.out.println("ENEMY COMP ID IN EXECUTE METHOD: " + compid);
         TOVEnemy target = (TOVEnemy) tovgs.getComponentById(compid);
         if (target == null) {
-            System.out.println("No target to attack.");
+        //    System.out.println("No target to attack.");
             return true;
         }
         else if (target.isDead()) {
-            System.out.println("Target is already dead.");
+        //    System.out.println("Target is already dead.");
             return false;
         }
-        System.out.println("Player attacking target with health: " + target.getHealth());
+        //System.out.println("Player attacking target with health: " + target.getHealth());
         tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).Attack(target);
-        System.out.println("Player attacked" + target.getHealth());
+        //System.out.println("Player attacked" + target.getHealth());
+
+        // Logging
+        int currPlayer = tovgs.getCurrentPlayer();
+        TOVEvaluation.logActionData(Integer.toString(currPlayer),
+                Integer.toString(tovgs.getTOVPlayerByID(currPlayer).getHealth()),
+                "Attack",
+                getString(gs),
+                Double.toString(tovgs.getHeuristicScore(currPlayer)));
         return true;
     }
 

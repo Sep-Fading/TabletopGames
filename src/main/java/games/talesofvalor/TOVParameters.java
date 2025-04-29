@@ -1,7 +1,12 @@
 package games.talesofvalor;
 
 import core.AbstractParameters;
+import core.AbstractPlayer;
+import core.Game;
+import games.GameType;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class TOVParameters extends AbstractParameters {

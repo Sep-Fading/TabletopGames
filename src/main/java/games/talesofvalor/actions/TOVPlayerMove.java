@@ -4,6 +4,7 @@ import core.AbstractGameState;
 import core.actions.AbstractAction;
 import games.talesofvalor.TOVGameState;
 import games.talesofvalor.TOVPlayer;
+import games.talesofvalor.utilities.TOVEvaluation;
 import org.apache.ivy.osgi.repo.EditableRepoDescriptor;
 import utilities.Vector2D;
 
@@ -24,6 +25,14 @@ public class TOVPlayerMove extends AbstractAction {
         tovgs.grid.getElement(oldPos).SetPlayerCount(tovgs.grid.getElement(oldPos).GetPlayerCount() - 1);
         Vector2D newPos = player.Move(direction);
         tovgs.grid.getElement(newPos).SetPlayerCount(tovgs.grid.getElement(newPos).GetPlayerCount() + 1);
+
+        // Logging
+        int currPlayer = tovgs.getCurrentPlayer();
+        TOVEvaluation.logActionData(Integer.toString(currPlayer),
+                Integer.toString(tovgs.getTOVPlayerByID(currPlayer).getHealth()),
+                "Attack",
+                getString(gs),
+                Double.toString(tovgs.getHeuristicScore(currPlayer)));
 
         return !oldPos.equals(newPos);
     }
@@ -48,7 +57,10 @@ public class TOVPlayerMove extends AbstractAction {
     @Override
     public String getString(AbstractGameState gameState) {
         TOVGameState tovgs = (TOVGameState) gameState;
-        return "Move " + direction;
+        TOVPlayer player = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer());
+        return "Moved from tile ["+ player.getPosition().getX() + ", " +
+                player.getPosition().getY() + "] in direction [" + direction.getX() +
+                ", " + direction.getY() + "].";
     }
 
     /* getter for the vector */

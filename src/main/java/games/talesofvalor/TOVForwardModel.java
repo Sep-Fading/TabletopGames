@@ -1,6 +1,7 @@
 package games.talesofvalor;
 
 import core.AbstractGameState;
+import core.CoreConstants;
 import core.StandardForwardModel;
 import core.actions.AbstractAction;
 import core.components.GridBoard;
@@ -58,7 +59,7 @@ public class TOVForwardModel extends StandardForwardModel {
         int x = currentPosition.getX();
         int y = currentPosition.getY();
 
-        System.out.println("Current round type: " + tovgs.getRoundType());
+        //System.out.println("Current round type: " + tovgs.getRoundType());
 
         // If out of combat, roll a d6 and calculate all reachable cells.
         // else if in combat, add possible combat actions to the list.
@@ -239,7 +240,7 @@ public class TOVForwardModel extends StandardForwardModel {
      */
     @Override
     protected void _afterAction(AbstractGameState gameState, AbstractAction action) {
-        System.out.println("After action");
+        //System.out.println("After action");
         TOVGameState tovgs = (TOVGameState) gameState;
         TOVCell combatCell = tovgs.grid.getElement(tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition());
         tovgs.setPreviousRoundType(tovgs.getRoundType());
@@ -259,9 +260,9 @@ public class TOVForwardModel extends StandardForwardModel {
 
                 // Move all players to the encounter.
                 for (TOVPlayer player : tovgs.players){
-                    System.out.println("Player " + player.getPlayerID() + " same pos as encounter: " +
-                            player.getPosition().equals(encounterPos));
-                    System.out.println("Player " + player.getPlayerID() + " pos: " + player.getPosition());
+                    //System.out.println("Player " + player.getPlayerID() + " same pos as encounter: " +
+                    //player.getPosition().equals(encounterPos));
+                    //System.out.println("Player " + player.getPlayerID() + " pos: " + player.getPosition());
                     if (!player.getPosition().equals(encounterPos)){
                         tovgs.grid.getElement(player.getPosition()).SetPlayerCount(
                                 tovgs.grid.getElement(player.getPosition()).GetPlayerCount() - 1);
@@ -288,7 +289,7 @@ public class TOVForwardModel extends StandardForwardModel {
                 if (tovOrderWrapper.isPlayer()) {
                     endPlayerTurn(tovgs, tovOrderWrapper.getPlayer().getPlayerID());
                     completedTurns.add(tovOrderWrapper);
-                    System.out.println("Player " + tovOrderWrapper.getPlayer().getPlayerID() + " turn. In combat.");
+                    //System.out.println("Player " + tovOrderWrapper.getPlayer().getPlayerID() + " turn. In combat.");
                     break;
                 }
                 else if (tovOrderWrapper.isEnemy()) {
@@ -299,7 +300,7 @@ public class TOVForwardModel extends StandardForwardModel {
 
                     // Check to see if the enemy is stunned.
                     if (tovOrderWrapper.getEnemy().getStunned()){
-                        System.out.println("Stunned enemy.");
+                        //System.out.println("Stunned enemy.");
                         continue;
                     }
 
@@ -309,10 +310,10 @@ public class TOVForwardModel extends StandardForwardModel {
                         target = alivePlayers.get(0);
                     }
                     else if (alivePlayers.size() > 1){
-                        System.out.println(alivePlayers.size() + " Players left alive");
+                        //System.out.println(alivePlayers.size() + " Players left alive");
 
                             int randomIndex = (int) (Math.random() * alivePlayers.size());
-                            System.out.println("Random index: " + randomIndex);
+                            //System.out.println("Random index: " + randomIndex);
                             target = alivePlayers.get(randomIndex);
 
                     }
@@ -320,14 +321,14 @@ public class TOVForwardModel extends StandardForwardModel {
                     // Check to see if the enemy is taunted.
                     if (tovOrderWrapper.getEnemy().getTauntedBy() != null){
 
-                        System.out.println("Taunted by player" +
-                                tovOrderWrapper.getEnemy().getTauntedBy().getPlayerID());
+                        //System.out.println("Taunted by player" +
+                        //tovOrderWrapper.getEnemy().getTauntedBy().getPlayerID());
 
                         target = tovOrderWrapper.getEnemy().getTauntedBy();
                     }
 
                     if (target == null){
-                        System.out.println("No players to attack.");
+                        //System.out.println("No players to attack.");
                         endGame(tovgs);
                     }
                     else {
@@ -335,7 +336,7 @@ public class TOVForwardModel extends StandardForwardModel {
                         completedTurns.add(tovOrderWrapper);
                         // Reset the taunt after the enemy has attacked.
                         tovOrderWrapper.getEnemy().SetTauntedBy(null);
-                        System.out.println("Enemy turn.");
+                        //System.out.println("Enemy turn.");
                     }
                 }
             }
@@ -354,5 +355,22 @@ public class TOVForwardModel extends StandardForwardModel {
             endPlayerTurn(tovgs);
             System.out.println("Player " + tovgs.getCurrentPlayer() + " turn. Out of combat.");
         }
+    }
+
+    /* -------------------- */
+    @Override
+    protected void endGame(AbstractGameState gs) {
+        TOVGameState tovgs = (TOVGameState) gs;
+        tovgs.setGameStatus(CoreConstants.GameResult.GAME_END);
+        for (int p = 0; p < tovgs.getNPlayers(); p++) {
+            int o = tovgs.encountersRemaining == 0 && !tovgs.getAlivePlayers().isEmpty() ? 1 : 0;
+            if (o == 1)
+                tovgs.setPlayerResult(CoreConstants.GameResult.WIN_GAME, p);
+            else
+                tovgs.setPlayerResult(CoreConstants.GameResult.LOSE_GAME, p);
+        }
+
+        System.out.println("Game over : [" + tovgs.getGameStatus() + "]");
+        System.out.println("Results : " + Arrays.toString(tovgs.getPlayerResults()));
     }
 }
