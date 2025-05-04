@@ -16,11 +16,11 @@ public enum RunArg {
             "StableNTBEA runs P (number of players) for a given random seed, with the tuned agent in each position.\n" +
             "This is useful for games with strong positional or random seed effects to reduce variance.\n" +
             "MultiNTBEA is deprecated and should not be used.",
-            "NTBEA",
+            "CoopNTBEA",
             new Usage[]{Usage.ParameterSearch}),
     addTimeStamp("(Optional) If true (default is false), then the results will be written to a subdirectory of destDir.\n" +
             "\t This may be useful if you want to use the same destDir for multiple experiments.",
-            false,
+            true,
             new Usage[]{Usage.RunGames}),
     budget("The budget to be used by all agent (if they support the IAnyTime interface). \n" +
             "\t If non-zero then this will override the value in any JSON definitions.\n",
@@ -42,7 +42,7 @@ public enum RunArg {
     distinctRandomSeeds("If non-zero, then this defines the number of distinct random seeds to use for each game.\n" +
             "\t For tournament will be run for each individual random seed individually, using the other specified parameters.\n" +
             "\t If a seedFile is specified, then this is ignored.",
-            0,
+            3,
             new Usage[]{Usage.RunGames}),
     evalGames("The number of games to run with the best predicted setting to estimate its true value (default is 20% of NTBEA iterations)",
             -1,
@@ -63,7 +63,7 @@ public enum RunArg {
             "\t pipe-delimited list, for example game=Uno|ColtExpress|Pandemic.\n" +
             "\t The default is 'all' to indicate that all games should be analysed.\n" +
             "\t Specifying all|-name1|-name2... will run all games except for name1, name2...",
-            "all",
+            "TalesOfValor",
             new Usage[]{Usage.RunGames, Usage.ParameterSearch}),
     gameParams("(Optional) A JSON file from which the game parameters will be initialised.",
             "",
@@ -119,7 +119,7 @@ public enum RunArg {
             2,
             new Usage[]{Usage.SkillLadder}),
     nPlayers("The number of players in each game. Overrides playerRange.",
-            -1,
+            3,
             new Usage[]{Usage.ParameterSearch, Usage.RunGames}),
     neighbourhood("The size of neighbourhood to look at in NTBEA. Default is min(50, |searchSpace|/100) ",
             50,

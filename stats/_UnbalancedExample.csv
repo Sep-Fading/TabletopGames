@@ -1,0 +1,561 @@
+Game,PlayerID,Health,ActionType,ActionString,HeuristicValue
+0,1,100,TOVPlayerMove,Moved from tile [0, 0] in direction [1, 0].,0.0
+0,2,100,TOVPlayerMove,Moved from tile [0, 0] in direction [0, 1].,0.0
+0,0,100,TOVPlayerMove,Moved from tile [1, 0] in direction [1, 0].,0.0
+0,0,100,TOVPlayerMove,Moved from tile [1, 1] in direction [0, 1].,0.0
+0,2,95,TOVPlayerUseCard,Played the card: null,0.0
+0,1,100,TOVPlayerAttack,Default Attack against 459,0.0
+0,2,94,TOVPlayerAttack,Default Attack against 458,0.33
+0,0,100,TOVPlayerMove,Moved from tile [1, 1] in direction [0, 1].,0.25
+0,1,100,TOVPlayerMove,Moved from tile [1, 1] in direction [0, 1].,0.33
+0,2,94,TOVPlayerMove,Moved from tile [1, 2] in direction [1, 0].,0.33
+0,0,100,TOVPlayerMove,Moved from tile [1, 3] in direction [0, 1].,0.25
+0,2,93,TOVPlayerUseCard,Played the card: null,0.33
+0,1,95,TOVPlayerAttack,Default Attack against 517,0.355
+0,2,93,TOVPlayerAttack,Default Attack against 518,0.66
+0,0,100,TOVPlayerMove,Moved from tile [1, 3] in direction [0, 1].,0.5
+0,1,95,TOVPlayerMove,Moved from tile [1, 3] in direction [0, 1].,0.685
+0,2,93,TOVPlayerMove,Moved from tile [1, 4] in direction [0, 1].,0.66
+0,0,100,TOVPlayerMove,Moved from tile [1, 5] in direction [0, 1].,0.5
+0,1,95,TOVPlayerUseCard,Played the card: null,0.685
+0,2,93,TOVPlayerAttack,Default Attack against 575,0.91
+0,0,100,TOVPlayerMove,Moved from tile [1, 5] in direction [0, 1].,0.75
+0,1,95,TOVPlayerMove,Moved from tile [1, 5] in direction [0, 1].,1.0150000000000001
+0,2,93,TOVPlayerMove,Moved from tile [1, 6] in direction [0, 1].,0.91
+0,0,100,TOVPlayerMove,Moved from tile [2, 6] in direction [1, 0].,0.75
+0,1,95,TOVPlayerAttack,Default Attack against 601,1.0150000000000001
+0,0,91,TOVPlayerAttack,Default Attack against 602,0.83
+0,1,95,TOVPlayerAttack,Default Attack against 602,1.27
+0,2,96,TOVPlayerMove,Moved from tile [2, 6] in direction [1, 0].,1.16
+0,0,95,TOVPlayerMove,Moved from tile [2, 6] in direction [-1, 0].,1.16
+0,1,97,TOVPlayerMove,Moved from tile [3, 6] in direction [1, 0].,1.27
+0,2,96,TOVPlayerMove,Moved from tile [3, 7] in direction [0, 1].,1.16
+0,0,95,TOVPlayerAttack,Default Attack against 629,1.41
+0,1,98,TOVPlayerMove,Moved from tile [3, 7] in direction [0, 1].,1.52
+0,2,98,TOVPlayerMove,Moved from tile [3, 7] in direction [0, 1].,1.49
+0,0,97,TOVPlayerMove,Moved from tile [3, 8] in direction [0, 1].,1.41
+0,1,98,TOVPlayerMove,Moved from tile [3, 8] in direction [0, -1].,1.52
+0,2,98,TOVPlayerMove,Moved from tile [3, 8] in direction [0, 1].,1.49
+0,0,97,TOVPlayerMove,Moved from tile [3, 7] in direction [0, -1].,1.41
+0,1,98,TOVPlayerMove,Moved from tile [3, 9] in direction [1, 0].,1.52
+0,0,97,TOVPlayerMove,Moved from tile [2, 9] in direction [-1, 0].,1.41
+0,2,98,TOVPlayerUseCard,Played the card: null,1.49
+0,1,98,TOVPlayerAttack,Default Attack against 686,1.52
+0,2,98,TOVPlayerAttack,Default Attack against 686,1.7449999999999999
+0,0,97,TOVPlayerMove,Moved from tile [1, 9] in direction [-1, 0].,1.66
+0,2,98,TOVPlayerAttack,Default Attack against 683,1.7449999999999999
+0,0,97,TOVPlayerAttack,Default Attack against 683,1.915
+0,2,98,TOVPlayerMove,Moved from tile [1, 8] in direction [0, -1].,2.075
+0,0,97,TOVPlayerUseCard,Played the card: null,1.915
+0,0,89,TOVPlayerAttack,Default Attack against 664,1.92
+0,1,98,TOVPlayerAttack,Default Attack against 664,2.35
+0,2,88,TOVPlayerMove,Moved from tile [1, 8] in direction [1, 0].,2.325
+0,0,89,TOVPlayerMove,Moved from tile [1, 8] in direction [1, 0].,2.25
+0,1,98,TOVPlayerMove,Moved from tile [2, 8] in direction [0, 1].,2.35
+0,2,88,TOVPlayerMove,Moved from tile [2, 8] in direction [1, 0].,2.325
+0,0,89,TOVPlayerMove,Moved from tile [1, 9] in direction [0, -1].,2.25
+0,1,98,TOVPlayerMove,Moved from tile [3, 8] in direction [-1, 0].,2.35
+0,2,88,TOVPlayerMove,Moved from tile [2, 7] in direction [1, 0].,2.325
+0,0,89,TOVPlayerMove,Moved from tile [0, 9] in direction [1, 0].,2.25
+0,1,98,TOVPlayerMove,Moved from tile [4, 8] in direction [1, 0].,2.35
+0,2,88,TOVPlayerMove,Moved from tile [3, 7] in direction [1, 0].,2.325
+0,0,89,TOVPlayerMove,Moved from tile [1, 9] in direction [0, 1].,2.25
+0,1,98,TOVPlayerMove,Moved from tile [5, 8] in direction [-1, 0].,2.35
+0,0,89,TOVPlayerMove,Moved from tile [5, 9] in direction [0, 1].,2.25
+0,1,98,TOVPlayerAttack,Default Attack against 691,2.6
+0,2,88,TOVPlayerMove,Moved from tile [5, 9] in direction [-1, 0].,2.575
+0,0,89,TOVPlayerMove,Moved from tile [5, 9] in direction [0, -1].,2.58
+0,1,98,TOVPlayerMove,Moved from tile [4, 9] in direction [0, 1].,2.6
+0,2,88,TOVPlayerMove,Moved from tile [5, 8] in direction [1, 0].,2.575
+0,0,89,TOVPlayerMove,Moved from tile [5, 10] in direction [0, 1].,2.58
+0,0,89,TOVPlayerMove,Moved from tile [6, 10] in direction [1, 0].,2.58
+0,1,98,TOVPlayerAttack,Default Attack against 715,2.85
+0,2,88,TOVPlayerMove,Moved from tile [6, 10] in direction [0, 1].,2.825
+0,0,89,TOVPlayerMove,Moved from tile [6, 10] in direction [0, 1].,2.91
+0,1,98,TOVPlayerMove,Moved from tile [6, 11] in direction [1, 0].,2.85
+0,0,89,TOVPlayerMove,Moved from tile [6, 12] in direction [0, 1].,2.91
+0,1,98,TOVPlayerAttack,Default Attack against 765,3.1
+0,0,89,TOVPlayerMove,Moved from tile [6, 13] in direction [0, 1].,3.2399999999999998
+0,1,98,TOVPlayerAttack,Default Attack against 786,3.1
+0,2,88,TOVPlayerAttack,Default Attack against 784,3.075
+0,2,88,TOVPlayerAttack,Default Attack against 785,3.1550000000000002
+0,0,86,TOVPlayerAttack,Default Attack against 784,3.5700000000000003
+0,0,86,TOVPlayerMove,Moved from tile [7, 13] in direction [1, 0].,3.5700000000000003
+0,1,92,TOVPlayerAttack,Default Attack against 789,3.385
+0,1,92,TOVPlayerAttack,Default Attack against 790,3.39
+0,2,82,TOVPlayerAttack,Default Attack against 789,3.485
+0,0,80,TOVPlayerAttack,Default Attack against 790,3.825
+0,1,92,TOVPlayerMove,Moved from tile [8, 13] in direction [1, 0].,3.7199999999999998
+0,2,82,TOVPlayerAttack,Default Attack against 793,4.065
+0,0,80,TOVPlayerMove,Moved from tile [8, 14] in direction [0, 1].,4.075
+0,1,92,TOVPlayerAttack,Default Attack against 833,4.05
+0,2,81,TOVPlayerUseCard,Played the card: null,4.065
+0,2,71,TOVPlayerUseCard,Played the card: null,4.065
+0,1,85,TOVPlayerAttack,Default Attack against 832,4.085
+0,2,71,TOVPlayerAttack,Default Attack against 832,4.32
+0,0,73,TOVPlayerMove,Moved from tile [8, 14] in direction [-1, 0].,4.405
+0,1,85,TOVPlayerMove,Moved from tile [8, 14] in direction [1, 0].,4.415
+0,2,71,TOVPlayerMove,Moved from tile [7, 14] in direction [1, 0].,4.32
+0,0,73,TOVPlayerMove,Moved from tile [9, 14] in direction [1, 0].,4.405
+0,0,73,TOVPlayerMove,Moved from tile [10, 14] in direction [1, 0].,4.405
+0,1,78,TOVPlayerAttack,Default Attack against 837,4.45
+0,2,71,TOVPlayerAttack,Default Attack against 837,4.57
+0,0,73,TOVPlayerMove,Moved from tile [10, 14] in direction [0, -1].,4.66
+0,1,78,TOVPlayerMove,Moved from tile [10, 14] in direction [1, 0].,4.78
+0,2,71,TOVPlayerMove,Moved from tile [10, 13] in direction [1, 0].,4.57
+0,2,71,TOVPlayerMove,Moved from tile [9, 13] in direction [-1, 0].,4.57
+0,0,73,TOVPlayerAttack,Default Attack against 798,4.66
+0,1,73,TOVPlayerAttack,Default Attack against 797,4.805
+0,2,71,TOVPlayerAttack,Default Attack against 796,4.9
+0,0,73,TOVPlayerMove,Moved from tile [9, 13] in direction [1, 0].,4.99
+0,1,73,TOVPlayerMove,Moved from tile [9, 13] in direction [0, 1].,5.135
+0,2,71,TOVPlayerMove,Moved from tile [10, 13] in direction [1, 0].,4.9
+0,0,73,TOVPlayerMove,Moved from tile [9, 14] in direction [0, 1].,4.99
+0,1,73,TOVPlayerMove,Moved from tile [10, 13] in direction [1, 0].,5.135
+0,0,73,TOVPlayerMove,Moved from tile [11, 13] in direction [1, 0].,4.99
+0,1,73,TOVPlayerAttack,Default Attack against 804,5.135
+0,1,66,TOVPlayerAttack,Default Attack against 802,5.175
+0,0,64,TOVPlayerAttack,Default Attack against 802,5.07
+0,1,66,TOVPlayerAttack,Default Attack against 803,5.255
+0,2,64,TOVPlayerAttack,Default Attack against 803,5.15
+0,0,64,TOVPlayerMove,Moved from tile [11, 13] in direction [0, -1].,5.325
+0,1,66,TOVPlayerMove,Moved from tile [11, 13] in direction [-1, 0].,5.585
+0,0,64,TOVPlayerMove,Moved from tile [12, 13] in direction [1, 0].,5.325
+0,1,66,TOVPlayerAttack,Default Attack against 809,5.585
+0,2,57,TOVPlayerAttack,Default Attack against 808,5.15
+0,2,57,TOVPlayerAttack,Default Attack against 807,5.155
+0,0,64,TOVPlayerAttack,Default Attack against 807,5.405
+0,1,51,TOVPlayerAttack,Default Attack against 808,5.915
+0,0,64,TOVPlayerMove,Moved from tile [13, 13] in direction [1, 0].,5.734999999999999
+0,1,51,TOVPlayerAttack,Default Attack against 812,6.165
+0,2,57,TOVPlayerMove,Moved from tile [13, 13] in direction [-1, 0].,5.734999999999999
+0,0,64,TOVPlayerMove,Moved from tile [13, 13] in direction [1, 0].,6.0649999999999995
+0,1,51,TOVPlayerMove,Moved from tile [12, 13] in direction [0, -1].,6.165
+0,0,64,TOVPlayerMove,Moved from tile [12, 14] in direction [0, 1].,6.0649999999999995
+0,1,51,TOVPlayerUseCard,Played the card: null,6.165
+0,2,56,TOVPlayerAttack,Default Attack against 842,5.734999999999999
+0,2,53,TOVPlayerAttack,Default Attack against 842,5.8149999999999995
+0,1,51,TOVPlayerUseCard,Played the card: null,6.17
+0,0,64,TOVPlayerAttack,Default Attack against 841,6.0649999999999995
+0,1,51,TOVPlayerAttack,Default Attack against 841,6.425
+0,2,56,TOVPlayerMove,Moved from tile [12, 14] in direction [0, -1].,6.0649999999999995
+0,0,64,TOVPlayerMove,Moved from tile [12, 14] in direction [-1, 0].,6.395
+0,1,51,TOVPlayerMove,Moved from tile [12, 13] in direction [0, -1].,6.425
+0,2,56,TOVPlayerMove,Moved from tile [11, 14] in direction [1, 0].,6.0649999999999995
+0,0,64,TOVPlayerMove,Moved from tile [12, 13] in direction [0, -1].,6.395
+0,1,51,TOVPlayerMove,Moved from tile [13, 13] in direction [0, -1].,6.425
+0,2,56,TOVPlayerMove,Moved from tile [11, 13] in direction [0, -1].,6.0649999999999995
+0,0,64,TOVPlayerMove,Moved from tile [12, 12] in direction [1, 0].,6.395
+0,1,51,TOVPlayerMove,Moved from tile [13, 12] in direction [1, 0].,6.425
+0,2,56,TOVPlayerMove,Moved from tile [13, 11] in direction [0, -1].,6.0649999999999995
+0,1,51,TOVPlayerAttack,Default Attack against 754,6.425
+0,0,64,TOVPlayerAttack,Default Attack against 754,6.395
+0,0,60,TOVPlayerAttack,Default Attack against 755,6.4
+0,0,60,TOVPlayerAttack,Default Attack against 753,6.405
+0,0,60,TOVPlayerAttack,Default Attack against 755,6.485
+0,1,35,TOVPlayerAttack,Default Attack against 753,6.835
+0,2,36,TOVPlayerMove,Moved from tile [13, 11] in direction [1, 0].,6.32
+0,0,60,TOVPlayerMove,Moved from tile [13, 11] in direction [1, 0].,6.8149999999999995
+0,1,35,TOVPlayerMove,Moved from tile [14, 11] in direction [0, 1].,6.835
+0,0,60,TOVPlayerMove,Moved from tile [14, 10] in direction [0, -1].,6.8149999999999995
+0,1,31,TOVPlayerAttack,Default Attack against 733,6.855
+0,1,31,TOVPlayerAttack,Default Attack against 731,6.859999999999999
+0,2,28,TOVPlayerAttack,Default Attack against 731,6.32
+0,1,31,TOVPlayerAttack,Default Attack against 732,6.9399999999999995
+0,2,28,TOVPlayerAttack,Default Attack against 732,6.575
+0,0,59,TOVPlayerMove,Moved from tile [14, 9] in direction [0, -1].,7.145
+0,1,23,TOVPlayerAttack,Default Attack against 704,7.3100000000000005
+0,1,19,TOVPlayerAttack,Default Attack against 705,7.41
+0,2,26,TOVPlayerAttack,Default Attack against 706,6.825
+0,2,26,TOVPlayerMove,Moved from tile [14, 8] in direction [0, -1].,6.825
+0,1,22,TOVPlayerUseCard,Played the card: null,7.74
+0,0,59,TOVPlayerAttack,Default Attack against 679,7.475
+0,1,22,TOVPlayerAttack,Default Attack against 679,7.995
+0,0,59,TOVPlayerMove,Moved from tile [14, 7] in direction [0, -1].,7.805
+0,2,26,TOVPlayerAttack,Default Attack against 660,7.075
+0,0,59,TOVPlayerAttack,Default Attack against 660,8.06
+0,1,22,TOVPlayerMove,Moved from tile [14, 7] in direction [0, 1].,8.245
+0,2,26,TOVPlayerMove,Moved from tile [14, 7] in direction [0, 1].,7.405
+0,0,79,TOVPlayerMove,Moved from tile [14, 8] in direction [-1, 0].,8.06
+0,1,61,TOVPlayerMove,Moved from tile [14, 8] in direction [0, 1].,8.245
+0,2,63,TOVPlayerMove,Moved from tile [13, 7] in direction [0, -1].,7.405
+0,0,79,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,8.06
+0,2,57,TOVPlayerAttack,Default Attack against 654,7.405
+0,2,55,TOVPlayerAttack,Default Attack against 654,7.484999999999999
+0,0,76,TOVPlayerUseCard,Played the card: null,8.065
+0,1,61,TOVPlayerAttack,Default Attack against 656,8.245
+0,2,45,TOVPlayerAttack,Default Attack against 655,7.484999999999999
+0,0,76,TOVPlayerAttack,Default Attack against 655,8.395
+0,0,76,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,8.395
+0,1,57,TOVPlayerAttack,Default Attack against 651,8.52
+0,2,45,TOVPlayerAttack,Default Attack against 650,8.065
+0,2,45,TOVPlayerMove,Moved from tile [11, 6] in direction [0, -1].,8.065
+0,0,74,TOVPlayerAttack,Default Attack against 619,8.725
+0,1,54,TOVPlayerAttack,Default Attack against 618,8.865
+0,1,54,TOVPlayerAttack,Default Attack against 620,8.870000000000001
+0,2,39,TOVPlayerAttack,Default Attack against 620,8.395
+0,0,70,TOVPlayerMove,Moved from tile [11, 5] in direction [0, -1].,9.055
+0,1,54,TOVPlayerAttack,Default Attack against 587,9.2
+0,2,39,TOVPlayerAttack,Default Attack against 588,8.645
+0,0,70,TOVPlayerMove,Moved from tile [11, 4] in direction [0, -1].,9.385
+0,2,39,TOVPlayerAttack,Default Attack against 564,8.645
+0,1,57,TOVPlayerUseCard,Played the card: null,9.53
+0,2,39,TOVPlayerAttack,Default Attack against 564,8.895
+0,0,83,TOVPlayerMove,Moved from tile [11, 4] in direction [0, -1].,9.64
+0,1,78,TOVPlayerMove,Moved from tile [11, 4] in direction [0, -1].,9.86
+0,2,69,TOVPlayerMove,Moved from tile [11, 3] in direction [1, 0].,8.895
+0,0,83,TOVPlayerMove,Moved from tile [10, 3] in direction [-1, 0].,9.64
+0,1,78,TOVPlayerAttack,Default Attack against 534,9.86
+0,2,69,TOVPlayerUseCard,Played the card: null,8.895
+0,2,69,TOVPlayerAttack,Default Attack against 533,8.9
+0,0,78,TOVPlayerAttack,Default Attack against 533,9.969999999999999
+0,2,69,TOVPlayerMove,Moved from tile [10, 2] in direction [0, -1].,9.23
+0,0,74,TOVPlayerAttack,Default Attack against 505,9.969999999999999
+0,0,74,TOVPlayerAttack,Default Attack against 504,10.05
+0,1,75,TOVPlayerAttack,Default Attack against 503,10.375
+0,2,66,TOVPlayerMove,Moved from tile [10, 2] in direction [0, 1].,9.56
+0,0,74,TOVPlayerMove,Moved from tile [10, 2] in direction [0, -1].,10.379999999999999
+0,1,75,TOVPlayerMove,Moved from tile [10, 3] in direction [0, -1].,10.375
+0,2,66,TOVPlayerMove,Moved from tile [10, 1] in direction [0, -1].,9.56
+0,0,74,TOVPlayerMove,Moved from tile [9, 1] in direction [-1, 0].,10.379999999999999
+0,1,75,TOVPlayerAttack,Default Attack against 470,10.625
+0,2,66,TOVPlayerMove,Moved from tile [9, 1] in direction [1, 0].,9.81
+0,0,74,TOVPlayerMove,Moved from tile [9, 1] in direction [-1, 0].,10.71
+0,1,75,TOVPlayerMove,Moved from tile [10, 1] in direction [0, -1].,10.625
+0,0,74,TOVPlayerMove,Moved from tile [11, 1] in direction [1, 0].,10.71
+0,1,75,TOVPlayerAttack,Default Attack against 475,10.625
+0,2,66,TOVPlayerAttack,Default Attack against 476,9.81
+0,2,66,TOVPlayerAttack,Default Attack against 474,9.815
+0,0,73,TOVPlayerAttack,Default Attack against 474,11.04
+0,1,63,TOVPlayerMove,Moved from tile [11, 1] in direction [0, -1].,11.015
+0,2,66,TOVPlayerMove,Moved from tile [11, 1] in direction [0, 1].,10.145
+0,0,73,TOVPlayerMove,Moved from tile [11, 0] in direction [1, 0].,11.04
+0,1,63,TOVPlayerMove,Moved from tile [11, 2] in direction [0, 1].,11.015
+0,2,66,TOVPlayerMove,Moved from tile [12, 1] in direction [-1, 0].,10.145
+0,0,73,TOVPlayerMove,Moved from tile [13, 1] in direction [1, 0].,11.04
+0,1,63,TOVPlayerAttack,Default Attack against 481,11.015
+0,1,63,TOVPlayerAttack,Default Attack against 480,11.02
+0,2,59,TOVPlayerAttack,Default Attack against 480,10.395
+0,0,69,TOVPlayerMove,Moved from tile [13, 2] in direction [0, 1].,11.37
+0,2,59,TOVPlayerAttack,Default Attack against 512,10.395
+0,1,63,TOVPlayerAttack,Default Attack against 511,11.35
+0,1,57,TOVPlayerUseCard,Played the card: null,11.379999999999999
+0,0,69,TOVPlayerAttack,Default Attack against 510,11.45
+0,1,49,TOVPlayerAttack,Default Attack against 510,11.675
+0,2,46,TOVPlayerMove,Moved from tile [13, 2] in direction [0, -1].,10.725
+0,0,69,TOVPlayerMove,Moved from tile [13, 2] in direction [1, 0].,11.78
+0,1,49,TOVPlayerMove,Moved from tile [13, 1] in direction [0, -1].,11.675
+0,2,46,TOVPlayerMove,Moved from tile [14, 2] in direction [0, 1].,10.725
+0,2,46,TOVPlayerMove,Moved from tile [14, 3] in direction [0, 1].,10.725
+0,0,69,TOVPlayerAttack,Default Attack against 540,11.78
+0,0,69,TOVPlayerAttack,Default Attack against 541,11.785
+0,1,41,TOVPlayerAttack,Default Attack against 542,11.715
+0,0,69,TOVPlayerAttack,Default Attack against 542,11.79
+0,1,41,TOVPlayerAttack,Default Attack against 541,12.045
+0,0,69,TOVPlayerMove,Moved from tile [14, 4] in direction [0, 1].,12.120000000000001
+0,1,41,TOVPlayerAttack,Default Attack against 569,12.045
+0,2,38,TOVPlayerAttack,Default Attack against 571,11.055
+0,2,38,TOVPlayerAttack,Default Attack against 570,11.06
+0,0,62,TOVPlayerAttack,Default Attack against 570,12.45
+0,1,37,TOVPlayerMove,Moved from tile [14, 4] in direction [0, 1].,12.395
+0,2,38,TOVPlayerMove,Moved from tile [14, 4] in direction [0, 1].,11.39
+0,0,62,TOVPlayerMove,Moved from tile [14, 5] in direction [0, 1].,12.45
+0,0,62,TOVPlayerMove,Moved from tile [13, 5] in direction [-1, 0].,12.45
+0,1,37,TOVPlayerAttack,Default Attack against 595,12.395
+0,2,38,TOVPlayerAttack,Default Attack against 595,11.64
+0,2,38,TOVPlayerMove,Moved from tile [12, 5] in direction [-1, 0].,11.64
+0,0,62,TOVPlayerAttack,Default Attack against 592,12.705
+0,0,59,TOVPlayerAttack,Default Attack against 591,12.71
+0,1,30,TOVPlayerAttack,Default Attack against 591,12.76
+0,2,38,TOVPlayerAttack,Default Attack against 592,11.895
+0,0,59,TOVPlayerMove,Moved from tile [12, 5] in direction [0, -1].,13.04
+0,1,30,TOVPlayerMove,Moved from tile [12, 5] in direction [0, 1].,13.09
+0,2,38,TOVPlayerMove,Moved from tile [12, 4] in direction [0, -1].,11.895
+0,0,59,TOVPlayerMove,Moved from tile [12, 6] in direction [1, 0].,13.04
+0,1,30,TOVPlayerMove,Moved from tile [12, 4] in direction [-1, 0].,13.09
+0,2,38,TOVPlayerMove,Moved from tile [13, 4] in direction [1, 0].,11.895
+0,0,59,TOVPlayerMove,Moved from tile [11, 6] in direction [-1, 0].,13.04
+0,1,30,TOVPlayerMove,Moved from tile [13, 4] in direction [-1, 0].,13.09
+0,2,38,TOVPlayerMove,Moved from tile [12, 4] in direction [0, 1].,11.895
+0,0,59,TOVPlayerMove,Moved from tile [10, 6] in direction [-1, 0].,13.04
+0,1,30,TOVPlayerMove,Moved from tile [13, 5] in direction [-1, 0].,13.09
+0,2,38,TOVPlayerMove,Moved from tile [11, 4] in direction [1, 0].,11.895
+0,0,59,TOVPlayerMove,Moved from tile [9, 6] in direction [1, 0].,13.04
+0,0,59,TOVPlayerMove,Moved from tile [9, 7] in direction [0, 1].,13.04
+0,1,30,TOVPlayerAttack,Default Attack against 644,13.09
+0,1,30,TOVPlayerUseCard,Played the card: null,13.09
+0,2,35,TOVPlayerAttack,Default Attack against 644,11.895
+0,0,49,TOVPlayerAttack,Default Attack against 645,13.045
+0,0,47,TOVPlayerAttack,Default Attack against 646,13.05
+0,0,47,TOVPlayerAttack,Default Attack against 646,13.129999999999999
+0,1,22,TOVPlayerAttack,Default Attack against 645,13.46
+0,2,24,TOVPlayerMove,Moved from tile [9, 7] in direction [-1, 0].,12.15
+0,0,47,TOVPlayerMove,Moved from tile [9, 7] in direction [-1, 0].,13.46
+0,1,22,TOVPlayerMove,Moved from tile [8, 7] in direction [-1, 0].,13.46
+0,2,24,TOVPlayerMove,Moved from tile [8, 7] in direction [0, -1].,12.15
+0,0,47,TOVPlayerMove,Moved from tile [8, 7] in direction [0, -1].,13.46
+0,1,22,TOVPlayerMove,Moved from tile [8, 6] in direction [0, -1].,13.46
+0,2,24,TOVPlayerMove,Moved from tile [8, 6] in direction [-1, 0].,12.15
+0,0,47,TOVPlayerMove,Moved from tile [8, 6] in direction [1, 0].,13.46
+0,1,22,TOVPlayerMove,Moved from tile [7, 6] in direction [1, 0].,13.46
+0,2,24,TOVPlayerMove,Moved from tile [9, 6] in direction [0, -1].,12.15
+0,0,47,TOVPlayerMove,Moved from tile [9, 6] in direction [-1, 0].,13.46
+0,1,22,TOVPlayerMove,Moved from tile [7, 5] in direction [-1, 0].,13.46
+0,2,24,TOVPlayerMove,Moved from tile [7, 4] in direction [0, -1].,12.15
+0,0,45,TOVPlayerAttack,Default Attack against 557,13.46
+0,1,22,TOVPlayerAttack,Default Attack against 558,13.46
+0,1,22,TOVPlayerAttack,Default Attack against 558,13.54
+0,2,24,TOVPlayerAttack,Default Attack against 557,12.23
+0,0,36,TOVPlayerAttack,Default Attack against 556,13.465
+0,1,22,TOVPlayerAttack,Default Attack against 556,13.79
+0,0,36,TOVPlayerMove,Moved from tile [6, 4] in direction [-1, 0].,13.795
+0,2,24,TOVPlayerAttack,Default Attack against 553,12.485
+0,1,22,TOVPlayerAttack,Default Attack against 551,13.79
+0,2,24,TOVPlayerAttack,Default Attack against 552,12.815
+0,0,64,TOVPlayerMove,Moved from tile [6, 4] in direction [0, -1].,14.125
+0,1,61,TOVPlayerMove,Moved from tile [6, 4] in direction [0, 1].,14.12
+0,2,62,TOVPlayerMove,Moved from tile [6, 3] in direction [-1, 0].,12.815
+0,2,62,TOVPlayerMove,Moved from tile [5, 3] in direction [-1, 0].,12.815
+0,0,60,TOVPlayerAttack,Default Attack against 525,14.125
+0,1,61,TOVPlayerAttack,Default Attack against 524,14.12
+0,2,62,TOVPlayerAttack,Default Attack against 526,13.145
+0,0,54,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,14.455
+0,2,62,TOVPlayerAttack,Default Attack against 491,13.145
+0,1,61,TOVPlayerAttack,Default Attack against 491,14.45
+0,1,61,TOVPlayerUseCard,Played the card: null,14.45
+0,0,46,TOVPlayerUseCard,Played the card: null,14.46
+0,1,54,TOVPlayerAttack,Default Attack against 490,14.485
+0,1,47,TOVPlayerUseCard,Played the card: null,14.52
+0,0,41,TOVPlayerAttack,Default Attack against 492,14.465
+0,1,47,TOVPlayerAttack,Default Attack against 492,14.525
+0,2,51,TOVPlayerAttack,Default Attack against 490,13.475
+0,0,34,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,14.795
+0,1,47,TOVPlayerMove,Moved from tile [5, 2] in direction [1, 0].,14.855
+0,2,75,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,13.475
+0,0,67,TOVPlayerMove,Moved from tile [6, 2] in direction [1, 0].,14.795
+0,0,67,TOVPlayerMove,Moved from tile [7, 2] in direction [1, 0].,14.795
+0,1,51,TOVPlayerAttack,Default Attack against 497,14.965
+0,2,75,TOVPlayerAttack,Default Attack against 498,13.475
+0,0,67,TOVPlayerAttack,Default Attack against 496,14.875
+0,1,51,TOVPlayerAttack,Default Attack against 496,15.295
+0,2,75,TOVPlayerMove,Moved from tile [7, 2] in direction [0, 1].,13.73
+0,0,67,TOVPlayerMove,Moved from tile [7, 2] in direction [0, -1].,15.205
+0,1,51,TOVPlayerMove,Moved from tile [7, 3] in direction [1, 0].,15.295
+0,2,75,TOVPlayerMove,Moved from tile [7, 1] in direction [0, -1].,13.73
+0,0,67,TOVPlayerMove,Moved from tile [8, 2] in direction [-1, 0].,15.205
+0,1,51,TOVPlayerMove,Moved from tile [7, 2] in direction [0, -1].,15.295
+0,2,75,TOVPlayerMove,Moved from tile [6, 1] in direction [0, 1].,13.73
+0,0,67,TOVPlayerMove,Moved from tile [8, 1] in direction [-1, 0].,15.205
+0,1,51,TOVPlayerMove,Moved from tile [7, 3] in direction [-1, 0].,15.295
+0,2,75,TOVPlayerMove,Moved from tile [5, 1] in direction [-1, 0].,13.73
+0,0,67,TOVPlayerMove,Moved from tile [7, 1] in direction [-1, 0].,15.205
+0,1,51,TOVPlayerMove,Moved from tile [6, 3] in direction [-1, 0].,15.295
+0,2,75,TOVPlayerMove,Moved from tile [4, 1] in direction [0, 1].,13.73
+0,0,67,TOVPlayerMove,Moved from tile [6, 1] in direction [1, 0].,15.205
+0,1,51,TOVPlayerMove,Moved from tile [6, 4] in direction [1, 0].,15.295
+0,2,75,TOVPlayerMove,Moved from tile [5, 1] in direction [0, 1].,13.73
+0,0,67,TOVPlayerMove,Moved from tile [7, 1] in direction [0, 1].,15.205
+0,1,51,TOVPlayerMove,Moved from tile [6, 5] in direction [0, 1].,15.295
+0,2,75,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,13.73
+0,0,67,TOVPlayerMove,Moved from tile [7, 2] in direction [0, 1].,15.205
+0,1,51,TOVPlayerMove,Moved from tile [6, 6] in direction [0, -1].,15.295
+0,2,75,TOVPlayerMove,Moved from tile [5, 6] in direction [-1, 0].,13.73
+0,0,67,TOVPlayerAttack,Default Attack against 610,15.205
+0,1,51,TOVPlayerAttack,Default Attack against 609,15.545
+0,0,67,TOVPlayerMove,Moved from tile [5, 7] in direction [0, 1].,15.535
+0,0,67,TOVPlayerUseCard,Played the card: null,15.535
+0,2,67,TOVPlayerAttack,Default Attack against 633,14.06
+0,0,67,TOVPlayerAttack,Default Attack against 635,15.865
+0,0,67,TOVPlayerMove,Moved from tile [6, 7] in direction [1, 0].,15.865
+0,2,67,TOVPlayerAttack,Default Attack against 639,14.39
+0,0,52,TOVPlayerAttack,Default Attack against 638,16.195
+0,1,51,TOVPlayerMove,Moved from tile [6, 7] in direction [0, 1].,16.045
+0,2,67,TOVPlayerMove,Moved from tile [6, 7] in direction [0, 1].,14.719999999999999
+0,0,52,TOVPlayerMove,Moved from tile [6, 8] in direction [1, 0].,16.195
+0,1,51,TOVPlayerMove,Moved from tile [6, 8] in direction [-1, 0].,16.045
+0,2,67,TOVPlayerMove,Moved from tile [7, 7] in direction [0, 1].,14.719999999999999
+0,0,52,TOVPlayerMove,Moved from tile [5, 8] in direction [1, 0].,16.195
+0,1,51,TOVPlayerMove,Moved from tile [6, 9] in direction [0, 1].,16.045
+0,2,67,TOVPlayerMove,Moved from tile [8, 7] in direction [0, -1].,14.719999999999999
+0,0,52,TOVPlayerMove,Moved from tile [5, 9] in direction [0, 1].,16.195
+0,1,51,TOVPlayerMove,Moved from tile [6, 8] in direction [1, 0].,16.045
+0,2,67,TOVPlayerMove,Moved from tile [8, 8] in direction [-1, 0].,14.719999999999999
+0,0,52,TOVPlayerMove,Moved from tile [6, 9] in direction [0, -1].,16.195
+0,1,75,TOVPlayerMove,Moved from tile [5, 8] in direction [1, 0].,16.045
+0,2,83,TOVPlayerMove,Moved from tile [8, 7] in direction [0, 1].,14.719999999999999
+0,0,76,TOVPlayerMove,Moved from tile [7, 9] in direction [0, 1].,16.195
+0,1,75,TOVPlayerMove,Moved from tile [5, 9] in direction [-1, 0].,16.045
+0,2,83,TOVPlayerMove,Moved from tile [8, 8] in direction [1, 0].,14.719999999999999
+0,0,76,TOVPlayerMove,Moved from tile [6, 9] in direction [0, 1].,16.195
+0,1,75,TOVPlayerMove,Moved from tile [6, 9] in direction [0, 1].,16.045
+0,2,83,TOVPlayerMove,Moved from tile [8, 9] in direction [0, 1].,14.719999999999999
+0,1,75,TOVPlayerMove,Moved from tile [9, 9] in direction [1, 0].,16.045
+0,2,83,TOVPlayerUseCard,Played the card: null,14.719999999999999
+0,0,76,TOVPlayerUseCard,Played the card: null,16.195
+0,0,71,TOVPlayerUseCard,Played the card: null,16.195
+0,0,71,TOVPlayerAttack,Default Attack against 697,16.2
+0,1,70,TOVPlayerAttack,Default Attack against 697,16.32
+0,2,73,TOVPlayerMove,Moved from tile [9, 9] in direction [0, 1].,14.969999999999999
+0,0,71,TOVPlayerMove,Moved from tile [9, 9] in direction [0, 1].,16.53
+0,1,70,TOVPlayerMove,Moved from tile [9, 10] in direction [1, 0].,16.32
+0,0,71,TOVPlayerMove,Moved from tile [8, 10] in direction [-1, 0].,16.53
+0,1,70,TOVPlayerAttack,Default Attack against 719,16.32
+0,2,73,TOVPlayerAttack,Default Attack against 720,15.219999999999999
+0,0,71,TOVPlayerMove,Moved from tile [8, 11] in direction [0, 1].,16.86
+0,1,70,TOVPlayerAttack,Default Attack against 744,16.9
+0,2,73,TOVPlayerMove,Moved from tile [8, 11] in direction [1, 0].,15.469999999999999
+0,0,71,TOVPlayerMove,Moved from tile [8, 11] in direction [-1, 0].,17.189999999999998
+0,1,70,TOVPlayerMove,Moved from tile [9, 11] in direction [0, 1].,16.9
+0,1,70,TOVPlayerMove,Moved from tile [10, 11] in direction [1, 0].,16.9
+0,2,73,TOVPlayerAttack,Default Attack against 748,15.719999999999999
+0,0,71,TOVPlayerMove,Moved from tile [10, 11] in direction [0, -1].,17.439999999999998
+0,1,70,TOVPlayerMove,Moved from tile [10, 11] in direction [0, 1].,17.23
+0,2,73,TOVPlayerMove,Moved from tile [10, 10] in direction [-1, 0].,15.719999999999999
+0,0,71,TOVPlayerMove,Moved from tile [11, 10] in direction [1, 0].,17.439999999999998
+0,2,67,TOVPlayerAttack,Default Attack against 725,15.719999999999999
+0,1,70,TOVPlayerAttack,Default Attack against 726,17.23
+0,2,67,TOVPlayerAttack,Default Attack against 726,15.975
+0,0,65,TOVPlayerMove,Moved from tile [11, 10] in direction [0, -1].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [11, 10] in direction [0, 1].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [11, 9] in direction [1, 0].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [11, 11] in direction [0, -1].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [12, 10] in direction [-1, 0].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [11, 8] in direction [-1, 0].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [10, 11] in direction [-1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [11, 10] in direction [0, -1].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [10, 8] in direction [0, 1].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [10, 10] in direction [-1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [11, 11] in direction [0, 1].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [9, 8] in direction [0, 1].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [10, 11] in direction [-1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [11, 12] in direction [0, 1].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [8, 8] in direction [-1, 0].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [10, 12] in direction [1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [10, 12] in direction [0, 1].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [9, 8] in direction [0, 1].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [10, 13] in direction [-1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [10, 13] in direction [0, 1].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [8, 8] in direction [-1, 0].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [10, 14] in direction [1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [9, 13] in direction [-1, 0].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [9, 8] in direction [-1, 0].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [9, 14] in direction [0, 1].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [8, 13] in direction [0, -1].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [9, 9] in direction [0, 1].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [9, 13] in direction [0, -1].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [8, 14] in direction [0, 1].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [9, 8] in direction [-1, 0].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [9, 14] in direction [0, 1].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [7, 14] in direction [1, 0].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [9, 9] in direction [0, -1].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [10, 14] in direction [0, -1].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [7, 13] in direction [-1, 0].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [9, 8] in direction [-1, 0].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [9, 14] in direction [1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [6, 13] in direction [-1, 0].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [10, 8] in direction [0, 1].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [8, 14] in direction [-1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [6, 14] in direction [-1, 0].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [9, 8] in direction [-1, 0].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [7, 14] in direction [-1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [5, 14] in direction [-1, 0].,17.56
+0,2,67,TOVPlayerMove,Moved from tile [8, 8] in direction [-1, 0].,15.975
+0,0,65,TOVPlayerMove,Moved from tile [6, 14] in direction [-1, 0].,17.77
+0,1,70,TOVPlayerMove,Moved from tile [4, 14] in direction [0, -1].,17.56
+0,1,70,TOVPlayerMove,Moved from tile [4, 13] in direction [0, -1].,17.56
+0,0,65,TOVPlayerUseCard,Played the card: null,17.77
+0,1,70,TOVPlayerAttack,Default Attack against 780,17.81
+0,2,67,TOVPlayerMove,Moved from tile [4, 13] in direction [0, 1].,16.225
+0,0,65,TOVPlayerMove,Moved from tile [4, 13] in direction [-1, 0].,18.1
+0,1,70,TOVPlayerMove,Moved from tile [4, 14] in direction [0, 1].,17.81
+0,0,65,TOVPlayerMove,Moved from tile [3, 14] in direction [-1, 0].,18.1
+0,1,70,TOVPlayerAttack,Default Attack against 824,17.81
+0,1,70,TOVPlayerAttack,Default Attack against 823,17.89
+0,2,59,TOVPlayerAttack,Default Attack against 824,16.225
+0,0,57,TOVPlayerAttack,Default Attack against 825,18.18
+0,1,70,TOVPlayerAttack,Default Attack against 825,18.14
+0,2,59,TOVPlayerMove,Moved from tile [3, 14] in direction [-1, 0].,16.48
+0,0,57,TOVPlayerMove,Moved from tile [3, 14] in direction [-1, 0].,18.509999999999998
+0,1,70,TOVPlayerMove,Moved from tile [2, 14] in direction [1, 0].,18.14
+0,0,57,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,18.509999999999998
+0,1,70,TOVPlayerAttack,Default Attack against 817,18.14
+0,2,59,TOVPlayerUseCard,Played the card: null,16.48
+0,2,48,TOVPlayerAttack,Default Attack against 818,16.485
+0,0,57,TOVPlayerAttack,Default Attack against 818,18.59
+0,1,59,TOVPlayerUseCard,Played the card: null,18.195
+0,2,48,TOVPlayerAttack,Default Attack against 819,16.815
+0,0,57,TOVPlayerMove,Moved from tile [1, 14] in direction [0, -1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 13] in direction [0, -1].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [0, 14] in direction [0, 1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [1, 13] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 14] in direction [0, 1].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [0, 13] in direction [0, -1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [1, 14] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 13] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [0, 12] in direction [0, 1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [2, 14] in direction [1, 0].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 14] in direction [0, -1].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [1, 12] in direction [0, -1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [2, 13] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 13] in direction [0, 1].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [1, 11] in direction [0, -1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [2, 14] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 12] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [1, 10] in direction [0, 1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [3, 14] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 13] in direction [-1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [1, 9] in direction [1, 0].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [2, 14] in direction [0, 1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [2, 13] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [1, 10] in direction [0, 1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [3, 14] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [2, 14] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [1, 9] in direction [0, -1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [4, 14] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [2, 13] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [1, 8] in direction [-1, 0].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [5, 14] in direction [1, 0].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 13] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [2, 8] in direction [0, 1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [6, 14] in direction [1, 0].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 14] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [3, 8] in direction [-1, 0].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [7, 14] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [0, 14] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [3, 7] in direction [0, -1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [8, 14] in direction [0, 1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [0, 13] in direction [-1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [3, 8] in direction [0, -1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [7, 14] in direction [1, 0].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [0, 12] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [4, 8] in direction [0, -1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [8, 14] in direction [0, 1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [0, 11] in direction [0, -1].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [4, 9] in direction [0, 1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [8, 13] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [0, 12] in direction [-1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [4, 8] in direction [1, 0].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [7, 13] in direction [0, 1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 12] in direction [-1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [4, 9] in direction [0, 1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [6, 13] in direction [1, 0].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 13] in direction [0, 1].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [5, 9] in direction [-1, 0].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [6, 14] in direction [-1, 0].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [0, 13] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [4, 9] in direction [0, 1].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [7, 14] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [0, 14] in direction [-1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [4, 8] in direction [1, 0].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [6, 14] in direction [-1, 0].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 14] in direction [0, -1].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [3, 8] in direction [-1, 0].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [6, 13] in direction [1, 0].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [0, 14] in direction [0, -1].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [4, 8] in direction [1, 0].,18.84
+0,1,59,TOVPlayerMove,Moved from tile [6, 12] in direction [0, -1].,18.525
+0,2,48,TOVPlayerMove,Moved from tile [1, 14] in direction [1, 0].,16.815
+0,0,57,TOVPlayerMove,Moved from tile [4, 7] in direction [-1, 0].,18.84
+0,0,57,TOVPlayerMove,Moved from tile [4, 6] in direction [0, -1].,18.84
+0,1,59,TOVPlayerAttack,Default Attack against 606,18.775

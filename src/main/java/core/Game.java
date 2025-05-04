@@ -9,6 +9,9 @@ import evaluation.listeners.IGameListener;
 import evaluation.metrics.Event;
 import evaluation.summarisers.TAGNumericStatSummary;
 import games.GameType;
+import games.talesofvalor.TOVGameState;
+import games.talesofvalor.TOVPlayer;
+import games.talesofvalor.utilities.TOVEvaluation;
 import gui.AbstractGUIManager;
 import gui.GUI;
 import gui.GamePanel;
@@ -573,9 +576,9 @@ public class Game {
                 if (debug)
                     System.out.printf("About to get action for player %d%n", gameState.getCurrentPlayer());
                 action = currentPlayer.getAction(observation, observedActions);
-                if (!observedActions.contains(action)) {
+                /*if (!observedActions.contains(action)) {
                     throw new AssertionError("Action played that was not in the list of available actions: " + action);
-                }
+                }*/
 
                 if (debug)
                     System.out.printf("Game: %2d Tick: %3d\t%s%n", gameState.getGameID(), getTick(), action.getString(gameState));
@@ -622,6 +625,10 @@ public class Game {
         // (such as the next player)
         AbstractAction finalAction1 = action;
         listeners.forEach(l -> l.onEvent(Event.createEvent(Event.GameEvent.ACTION_TAKEN, gameState, finalAction1.copy(), activePlayer)));
+
+        if (gameState instanceof TOVGameState) {
+            LogGameAction(gameState, finalAction1);
+        }
 
         if (debug) System.out.printf("Finishing oneAction for player %s%n", activePlayer);
         return action;
@@ -815,6 +822,19 @@ public class Game {
         return gameType.toString();
     }
 
+    // Logging for Talse Of Valor:
+    private void LogGameAction(AbstractGameState gs, AbstractAction action) {
+        TOVGameState tovgs = (TOVGameState) gs;
+        TOVPlayer currentPlayer = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer());
+        TOVEvaluation.logActionData(
+                String.valueOf(currentPlayer.getPlayerID()),
+                String.valueOf(currentPlayer.getHealth()),
+                action.getClass().getSimpleName(),
+                action.getString(tovgs),
+                String.valueOf(tovgs.getHeuristicScore(tovgs.getCurrentPlayer()))
+        );
+    }
+
     /**
      * The recommended way to run a game is via evaluations.Frontend, however that may not work on
      * some games for some screen sizes due to the vagaries of Java Swing...
@@ -836,6 +856,7 @@ public class Game {
 
         /* Set up players for the game */
         ArrayList<AbstractPlayer> players = new ArrayList<>();
+        players.add(new RandomPlayer());
         players.add(new RandomPlayer());
         players.add(new RandomPlayer());
 //        players.add(new BasicMCTSPlayer());

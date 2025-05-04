@@ -1,12 +1,21 @@
 package games.talesofvalor;
 
 import core.AbstractParameters;
+import core.AbstractPlayer;
+import core.Game;
+import games.GameType;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class TOVParameters extends AbstractParameters {
-    int gridWidth = 12;
-    int gridHeight = 12;
+    // Grid dimensions.
+    static int gridWidth = 10;
+    static int gridHeight = 10;
+    public static final int maxEncounters = ((gridHeight * gridWidth) / 100) * 20;
+    public static final int maxShrines = ((gridHeight * gridWidth) / 100) * 10;
+    public static final int maxJesters = ((gridHeight * gridWidth) / 100) * 8;
 
     public TOVParameters() {
     }
