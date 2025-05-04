@@ -5,6 +5,7 @@ import core.actions.AbstractAction;
 import games.talesofvalor.TOVGameState;
 import games.talesofvalor.TOVPlayer;
 import games.talesofvalor.components.*;
+import games.talesofvalor.utilities.TOVEvaluation;
 
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class TOVPlayerUseCard extends AbstractAction {
     int playerID;
     int enemyCompID;
     ArrayList<Integer> secondaryEnemyCompIDs;
+    String cardName;
 
     // Constructors that fit the different types of cards that can be used.
     public TOVPlayerUseCard(int cardIndex){
@@ -46,96 +48,79 @@ public class TOVPlayerUseCard extends AbstractAction {
         this.secondaryEnemyCompIDs = secondaryEnemyCompIDs;
     }
 
+
     @Override
     public boolean execute(AbstractGameState gs) {
-        System.out.println(getString(gs));
         TOVGameState tovgs = (TOVGameState) gs;
-        TOVCard card = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getHand().get(cardIndex);
         TOVPlayer caster = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer());
-        if (card instanceof TOVCardHeal){
-            TOVPlayer target = tovgs.getTOVPlayerByID(playerID);
-            if (target != null && target.getHealth() > 0){
-                card.useCard(caster, target);
-                caster.getHand().remove(card);
-                return true;
-            }
-            else{
-                System.out.println("Invalid target.");
-                return false;
-            }
+        TOVCard card;
+        try{
+            card = caster.getHand().get(cardIndex);
         }
-        else if (card instanceof TOVCardLifeTap) {
-            TOVPlayer target = tovgs.getTOVPlayerByID(playerID);
-            if (target != null && tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getHealth() >= 10){
-                card.useCard(caster, target);
-                caster.getHand().remove(card);
-                return true;
-            }
-            else{
-                System.out.println("Invalid target. Or Health is too low to use this card.");
-                return false;
-            }
-        }
-        else if (card instanceof TOVCardTaunt) {
-            TOVEnemy target = (TOVEnemy) tovgs.getComponentById(enemyCompID);
-            if (target != null && !target.isDead()){
-                card.useCard(caster, target);
-                caster.getHand().remove(card);
-                return true;
-            }
-            else{
-                System.out.println("Invalid target.");
-                return false;
-            }
-        }
-        else if (card instanceof TOVCardDazzle) {
-            TOVEnemy target = (TOVEnemy) tovgs.getComponentById(enemyCompID);
-            if (target != null && !target.isDead()){
-                card.useCard(target);
-                caster.getHand().remove(card);
-                return true;
-            }
-            else{
-                System.out.println("Invalid target.");
-                return false;
-            }
-        }
-        else if (card instanceof TOVCardCleave){
-            TOVEnemy primaryTarget = (TOVEnemy) tovgs.getComponentById(enemyCompID);
-            ArrayList<TOVEnemy> secondaryTargets = new ArrayList<>();
-            for (int id : secondaryEnemyCompIDs){
-                TOVEnemy secondaryTarget = (TOVEnemy) tovgs.getComponentById(id);
-                if (secondaryTarget != null && !secondaryTarget.isDead()){
-                    secondaryTargets.add(secondaryTarget);
-                }
-            }
-            if (primaryTarget != null && !primaryTarget.isDead()){
-                card.useCard(caster,primaryTarget, secondaryTargets);
-                caster.getHand().remove(card);
-                return true;
-            }
-            else{
-                System.out.println("Invalid target.");
-                return false;
-            }
-        }
-        else if (card instanceof TOVCardEmpower){
-            TOVPlayer target = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer());
-            if (target != null && target.getHealth() > 0){
-                card.useCard(target);
-                caster.getHand().remove(card);
-                return true;
-            }
-            else{
-                System.out.println("Invalid target.");
-                return false;
-            }
-        }
-        else{
-            System.out.println("Invalid card.");
+        catch (IndexOutOfBoundsException e){
+            System.out.println("Card index out of bounds: " + cardIndex);
             return false;
         }
+
+        cardName = caster.getHand().get(cardIndex).getName();
+
+        boolean success = false;
+
+        if (card instanceof TOVCardHeal) {
+            TOVPlayer target = tovgs.getTOVPlayerByID(playerID);
+            if (target != null && target.getHealth() > 0 && target.getHealth() < target.getMaxHealth()) {
+                card.useCard(caster, target);
+                success = true;
+            }
+        } else if (card instanceof TOVCardLifeTap) {
+            TOVPlayer target = tovgs.getTOVPlayerByID(playerID);
+            if (target != null && caster.getHealth() >= 10) {
+                card.useCard(caster, target);
+                success = true;
+            }
+        } else if (card instanceof TOVCardTaunt) {
+            TOVEnemy target = (TOVEnemy) tovgs.getComponentById(enemyCompID);
+            if (target != null && !target.isDead()) {
+                card.useCard(caster, target);
+                success = true;
+            }
+        } else if (card instanceof TOVCardDazzle) {
+            TOVEnemy target = (TOVEnemy) tovgs.getComponentById(enemyCompID);
+            if (target != null && !target.isDead()) {
+                card.useCard(target);
+                success = true;
+            }
+        } else if (card instanceof TOVCardCleave) {
+            TOVEnemy primaryTarget = (TOVEnemy) tovgs.getComponentById(enemyCompID);
+            ArrayList<TOVEnemy> secondaryTargets = new ArrayList<>();
+
+            if (secondaryEnemyCompIDs != null) {
+                for (int id : secondaryEnemyCompIDs) {
+                    TOVEnemy sec = (TOVEnemy) tovgs.getComponentById(id);
+                    if (sec != null && !sec.isDead()) secondaryTargets.add(sec);
+                }
+            }
+            if (primaryTarget != null && !primaryTarget.isDead()) {
+                card.useCard(caster, primaryTarget, secondaryTargets);
+                success = true;
+            }
+        } else if (card instanceof TOVCardEmpower) {
+            if (caster != null && caster.getHealth() > 0) {
+                card.useCard(caster);
+                success = true;
+            }
+        }
+
+        // If card was used, remove from hand
+        if (success) {
+            caster.getHand().remove(card);
+        } else {
+            System.out.println("Invalid use of card: " + card.getName());
+        }
+
+        return success;
     }
+
 
     @Override
     public AbstractAction copy() {
@@ -160,7 +145,6 @@ public class TOVPlayerUseCard extends AbstractAction {
 
     @Override
     public String getString(AbstractGameState gameState) {
-        return "Played the card: " + ((TOVGameState) gameState).
-                getTOVPlayerByID(((TOVGameState) gameState).getCurrentPlayer()).getHand().get(cardIndex).getName();
+        return "Played the card: " + cardName;
     }
 }

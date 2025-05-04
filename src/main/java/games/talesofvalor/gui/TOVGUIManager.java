@@ -37,6 +37,8 @@ public class TOVGUIManager extends AbstractGUIManager {
     private static final Color defaultTextColor = Color.WHITE;
     private static final Color defaultEncounterColor = Color.RED;
     private static final Color defaultPlayerColor = Color.BLUE;
+    private static final Color defaultJesterColor = new Color(95, 10, 207);
+    private static final Color defaultShrineColor = new Color(4, 71, 21);
     private static final Color defaultEPColor = Color.MAGENTA;
 
     // View Flag
@@ -104,7 +106,34 @@ public class TOVGUIManager extends AbstractGUIManager {
                     }
                     tooltipText.append("</html>");
                     cellLabel.setToolTipText(tooltipText.toString());
-                } else {
+                }
+                else if (cell.hasJester){
+                    cellLabel.setText("J"); // Display J for Jester
+                    cellLabel.setOpaque(true);
+                    cellLabel.setBackground(defaultJesterColor);
+                    cellLabel.setForeground(defaultTextColor);
+
+                    // Generate tooltip text
+                    StringBuilder tooltipText = new StringBuilder("<html>"); // HTML allows multiline tooltips
+                    tooltipText.append("Jester<br>");
+                    tooltipText.append("Draws a card for all players!<br>");
+                    tooltipText.append("</html>");
+                    cellLabel.setToolTipText(tooltipText.toString());
+                }
+                else if (cell.hasShrine) {
+                    cellLabel.setText("S"); // Display S for Shrine
+                    cellLabel.setOpaque(true);
+                    cellLabel.setBackground(defaultShrineColor);
+                    cellLabel.setForeground(defaultTextColor);
+
+                    // Generate tooltip text
+                    StringBuilder tooltipText = new StringBuilder("<html>"); // HTML allows multiline tooltips
+                    tooltipText.append("Shrine of Health<br>");
+                    tooltipText.append("Heals all players for 75% of their missing health.<br>");
+                    tooltipText.append("</html>");
+                    cellLabel.setToolTipText(tooltipText.toString());
+                }
+                else {
                     cellLabel.setOpaque(true);
                     cellLabel.setBackground(Color.LIGHT_GRAY);
                     cellLabel.setToolTipText("No encounter in this cell.");
@@ -217,6 +246,28 @@ public class TOVGUIManager extends AbstractGUIManager {
                             tooltipText.append("Health: ").append(enemy.getHealth()).append("<br>");
                             tooltipText.append("Attack: ").append(enemy.getAttack()).append("<br>");
                         }
+                        tooltipText.append("</html>");
+                        cellLabel.setToolTipText(tooltipText.toString());
+                    }
+                    else if (cell.hasJester){
+                        labelText.append("J"); // Display J for Jester
+                        backgroundColor = defaultJesterColor;
+
+                        // Generate tooltip text
+                        StringBuilder tooltipText = new StringBuilder("<html>"); // HTML allows multiline tooltips
+                        tooltipText.append("Jester<br>");
+                        tooltipText.append("Draws a card for all players!<br>");
+                        tooltipText.append("</html>");
+                        cellLabel.setToolTipText(tooltipText.toString());
+                    }
+                    else if (cell.hasShrine) {
+                        labelText.append("S"); // Display S for Shrine
+                        backgroundColor = defaultShrineColor;
+
+                        // Generate tooltip text
+                        StringBuilder tooltipText = new StringBuilder("<html>"); // HTML allows multiline tooltips
+                        tooltipText.append("Shrine of Health<br>");
+                        tooltipText.append("Heals all players for 75% of their missing health.<br>");
                         tooltipText.append("</html>");
                         cellLabel.setToolTipText(tooltipText.toString());
                     }

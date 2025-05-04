@@ -1,11 +1,11 @@
-package games.talesofvalor;
+package games.talesofvalor.components;
 
 import core.CoreConstants;
 import core.components.Component;
-import games.talesofvalor.components.TOVEnemy;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class TOVEncounter extends Component {
     int encounterLevel;
@@ -57,7 +57,9 @@ public class TOVEncounter extends Component {
      */
     private void InitializeEnemies(int enemyCount){
         for (int i = 0; i < enemyCount; i++){
-            enemies.add(new TOVEnemy((int) (Math.random()*10)+1, (int) (Math.random()*10)+1));
+            // Random attack value between 1 and 8 and random health value between 10 and 20.
+            enemies.add(new TOVEnemy(ThreadLocalRandom.current().nextInt(1, 9),
+                    ThreadLocalRandom.current().nextInt(10, 21)));
         }
     }
 

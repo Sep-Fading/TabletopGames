@@ -9,6 +9,7 @@ import games.talesofvalor.actions.TOVPlayerAttack;
 import games.talesofvalor.actions.TOVPlayerMove;
 import games.talesofvalor.actions.TOVPlayerUseCard;
 import games.talesofvalor.components.*;
+import games.talesofvalor.utilities.TOVEvaluation;
 import games.talesofvalor.utilities.TOVUtilities;
 import utilities.Vector2D;
 
@@ -19,15 +20,23 @@ public class TOVForwardModel extends StandardForwardModel {
     protected void _setup(AbstractGameState firstState) {
         TOVGameState tovgs = (TOVGameState) firstState;
         TOVParameters tovp = (TOVParameters) tovgs.getGameParameters();
-
         // Create the map, counting the encounters as we go.
         tovgs.totalEncounters = 0;
-        tovgs.grid = new GridBoard<>(tovp.gridWidth, tovp.gridHeight);
-        for (int i = 0; i < tovp.gridHeight; i++) {
-            for (int j = 0; j < tovp.gridWidth; j++) {
-                tovgs.grid.setElement(j, i, new TOVCell(j, i));
+        tovgs.totalJesters = 0;
+        tovgs.totalShrines = 0;
+        tovgs.grid = new GridBoard<>(TOVParameters.gridWidth, TOVParameters.gridHeight);
+        for (int i = 0; i < TOVParameters.gridHeight; i++) {
+            for (int j = 0; j < TOVParameters.gridWidth; j++) {
+                tovgs.grid.setElement(j, i, new TOVCell(j, i, tovgs.totalEncounters,
+                        tovgs.totalJesters, tovgs.totalShrines));
                 if (tovgs.grid.getElement(j, i).hasEncounter) {
                     tovgs.totalEncounters++;
+                }
+                else if (tovgs.grid.getElement(j, i).hasJester) {
+                    tovgs.totalJesters++;
+                }
+                else if (tovgs.grid.getElement(j, i).hasShrine) {
+                    tovgs.totalShrines++;
                 }
             }
         }
@@ -66,7 +75,7 @@ public class TOVForwardModel extends StandardForwardModel {
         if (tovgs.getRoundType() == TOVRoundTypes.OUT_OF_COMBAT) {
 
             int d6Roll = tovgs.d6f.getFinalVal();
-            System.out.println("Player " + tovgs.getCurrentPlayer() + " rolled a " + d6Roll);
+            //System.out.println("Player " + tovgs.getCurrentPlayer() + " rolled a " + d6Roll);
 
             // A BFS implementation to calculate all reachable cells to multi-directional movement.
             boolean[][] visited = new boolean[tovgs.grid.getWidth()][tovgs.grid.getHeight()];
@@ -132,8 +141,8 @@ public class TOVForwardModel extends StandardForwardModel {
             System.out.println(tovgs.grid.getElement(x, y).hasEncounter);
             // Default attack options
             for (TOVEnemy target : tovgs.grid.getElement(x, y).encounter.enemies){
-                System.out.println("COMPONENT ID: " + target.getComponentID());
-                System.out.println("TARGET SET TO COMPONENT ID: " + target.getComponentID() + " " + target.isDead());
+                //System.out.println("COMPONENT ID: " + target.getComponentID());
+                //System.out.println("TARGET SET TO COMPONENT ID: " + target.getComponentID() + " " + target.isDead());
                 actions.add(new TOVPlayerAttack(target.getComponentID()));
             }
             // TODO:Playing cards if the player has any.
@@ -220,6 +229,22 @@ public class TOVForwardModel extends StandardForwardModel {
     protected void _beforeAction(AbstractGameState gameState, AbstractAction action) {
         TOVGameState tovgs = (TOVGameState) gameState;
         TOVRoundTypes round = tovgs.getRoundType();
+        ArrayList<TOVPlayer> players = tovgs.getAlivePlayers();
+
+        if (players.isEmpty() || tovgs.getRoundCounter() > maxRounds()){
+            endGame(tovgs);
+        }
+
+        if (tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).isDead()){
+            System.out.println("PLAYERS ALIVE: " + tovgs.getAlivePlayers().size());
+            endPlayerTurn(tovgs);
+            endRound(tovgs, getNextPlayer(tovgs.getCurrentPlayer(), tovgs.getNPlayers()));
+            if (tovgs.getAlivePlayers() == null || tovgs.getAlivePlayers().isEmpty()){
+                endGame(tovgs);
+            }
+            return;
+        }
+
         switch (round){
             case OUT_OF_COMBAT:
                 tovgs.d6f.Roll(tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getDexterity());
@@ -240,12 +265,14 @@ public class TOVForwardModel extends StandardForwardModel {
      */
     @Override
     protected void _afterAction(AbstractGameState gameState, AbstractAction action) {
+
         //System.out.println("After action");
         TOVGameState tovgs = (TOVGameState) gameState;
-        TOVCell combatCell = tovgs.grid.getElement(tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition());
+        TOVPlayer currPlayer = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer());
+        TOVCell currCell = tovgs.grid.getElement(currPlayer.getPosition());
         tovgs.setPreviousRoundType(tovgs.getRoundType());
         // Check if the encounter is defeated.
-        combatCell.updateHasEncounter();
+        currCell.updateHasEncounter();
         tovgs.UpdateRoundType();
 
         // If in combat, find the next player to act according to the custom turn order.
@@ -259,7 +286,7 @@ public class TOVForwardModel extends StandardForwardModel {
                 Vector2D encounterPos = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition();
 
                 // Move all players to the encounter.
-                for (TOVPlayer player : tovgs.players){
+                for (TOVPlayer player : tovgs.getAlivePlayers()){
                     //System.out.println("Player " + player.getPlayerID() + " same pos as encounter: " +
                     //player.getPosition().equals(encounterPos));
                     //System.out.println("Player " + player.getPlayerID() + " pos: " + player.getPosition());
@@ -269,8 +296,8 @@ public class TOVForwardModel extends StandardForwardModel {
                         player.MoveToCell(encounterPos);
                         tovgs.grid.getElement(player.getPosition()).SetPlayerCount(
                                 tovgs.grid.getElement(player.getPosition()).GetPlayerCount() + 1);
-                        System.out.println("Player " + player.getPlayerID() + " moved to encounter cell." +
-                                " Position: " + player.getPosition());
+                        //System.out.println("Player " + player.getPlayerID() + " moved to encounter cell." +
+                        //        " Position: " + player.getPosition());
                     }
                 }
 
@@ -279,9 +306,10 @@ public class TOVForwardModel extends StandardForwardModel {
 
             // Turn order
             ArrayList<TOVOrderWrapper> turnOrder = tovgs.getCombatOrder();
-            if (turnOrder.isEmpty()){
-                tovgs.SetupCombatTurnOrder(tovgs.players, tovgs.grid.getElement(
-                        tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition()).encounter.enemies);
+            TOVEncounter encounter = tovgs.grid.getElement(
+                    tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).getPosition()).encounter;
+            if (turnOrder.isEmpty() && encounter != null){
+                tovgs.SetupCombatTurnOrder(tovgs.players, encounter.enemies);
             }
 
             ArrayList<TOVOrderWrapper> completedTurns = new ArrayList<>();
@@ -346,15 +374,33 @@ public class TOVForwardModel extends StandardForwardModel {
                 tovgs.getPreviousRoundType() == TOVRoundTypes.IN_COMBAT){
             tovgs.encountersRemaining --;
             System.out.println("Encounter defeated. Remaining: " + tovgs.encountersRemaining);
-            endPlayerTurn(tovgs);
-            if (tovgs.encountersRemaining == 0){
+            if ((tovgs.encountersRemaining == 0 && !tovgs.getAlivePlayers().isEmpty()) ||
+                    tovgs.getAlivePlayers().isEmpty()){
                 endGame(tovgs);
             }
+            endPlayerTurn(tovgs);
+            endRound(tovgs, getNextPlayer(tovgs.getCurrentPlayer(), tovgs.getNPlayers()));
         }
         else{
+            if (currCell.hasShrine) {
+                System.out.println("Player " + tovgs.getCurrentPlayer() + " used a shrine.");
+                TOVUtilities.ApplyShrineEffect(tovgs.getAlivePlayers());
+                currCell.hasShrine = false;
+            }
+            else if (currCell.hasJester) {
+                System.out.println("Player " + tovgs.getCurrentPlayer() + " used a jester.");
+                for (TOVPlayer player : tovgs.getAlivePlayers()) {
+                    TOVUtilities.DrawCard(player);
+                    player.setDamage(player.getDamage() + 2);
+                }
+                currCell.hasJester = false;
+            }
             endPlayerTurn(tovgs);
-            System.out.println("Player " + tovgs.getCurrentPlayer() + " turn. Out of combat.");
+            //System.out.println("Player " + tovgs.getCurrentPlayer() + " turn. Out of combat.");
+
+            endRound(tovgs, getNextPlayer(tovgs.getCurrentPlayer(), tovgs.getNPlayers()));
         }
+
     }
 
     /* -------------------- */
@@ -373,4 +419,14 @@ public class TOVForwardModel extends StandardForwardModel {
         System.out.println("Game over : [" + tovgs.getGameStatus() + "]");
         System.out.println("Results : " + Arrays.toString(tovgs.getPlayerResults()));
     }
+
+    protected double maxRounds() {
+        return 400.0;
+    }
+
+    private int getNextPlayer(int currentPlayer, int nPlayers) {
+        return (currentPlayer + 1) % nPlayers;
+    }
+
+
 }

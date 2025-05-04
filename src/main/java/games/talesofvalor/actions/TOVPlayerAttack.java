@@ -16,7 +16,7 @@ public class TOVPlayerAttack extends AbstractAction {
 
     @Override
     public boolean execute(AbstractGameState gs) {
-        System.out.println(getString(gs));
+        //System.out.println(getString(gs));
         TOVGameState tovgs = (TOVGameState) gs;
         //System.out.println("ENEMY COMP ID IN EXECUTE METHOD: " + compid);
         TOVEnemy target = (TOVEnemy) tovgs.getComponentById(compid);
@@ -32,13 +32,6 @@ public class TOVPlayerAttack extends AbstractAction {
         tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer()).Attack(target);
         //System.out.println("Player attacked" + target.getHealth());
 
-        // Logging
-        int currPlayer = tovgs.getCurrentPlayer();
-        TOVEvaluation.logActionData(Integer.toString(currPlayer),
-                Integer.toString(tovgs.getTOVPlayerByID(currPlayer).getHealth()),
-                "Attack",
-                getString(gs),
-                Double.toString(tovgs.getHeuristicScore(currPlayer)));
         return true;
     }
 

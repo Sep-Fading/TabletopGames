@@ -9,7 +9,8 @@ import java.util.ArrayList;
 public class TOVPlayer{
     Vector2D position;
     private final TOVClasses playerClass; // TODO: Implement parameters for this and make it final.
-    private int health = 1000;
+    private int health = 100;
+    private int maxHealth = 100;
     private int dexterity = 0;
     private int strength = 0;
     private int intelligence = 0;
@@ -21,6 +22,7 @@ public class TOVPlayer{
     private int killingBlows = 0;
     private int deathCount = 0;
     private boolean empowered = false;
+    private int damageTaken = 0;
 
     ArrayList<TOVCard> hand = new ArrayList<>();
 
@@ -79,8 +81,8 @@ public class TOVPlayer{
      */
     public Vector2D Move(Vector2D direction){
         Vector2D newPosition = position.add(direction);
-        if (newPosition.getX() >= 0 && newPosition.getX() < 12 &&
-                newPosition.getY() >= 0 && newPosition.getY() < 12){
+        if (newPosition.getX() >= 0 && newPosition.getX() < TOVParameters.gridWidth &&
+                newPosition.getY() >= 0 && newPosition.getY() < TOVParameters.gridHeight) {
             position = newPosition;
         }
         return position;
@@ -103,13 +105,14 @@ public class TOVPlayer{
         if (enemy != null){
             if (empowered) {
                 enemy.takeDamage((int) Math.round(damage * 1.25));
+                empowered = false; // Reset empowered state after use.
             }
             else{
                 enemy.takeDamage(damage);
             }
             damageDealt += damage;
             if (enemy.isDead()){
-                System.out.println("Enemy is killed.");
+                //System.out.println("Enemy is killed.");
                 killingBlows++;
             }
         }
@@ -182,7 +185,7 @@ public class TOVPlayer{
         return health;
     }
     public boolean isDead() {
-        return isDead;
+        return health <= 0;
     }
 
     public int getDamageDealt() {
@@ -242,5 +245,20 @@ public class TOVPlayer{
 
     public TOVClasses getPlayerClass() {
         return playerClass;
+    }
+
+    public int getDamageTaken() {
+        return damageTaken;
+    }
+    public void AddDamageTaken(int attack) {
+        damageTaken += attack;
+    }
+
+    public int getMaxHealth() {
+        return maxHealth;
+    }
+
+    public void setDamage(int i) {
+        damage = i;
     }
 }

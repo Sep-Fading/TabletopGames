@@ -19,6 +19,8 @@ public class TOVGameState extends AbstractGameState {
     public GridBoard<TOVCell> grid;
     int encountersRemaining; // Used to determine a win condition.
     int totalEncounters; // Total encounters in the map when initialized.
+    int totalJesters; // Total jesters in the map when initialized.
+    int totalShrines; // Total shrines in the map when initialized.
     private TOVRoundTypes roundType;
     private TOVRoundTypes previousRoundType;
 
@@ -53,13 +55,12 @@ public class TOVGameState extends AbstractGameState {
             }
         }
 
-
         return returnList;
     }
 
     @Override
     protected AbstractGameState _copy(int playerId) {
-        System.out.println("Copying GameState...");
+        //System.out.println("Copying GameState...");
         TOVGameState copy = new TOVGameState(gameParameters, getNPlayers());
         copy.grid = deepCopyGrid();
         copy.players = copyPlayers();
@@ -67,7 +68,10 @@ public class TOVGameState extends AbstractGameState {
         copy.setPreviousRoundType(previousRoundType);
         copy.d6f = d6f.copy();
         copy.combatTurnOrder = copyTurnOrder();
-
+        copy.encountersRemaining = encountersRemaining;
+        copy.totalEncounters = totalEncounters;
+        copy.totalJesters = totalJesters;
+        copy.totalShrines = totalShrines;
         return copy;
     }
 

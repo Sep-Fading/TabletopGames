@@ -68,6 +68,8 @@ public class TOVEnemy extends Component {
                 target.getHealth() - attack
         );
 
+        target.AddDamageTaken(attack);
+
         System.out.println(target.getPlayerID() + " Player attacked by enemy. Health: " + target.getHealth());
         if (target.getHealth() <= 0){
             target.setDead(true);

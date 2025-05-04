@@ -26,7 +26,7 @@ public class TOVDice extends Dice {
     public void Roll(int modifier){
         Random rand = new Random();
         roll(rand);
-        System.out.println("Rolled a " + getValue());
+        //System.out.println("Rolled a " + getValue());
         setValue(getValue());
         val = getValue() + modifier;
     }

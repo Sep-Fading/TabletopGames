@@ -6,6 +6,7 @@ import games.talesofvalor.TOVForwardModel;
 import games.talesofvalor.TOVGameState;
 import games.talesofvalor.TOVParameters;
 import players.basicMCTS.BasicMCTSPlayer;
+import players.mcts.MCTSPlayer;
 import players.simple.RandomPlayer;
 
 import java.io.File;
@@ -61,27 +62,66 @@ public class TOVEvaluation {
         }
     }
 
+    private static void CalculateAndPrintMetrics(ArrayList<Integer> wonGames,
+                                                 ArrayList<Double> timeTakenToComplete) {
+        double winRate = (double) wonGames.size() / nGames * 100;
+        double averageTime = timeTakenToComplete.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
+
+        System.out.println("Total Games Played: " + nGames);
+        System.out.println("Total Wins: " + wonGames.size());
+        System.out.println("Win Rate: " + winRate + "%");
+        System.out.println("Average Time Taken: " + averageTime + " seconds");
+        System.out.println("Games that won:" + wonGames);
+    }
+
     public static void main(String[] args) {
-        // Create players
-        ArrayList<AbstractPlayer> players = new ArrayList<>();
-        players.add(new BasicMCTSPlayer());
-        players.add(new BasicMCTSPlayer());
-        players.add(new BasicMCTSPlayer());
-
-        TOVParameters params = new TOVParameters();
-        AbstractForwardModel forwardModel = new TOVForwardModel();
-        AbstractGameState gameState = new TOVGameState(params, nPlayers);
-
         // Trackers
         gameNumber = 0;
+        ArrayList<Integer> wonGames = new ArrayList<>();
+        ArrayList<Double> timeTakenToComplete = new ArrayList<>(); // To track time taken per game in seconds.
 
-        Game game = new Game(
-                GameType.TalesOfValor,
-                players,
-                forwardModel,
-                gameState
-        );
+        for (int i = 0; i < nGames; i++) {
+            long startTime = System.nanoTime();
 
-        game.run();
+            // Create players
+            ArrayList<AbstractPlayer> players = new ArrayList<>();
+
+            players.add(new BasicMCTSPlayer());
+            players.add(new BasicMCTSPlayer());
+            players.add(new BasicMCTSPlayer());
+            //players.add(new MCTSPlayer());
+            //players.add(new MCTSPlayer());
+            //players.add(new MCTSPlayer());
+            //players.add(new RandomPlayer());
+            //players.add(new RandomPlayer());
+            //players.add(new RandomPlayer());
+
+            TOVParameters params = new TOVParameters();
+            AbstractForwardModel forwardModel = new TOVForwardModel();
+            AbstractGameState gameState = new TOVGameState(params, nPlayers);
+
+            Game game = new Game(
+                    GameType.TalesOfValor,
+                    players,
+                    forwardModel,
+                    gameState
+            );
+
+            game.run();
+
+            // Track time taken to complete the game
+            long endTime = System.nanoTime();
+            double durationSeconds = (endTime - startTime) / 1_000_000_000.0;
+            timeTakenToComplete.add(durationSeconds);
+
+            var gameResults = game.getGameState().getPlayerResults();
+            if (gameResults != null && (gameResults[0] == CoreConstants.GameResult.WIN_GAME)) {
+                wonGames.add(i);
+            }
+            gameNumber++;
+        }
+
+        // Print out the results
+        CalculateAndPrintMetrics(wonGames, timeTakenToComplete);
     }
 }

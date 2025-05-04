@@ -9,6 +9,9 @@ import evaluation.listeners.IGameListener;
 import evaluation.metrics.Event;
 import evaluation.summarisers.TAGNumericStatSummary;
 import games.GameType;
+import games.talesofvalor.TOVGameState;
+import games.talesofvalor.TOVPlayer;
+import games.talesofvalor.utilities.TOVEvaluation;
 import gui.AbstractGUIManager;
 import gui.GUI;
 import gui.GamePanel;
@@ -623,6 +626,10 @@ public class Game {
         AbstractAction finalAction1 = action;
         listeners.forEach(l -> l.onEvent(Event.createEvent(Event.GameEvent.ACTION_TAKEN, gameState, finalAction1.copy(), activePlayer)));
 
+        if (gameState instanceof TOVGameState) {
+            LogGameAction(gameState, finalAction1);
+        }
+
         if (debug) System.out.printf("Finishing oneAction for player %s%n", activePlayer);
         return action;
     }
@@ -813,6 +820,19 @@ public class Game {
     @Override
     public String toString() {
         return gameType.toString();
+    }
+
+    // Logging for Talse Of Valor:
+    private void LogGameAction(AbstractGameState gs, AbstractAction action) {
+        TOVGameState tovgs = (TOVGameState) gs;
+        TOVPlayer currentPlayer = tovgs.getTOVPlayerByID(tovgs.getCurrentPlayer());
+        TOVEvaluation.logActionData(
+                String.valueOf(currentPlayer.getPlayerID()),
+                String.valueOf(currentPlayer.getHealth()),
+                action.getClass().getSimpleName(),
+                action.getString(tovgs),
+                String.valueOf(tovgs.getHeuristicScore(tovgs.getCurrentPlayer()))
+        );
     }
 
     /**
