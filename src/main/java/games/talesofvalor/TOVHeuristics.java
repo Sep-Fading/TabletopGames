@@ -20,6 +20,8 @@ public class TOVHeuristics extends TunableParameters implements IStateHeuristic 
     double shrineBonusWeight = 0.5;
     double shrineAvoidPenalty = 0.25;
     double jesterBonusWeight = -0.001;
+    double shrineUsageWeight = 1.0;
+    double jesterUsageWeight = 0.8;
 
     public TOVHeuristics() {
         addTunableParameter("deathWeight", deathWeight);
@@ -87,7 +89,15 @@ public class TOVHeuristics extends TunableParameters implements IStateHeuristic 
             score += distToShrine * shrineAvoidPenalty;
         }
 
-        score += distToJester * jesterBonusWeight;
+        score += Math.exp(-distToJester) * jesterBonusWeight;
+
+        // Shrine and Jester usage
+        if (player.isJesterUsedLastTurn()) {
+            score += jesterUsageWeight;
+        }
+        if (player.isShrineUsedLastTurn()) {
+            score += shrineUsageWeight;
+        }
 
         // Terminal state
         if (tovgs.getAlivePlayers().isEmpty()) {

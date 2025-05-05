@@ -30,7 +30,7 @@ public class TOVCell extends Component {
 
         if (x != 0 && y != 0) {
             if (TOVParameters.maxEncounters > totalEncounters) {
-                hasEncounter = ChanceEvents(0.3);
+                hasEncounter = ChanceEvents(0.25);
             } else {
                 hasEncounter = false;
             }

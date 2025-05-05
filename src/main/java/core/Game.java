@@ -831,7 +831,8 @@ public class Game {
                 String.valueOf(currentPlayer.getHealth()),
                 action.getClass().getSimpleName(),
                 action.getString(tovgs),
-                String.valueOf(tovgs.getHeuristicScore(tovgs.getCurrentPlayer()))
+                String.valueOf(tovgs.getHeuristicScore(tovgs.getCurrentPlayer())),
+                String.valueOf(tovgs.getRoundCounter())
         );
     }
 

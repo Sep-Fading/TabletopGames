@@ -41,11 +41,13 @@ public class TOVPlayerUseCard extends AbstractAction {
     }
 
     // Copy constructor
-    public TOVPlayerUseCard(int cardIndex, int playerID, int enemyCompID, ArrayList<Integer> secondaryEnemyCompIDs){
+    public TOVPlayerUseCard(int cardIndex, int playerID, int enemyCompID, ArrayList<Integer> secondaryEnemyCompIDs,
+                            String cardName) {
         this.cardIndex = cardIndex;
         this.playerID = playerID;
         this.enemyCompID = enemyCompID;
         this.secondaryEnemyCompIDs = secondaryEnemyCompIDs;
+        this.cardName = cardName;
     }
 
 
@@ -56,13 +58,12 @@ public class TOVPlayerUseCard extends AbstractAction {
         TOVCard card;
         try{
             card = caster.getHand().get(cardIndex);
+            cardName = card.getName();
         }
         catch (IndexOutOfBoundsException e){
             System.out.println("Card index out of bounds: " + cardIndex);
             return false;
         }
-
-        cardName = caster.getHand().get(cardIndex).getName();
 
         boolean success = false;
 
@@ -124,7 +125,8 @@ public class TOVPlayerUseCard extends AbstractAction {
 
     @Override
     public AbstractAction copy() {
-        return new TOVPlayerUseCard(cardIndex, playerID, enemyCompID, secondaryEnemyCompIDs);
+        return new TOVPlayerUseCard(cardIndex, playerID, enemyCompID, secondaryEnemyCompIDs,
+                cardName);
     }
 
     @Override

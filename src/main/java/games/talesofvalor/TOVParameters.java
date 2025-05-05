@@ -11,8 +11,8 @@ import java.util.Objects;
 
 public class TOVParameters extends AbstractParameters {
     // Grid dimensions.
-    static int gridWidth = 10;
-    static int gridHeight = 10;
+    static int gridWidth = 15;
+    static int gridHeight = 15;
     public static final int maxEncounters = ((gridHeight * gridWidth) / 100) * 20;
     public static final int maxShrines = ((gridHeight * gridWidth) / 100) * 10;
     public static final int maxJesters = ((gridHeight * gridWidth) / 100) * 8;

@@ -7,6 +7,7 @@ import games.talesofvalor.TOVGameState;
 import games.talesofvalor.TOVParameters;
 import players.basicMCTS.BasicMCTSPlayer;
 import players.mcts.MCTSPlayer;
+import players.simple.OSLAPlayer;
 import players.simple.RandomPlayer;
 
 import java.io.File;
@@ -19,7 +20,7 @@ import java.util.ArrayList;
 public class TOVEvaluation {
 
     // Configurations
-    private static int nGames = 10; // Number of games played by simulation.
+    private static int nGames = 100; // Number of games played by simulation.
     private static int nPlayers = 3; // Number of players in the games.
     private static String outputDirectory = "./stats/"; // File to write the results to.
     private static String csvFilePath;
@@ -40,22 +41,23 @@ public class TOVEvaluation {
         // Timestamping files so we get separate files per experiment.
         DateTimeFormatter dtFormatter = DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss");
         String ts = LocalDateTime.now().format(dtFormatter);
-        csvFilePath = outputDirectory + "action_data_" + ts + ".csv";
+        csvFilePath = outputDirectory + "100osla_action_data_" + ts + ".csv";
 
         // Headers
         try (FileWriter writer = new FileWriter(csvFilePath)) {
-            writer.write("Game,PlayerID,Health,ActionType,ActionString,HeuristicValue\n");
+            writer.write("Game,PlayerID,Health,ActionType,ActionString,HeuristicValue,RoundNum\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     // A method to write stuff to a csv.
-    // Player ID | Player Health | Action Type | Action String | Heuristic Value
+    // Player ID | Player Health | Action Type | Action String | Heuristic Value | Round Number
     public static void logActionData(String id, String hp, String actionType, String actionString,
-                                     String heuristicValue) {
+                                     String heuristicValue, String roundNum) {
         try (FileWriter writer = new FileWriter(csvFilePath, true)) {
-            writer.append(String.join(",", String.valueOf(gameNumber), id, hp, actionType, actionString, heuristicValue));
+            writer.append(String.join(",", String.valueOf(gameNumber), id, hp, actionType, actionString,
+                    heuristicValue, roundNum));
             writer.append("\n");
         } catch (IOException e) {
             e.printStackTrace();
@@ -86,15 +88,22 @@ public class TOVEvaluation {
             // Create players
             ArrayList<AbstractPlayer> players = new ArrayList<>();
 
-            players.add(new BasicMCTSPlayer());
-            players.add(new BasicMCTSPlayer());
-            players.add(new BasicMCTSPlayer());
+            //players.add(new BasicMCTSPlayer());
+            //players.add(new BasicMCTSPlayer());
+            //players.add(new BasicMCTSPlayer());
+
             //players.add(new MCTSPlayer());
             //players.add(new MCTSPlayer());
             //players.add(new MCTSPlayer());
+
             //players.add(new RandomPlayer());
             //players.add(new RandomPlayer());
             //players.add(new RandomPlayer());
+
+            players.add(new OSLAPlayer());
+            players.add(new OSLAPlayer());
+            players.add(new OSLAPlayer());
+
 
             TOVParameters params = new TOVParameters();
             AbstractForwardModel forwardModel = new TOVForwardModel();
