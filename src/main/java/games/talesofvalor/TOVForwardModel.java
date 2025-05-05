@@ -379,22 +379,39 @@ public class TOVForwardModel extends StandardForwardModel {
                 endGame(tovgs);
             }
             endPlayerTurn(tovgs);
-            endRound(tovgs, getNextPlayer(tovgs.getCurrentPlayer(), tovgs.getNPlayers()));
         }
         else{
             if (currCell.hasShrine) {
                 System.out.println("Player " + tovgs.getCurrentPlayer() + " used a shrine.");
                 TOVUtilities.ApplyShrineEffect(tovgs.getAlivePlayers());
+                currPlayer.setShrineUsedThisTurn(true);
                 currCell.hasShrine = false;
             }
             else if (currCell.hasJester) {
                 System.out.println("Player " + tovgs.getCurrentPlayer() + " used a jester.");
                 for (TOVPlayer player : tovgs.getAlivePlayers()) {
                     TOVUtilities.DrawCard(player);
+                    currPlayer.setJesterUsedThisTurn(true);
                     player.setDamage(player.getDamage() + 2);
                 }
                 currCell.hasJester = false;
             }
+
+            if (currPlayer.isJesterUsedThisTurn()) {
+                currPlayer.setJesterUsedThisTurn(false);
+                currPlayer.setJesterUsedLastTurn(true);
+            }
+            else {
+                currPlayer.setJesterUsedLastTurn(false);
+            }
+            if (currPlayer.isShrineUsedThisTurn()) {
+                currPlayer.setShrineUsedThisTurn(false);
+                currPlayer.setShrineUsedLastTurn(true);
+            }
+            else {
+                currPlayer.setShrineUsedLastTurn(false);
+            }
+
             endPlayerTurn(tovgs);
             //System.out.println("Player " + tovgs.getCurrentPlayer() + " turn. Out of combat.");
 

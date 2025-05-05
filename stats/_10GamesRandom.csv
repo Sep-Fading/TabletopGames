@@ -8,7 +8,7 @@ Game,PlayerID,Health,ActionType,ActionString,HeuristicValue
 0,0,100,TOVPlayerAttack,Default Attack against 23,0.003
 0,1,94,TOVPlayerAttack,Default Attack against 24,0.027999999999999997
 0,1,90,TOVPlayerAttack,Default Attack against 23,0.053
-0,0,98,TOVPlayerAttack,Default Attack against 24,0.008
+0,0,98,TOVPlayerAttack,Default Attack against 24,0.009
 0,1,90,TOVPlayerUseCard,Played the card: null,0.058
 0,0,94,TOVPlayerUseCard,Played the card: null,0.008
 0,2,88,TOVPlayerAttack,Default Attack against 23,-0.002

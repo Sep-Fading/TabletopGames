@@ -1,0 +1,1049 @@
+Game,PlayerID,Health,ActionType,ActionString,HeuristicValue
+0,2,100,TOVPlayerMove,Moved from tile [0, 0] in direction [1, 0].,-0.030006737946999085
+0,1,100,TOVPlayerMove,Moved from tile [0, 0] in direction [0, 1].,-0.030006737946999085
+0,0,100,TOVPlayerMove,Moved from tile [1, 0] in direction [1, 0].,-0.020018315638888735
+0,2,100,TOVPlayerMove,Moved from tile [0, 1] in direction [1, 0].,-0.020018315638888735
+0,1,100,TOVPlayerMove,Moved from tile [1, 0] in direction [0, -1].,-0.020018315638888735
+0,0,100,TOVPlayerMove,Moved from tile [2, 0] in direction [1, 0].,-0.010006737946999085
+0,2,100,TOVPlayerMove,Moved from tile [2, 1] in direction [0, 1].,-1.831563888873418E-5
+0,0,100,TOVPlayerUseCard,Played the card: null,-1.831563888873418E-5
+0,1,98,TOVPlayerUseCard,Played the card: null,0.009981684361111265
+0,0,100,TOVPlayerUseCard,Played the card: null,-1.831563888873418E-5
+0,2,90,TOVPlayerAttack,Default Attack against 29,-1.831563888873418E-5
+0,1,98,TOVPlayerUseCard,Played the card: null,0.009981684361111265
+0,1,98,TOVPlayerUseCard,Played the card: null,0.009981684361111265
+0,1,98,TOVPlayerUseCard,Played the card: null,0.009981684361111265
+0,2,93,TOVPlayerAttack,Default Attack against 29,1.9799816843611113
+0,1,98,TOVPlayerMove,Moved from tile [2, 1] in direction [0, 1].,2.069981684361111
+0,0,100,TOVPlayerMove,Moved from tile [2, 1] in direction [0, 1].,1.9849816843611112
+0,2,93,TOVPlayerMove,Moved from tile [2, 2] in direction [1, 0].,1.9899502129316322
+0,0,100,TOVPlayerMove,Moved from tile [1, 2] in direction [-1, 0].,2.0048646647167634
+0,1,97,TOVPlayerAttack,Default Attack against 51,2.0948646647167637
+0,2,93,TOVPlayerAttack,Default Attack against 51,1.9998646647167635
+0,2,93,TOVPlayerAttack,Default Attack against 53,2.0048646647167634
+0,1,88,TOVPlayerAttack,Default Attack against 53,2.1448646647167635
+0,0,100,TOVPlayerAttack,Default Attack against 51,2.0098646647167633
+0,2,93,TOVPlayerAttack,Default Attack against 53,2.0098646647167633
+0,2,93,TOVPlayerAttack,Default Attack against 52,2.0148646647167636
+0,0,83,TOVPlayerAttack,Default Attack against 52,2.0898646647167634
+0,1,88,TOVPlayerUseCard,Played the card: null,4.119864664716763
+0,0,83,TOVPlayerMove,Moved from tile [1, 2] in direction [1, 0].,4.059864664716763
+0,2,93,TOVPlayerMove,Moved from tile [1, 2] in direction [0, 1].,4.0648646647167626
+0,1,88,TOVPlayerMove,Moved from tile [2, 2] in direction [0, 1].,4.129950212931633
+0,0,83,TOVPlayerMove,Moved from tile [1, 3] in direction [0, 1].,4.069632120558829
+0,2,93,TOVPlayerMove,Moved from tile [1, 3] in direction [0, 1].,4.074950212931633
+0,1,88,TOVPlayerMove,Moved from tile [2, 3] in direction [0, 1].,4.139864664716764
+0,1,88,TOVPlayerMove,Moved from tile [2, 4] in direction [0, 1].,4.149950212931633
+0,0,83,TOVPlayerAttack,Default Attack against 100,4.889950212931632
+0,2,86,TOVPlayerUseCard,Played the card: null,4.094950212931632
+0,2,76,TOVPlayerUseCard,Played the card: null,4.094950212931632
+0,0,83,TOVPlayerAttack,Default Attack against 101,4.889950212931632
+0,2,76,TOVPlayerAttack,Default Attack against 101,4.101950212931633
+0,0,83,TOVPlayerAttack,Default Attack against 100,4.971950212931632
+0,1,73,TOVPlayerAttack,Default Attack against 100,6.211950212931633
+0,0,83,TOVPlayerMove,Moved from tile [2, 4] in direction [1, 0].,7.033950212931632
+0,2,76,TOVPlayerMove,Moved from tile [2, 4] in direction [0, 1].,6.088950212931633
+0,1,73,TOVPlayerMove,Moved from tile [3, 4] in direction [0, 1].,6.211864664716764
+0,0,83,TOVPlayerMove,Moved from tile [2, 5] in direction [0, -1].,6.243981684361111
+0,2,76,TOVPlayerMove,Moved from tile [1, 5] in direction [-1, 0].,6.1089932620530005
+0,1,73,TOVPlayerAttack,Default Attack against 139,6.231993262053001
+0,0,83,TOVPlayerUseCard,Played the card: null,6.253993262053
+0,1,72,TOVPlayerAttack,Default Attack against 139,6.236993262053001
+0,2,76,TOVPlayerAttack,Default Attack against 139,8.095993262053002
+0,1,72,TOVPlayerMove,Moved from tile [1, 5] in direction [0, 1].,8.298993262053003
+0,0,83,TOVPlayerMove,Moved from tile [1, 5] in direction [-1, 0].,8.240993262053001
+0,2,76,TOVPlayerMove,Moved from tile [1, 6] in direction [-1, 0].,8.105997521247824
+0,0,83,TOVPlayerMove,Moved from tile [2, 6] in direction [1, 0].,8.260993262053
+0,2,76,TOVPlayerAttack,Default Attack against 176,8.115993262053001
+0,1,57,TOVPlayerAttack,Default Attack against 177,8.393993262053002
+0,1,50,TOVPlayerUseCard,Played the card: null,8.428993262053002
+0,0,83,TOVPlayerAttack,Default Attack against 175,8.267993262053002
+0,1,50,TOVPlayerAttack,Default Attack against 177,8.435993262053001
+0,2,69,TOVPlayerAttack,Default Attack against 175,8.122993262053
+0,2,69,TOVPlayerAttack,Default Attack against 176,8.129993262053002
+0,2,69,TOVPlayerAttack,Default Attack against 176,8.211993262053001
+0,0,83,TOVPlayerAttack,Default Attack against 177,10.254993262053002
+0,2,69,TOVPlayerMove,Moved from tile [2, 6] in direction [-1, 0].,10.273993262053002
+0,1,35,TOVPlayerMove,Moved from tile [2, 6] in direction [1, 0].,10.361743262053002
+0,0,83,TOVPlayerMove,Moved from tile [1, 6] in direction [0, 1].,10.244997521247825
+0,2,69,TOVPlayerMove,Moved from tile [3, 6] in direction [0, -1].,10.263981684361113
+0,1,35,TOVPlayerMove,Moved from tile [2, 7] in direction [0, 1].,10.371731684361112
+0,0,83,TOVPlayerMove,Moved from tile [2, 8] in direction [0, 1].,10.274950212931632
+0,2,67,TOVPlayerAttack,Default Attack against 236,10.293950212931632
+0,1,35,TOVPlayerAttack,Default Attack against 237,10.381700212931632
+0,1,35,TOVPlayerAttack,Default Attack against 235,10.388700212931631
+0,2,60,TOVPlayerAttack,Default Attack against 237,10.300950212931632
+0,0,75,TOVPlayerAttack,Default Attack against 236,10.281950212931632
+0,1,35,TOVPlayerAttack,Default Attack against 235,10.470700212931632
+0,1,35,TOVPlayerAttack,Default Attack against 236,10.552700212931631
+0,2,60,TOVPlayerAttack,Default Attack against 235,12.277950212931632
+0,1,35,TOVPlayerMove,Moved from tile [2, 8] in direction [0, 1].,12.604700212931633
+0,0,58,TOVPlayerMove,Moved from tile [2, 8] in direction [0, 1].,12.258950212931632
+0,2,60,TOVPlayerMove,Moved from tile [2, 9] in direction [0, 1].,12.787864664716764
+0,1,35,TOVPlayerMove,Moved from tile [2, 9] in direction [0, 1].,13.114614664716765
+0,0,58,TOVPlayerMove,Moved from tile [2, 9] in direction [0, 1].,12.768864664716764
+0,2,60,TOVPlayerMove,Moved from tile [2, 10] in direction [1, 0].,12.547864664716764
+0,2,60,TOVPlayerMove,Moved from tile [1, 10] in direction [-1, 0].,12.807950212931631
+0,0,58,TOVPlayerAttack,Default Attack against 287,12.788950212931631
+0,1,35,TOVPlayerAttack,Default Attack against 287,13.134700212931632
+0,2,57,TOVPlayerAttack,Default Attack against 287,14.75495021293163
+0,1,35,TOVPlayerMove,Moved from tile [1, 10] in direction [0, 1].,15.15670021293163
+0,0,58,TOVPlayerMove,Moved from tile [1, 10] in direction [1, 0].,14.73595021293163
+0,2,57,TOVPlayerMove,Moved from tile [1, 11] in direction [1, 0].,14.744864664716763
+0,1,35,TOVPlayerMove,Moved from tile [2, 10] in direction [0, -1].,15.166614664716763
+0,0,58,TOVPlayerMove,Moved from tile [2, 10] in direction [1, 0].,14.745864664716763
+0,2,57,TOVPlayerMove,Moved from tile [1, 10] in direction [0, -1].,14.75495021293163
+0,1,35,TOVPlayerMove,Moved from tile [3, 10] in direction [0, 1].,15.176614664716764
+0,0,58,TOVPlayerMove,Moved from tile [2, 9] in direction [0, -1].,14.755864664716764
+0,2,57,TOVPlayerMove,Moved from tile [1, 11] in direction [1, 0].,14.744864664716763
+0,1,83,TOVPlayerMove,Moved from tile [3, 9] in direction [1, 0].,14.89763212055883
+0,0,89,TOVPlayerMove,Moved from tile [3, 9] in direction [-1, 0].,14.265632120558829
+0,2,89,TOVPlayerMove,Moved from tile [2, 11] in direction [0, 1].,15.754632120558828
+0,1,83,TOVPlayerMove,Moved from tile [2, 9] in direction [1, 0].,14.887864664716766
+0,0,89,TOVPlayerMove,Moved from tile [3, 10] in direction [0, -1].,14.255864664716764
+0,2,89,TOVPlayerMove,Moved from tile [3, 11] in direction [0, -1].,14.764864664716763
+0,1,83,TOVPlayerMove,Moved from tile [2, 8] in direction [0, 1].,14.877950212931632
+0,0,89,TOVPlayerMove,Moved from tile [3, 9] in direction [0, 1].,14.265632120558829
+0,2,89,TOVPlayerMove,Moved from tile [3, 12] in direction [0, -1].,14.754632120558828
+0,1,83,TOVPlayerMove,Moved from tile [2, 9] in direction [1, 0].,14.887864664716766
+0,0,89,TOVPlayerMove,Moved from tile [3, 8] in direction [0, -1].,14.255864664716764
+0,2,89,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,14.764864664716763
+0,1,83,TOVPlayerMove,Moved from tile [2, 8] in direction [1, 0].,14.877950212931632
+0,0,89,TOVPlayerMove,Moved from tile [4, 8] in direction [0, -1].,14.265632120558829
+0,2,89,TOVPlayerMove,Moved from tile [5, 12] in direction [1, 0].,14.524950212931632
+0,1,83,TOVPlayerMove,Moved from tile [2, 7] in direction [-1, 0].,14.877981684361112
+0,0,89,TOVPlayerMove,Moved from tile [5, 8] in direction [1, 0].,14.275632120558829
+0,2,89,TOVPlayerMove,Moved from tile [4, 12] in direction [0, 1].,14.764864664716763
+0,1,83,TOVPlayerMove,Moved from tile [3, 7] in direction [0, -1].,14.887950212931633
+0,0,89,TOVPlayerMove,Moved from tile [5, 9] in direction [1, 0].,14.785632120558828
+0,0,89,TOVPlayerMove,Moved from tile [6, 9] in direction [1, 0].,14.295632120558828
+0,1,83,TOVPlayerAttack,Default Attack against 262,14.92763212055883
+0,0,85,TOVPlayerAttack,Default Attack against 263,14.30263212055883
+0,1,83,TOVPlayerAttack,Default Attack against 262,14.93463212055883
+0,1,83,TOVPlayerAttack,Default Attack against 262,15.016632120558828
+0,0,85,TOVPlayerAttack,Default Attack against 262,14.30963212055883
+0,1,83,TOVPlayerAttack,Default Attack against 263,17.006632120558827
+0,2,73,TOVPlayerMove,Moved from tile [7, 9] in direction [1, 0].,16.814864664716765
+0,0,85,TOVPlayerAttack,Default Attack against 266,16.891864664716763
+0,1,83,TOVPlayerAttack,Default Attack against 266,19.506864664716762
+0,0,85,TOVPlayerMove,Moved from tile [7, 8] in direction [0, -1].,18.72363212055883
+0,1,83,TOVPlayerAttack,Default Attack against 244,19.26663212055883
+0,1,83,TOVPlayerAttack,Default Attack against 244,19.27363212055883
+0,2,66,TOVPlayerAttack,Default Attack against 244,20.55163212055883
+0,1,95,TOVPlayerMove,Moved from tile [7, 8] in direction [1, 0].,21.08563212055883
+0,0,96,TOVPlayerMove,Moved from tile [7, 8] in direction [0, 1].,20.46063212055883
+0,2,91,TOVPlayerMove,Moved from tile [8, 8] in direction [0, -1].,21.81186466471676
+0,0,95,TOVPlayerMove,Moved from tile [8, 7] in direction [0, -1].,20.730864664716766
+0,0,95,TOVPlayerAttack,Default Attack against 212,20.737864664716763
+0,1,95,TOVPlayerAttack,Default Attack against 212,21.355864664716766
+0,2,91,TOVPlayerAttack,Default Attack against 212,23.56186466471676
+0,0,95,TOVPlayerMove,Moved from tile [9, 7] in direction [1, 0].,22.99463212055883
+0,2,91,TOVPlayerAttack,Default Attack against 215,23.821632120558828
+0,1,95,TOVPlayerAttack,Default Attack against 215,23.687632120558828
+0,2,91,TOVPlayerAttack,Default Attack against 215,25.80863212055883
+0,1,95,TOVPlayerMove,Moved from tile [9, 7] in direction [-1, 0].,25.74963212055883
+0,0,95,TOVPlayerMove,Moved from tile [9, 7] in direction [0, -1].,24.981632120558828
+0,2,91,TOVPlayerMove,Moved from tile [8, 7] in direction [-1, 0].,24.558864664716765
+0,1,98,TOVPlayerMove,Moved from tile [9, 6] in direction [0, -1].,25.259864664716762
+0,0,98,TOVPlayerMove,Moved from tile [10, 6] in direction [1, 0].,24.501632120558828
+0,2,97,TOVPlayerAttack,Default Attack against 191,25.32863212055883
+0,1,98,TOVPlayerAttack,Default Attack against 190,25.26963212055883
+0,1,98,TOVPlayerAttack,Default Attack against 191,25.27663212055883
+0,0,94,TOVPlayerAttack,Default Attack against 190,24.50863212055883
+0,1,98,TOVPlayerAttack,Default Attack against 191,27.338632120558827
+0,0,94,TOVPlayerMove,Moved from tile [10, 6] in direction [-1, 0].,26.57063212055883
+0,2,97,TOVPlayerMove,Moved from tile [10, 6] in direction [-1, 0].,27.315632120558828
+0,1,98,TOVPlayerMove,Moved from tile [9, 6] in direction [0, 1].,27.34886466471676
+0,0,94,TOVPlayerMove,Moved from tile [9, 6] in direction [1, 0].,26.580864664716763
+0,2,97,TOVPlayerMove,Moved from tile [9, 5] in direction [0, -1].,27.135950212931633
+0,0,94,TOVPlayerUseCard,Played the card: null,26.590950212931634
+0,1,94,TOVPlayerUseCard,Played the card: null,27.378950212931635
+0,1,86,TOVPlayerUseCard,Played the card: null,27.418950212931634
+0,0,92,TOVPlayerAttack,Default Attack against 159,26.590950212931634
+0,1,86,TOVPlayerUseCard,Played the card: null,27.427950212931634
+0,2,79,TOVPlayerAttack,Default Attack against 160,27.135950212931633
+0,2,73,TOVPlayerAttack,Default Attack against 159,27.219950212931636
+0,0,92,TOVPlayerAttack,Default Attack against 161,28.580950212931633
+0,2,73,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,29.303981684361112
+0,0,92,TOVPlayerAttack,Default Attack against 155,28.59098168436111
+0,1,86,TOVPlayerAttack,Default Attack against 156,29.51198168436111
+0,1,82,TOVPlayerAttack,Default Attack against 155,29.54098168436111
+0,0,90,TOVPlayerAttack,Default Attack against 156,28.59998168436111
+0,1,82,TOVPlayerAttack,Default Attack against 155,31.61498168436111
+0,0,90,TOVPlayerMove,Moved from tile [7, 5] in direction [-1, 0].,30.68398168436111
+0,2,73,TOVPlayerAttack,Default Attack against 152,31.312981684361112
+0,1,74,TOVPlayerAttack,Default Attack against 152,31.66498168436111
+0,1,74,TOVPlayerAttack,Default Attack against 151,31.67398168436111
+0,2,72,TOVPlayerAttack,Default Attack against 151,33.376981684361105
+0,1,74,TOVPlayerMove,Moved from tile [7, 5] in direction [-1, 0].,33.73798168436111
+0,0,90,TOVPlayerMove,Moved from tile [7, 5] in direction [-1, 0].,32.672981684361105
+0,2,72,TOVPlayerMove,Moved from tile [6, 5] in direction [0, -1].,32.58695021293163
+0,0,90,TOVPlayerMove,Moved from tile [6, 4] in direction [0, -1].,32.69295021293163
+0,1,74,TOVPlayerAttack,Default Attack against 111,33.75795021293163
+0,2,72,TOVPlayerAttack,Default Attack against 111,34.58695021293163
+0,0,90,TOVPlayerMove,Moved from tile [5, 4] in direction [-1, 0].,34.70186466471676
+0,1,74,TOVPlayerAttack,Default Attack against 107,35.84186466471676
+0,0,87,TOVPlayerAttack,Default Attack against 106,34.71086466471676
+0,2,58,TOVPlayerAttack,Default Attack against 107,34.59686466471676
+0,2,58,TOVPlayerAttack,Default Attack against 106,34.60586466471676
+0,0,73,TOVPlayerAttack,Default Attack against 108,34.71986466471676
+0,2,58,TOVPlayerAttack,Default Attack against 106,34.61486466471676
+0,1,68,TOVPlayerAttack,Default Attack against 107,35.88086466471676
+0,2,50,TOVPlayerAttack,Default Attack against 108,36.68886466471676
+0,2,50,TOVPlayerMove,Moved from tile [5, 5] in direction [0, 1].,36.69895021293163
+0,0,73,TOVPlayerAttack,Default Attack against 146,36.80395021293163
+0,0,73,TOVPlayerAttack,Default Attack against 147,36.81295021293163
+0,0,73,TOVPlayerAttack,Default Attack against 145,36.82195021293163
+0,1,56,TOVPlayerAttack,Default Attack against 147,38.02495021293163
+0,2,44,TOVPlayerAttack,Default Attack against 145,36.55115021293163
+0,0,73,TOVPlayerAttack,Default Attack against 146,38.885950212931625
+0,2,44,TOVPlayerMove,Moved from tile [5, 5] in direction [0, 1].,38.615150212931624
+0,1,56,TOVPlayerMove,Moved from tile [5, 5] in direction [0, 1].,40.08895021293163
+0,0,73,TOVPlayerMove,Moved from tile [5, 6] in direction [0, 1].,38.89595021293163
+0,0,73,TOVPlayerMove,Moved from tile [6, 6] in direction [1, 0].,38.90586466471676
+0,2,44,TOVPlayerAttack,Default Attack against 183,38.63506466471676
+0,1,56,TOVPlayerAttack,Default Attack against 183,40.10886466471676
+0,1,56,TOVPlayerAttack,Default Attack against 184,40.11786466471676
+0,0,73,TOVPlayerAttack,Default Attack against 183,38.91486466471676
+0,1,56,TOVPlayerAttack,Default Attack against 184,42.16186466471676
+0,0,73,TOVPlayerMove,Moved from tile [6, 6] in direction [0, 1].,40.958864664716764
+0,2,36,TOVPlayerMove,Moved from tile [6, 6] in direction [0, -1].,40.556064664716764
+0,1,56,TOVPlayerMove,Moved from tile [6, 7] in direction [0, -1].,42.15163212055883
+0,0,73,TOVPlayerMove,Moved from tile [6, 5] in direction [0, -1].,40.96895021293163
+0,2,36,TOVPlayerMove,Moved from tile [6, 5] in direction [0, 1].,40.56615021293163
+0,1,56,TOVPlayerMove,Moved from tile [6, 6] in direction [1, 0].,42.16186466471676
+0,0,73,TOVPlayerMove,Moved from tile [6, 6] in direction [0, -1].,40.958864664716764
+0,2,36,TOVPlayerMove,Moved from tile [7, 5] in direction [1, 0].,40.57618168436111
+0,1,56,TOVPlayerMove,Moved from tile [6, 5] in direction [0, -1].,42.17195021293163
+0,0,73,TOVPlayerMove,Moved from tile [7, 6] in direction [0, 1].,40.96895021293163
+0,2,36,TOVPlayerMove,Moved from tile [7, 4] in direction [1, 0].,40.586181684361115
+0,1,56,TOVPlayerMove,Moved from tile [8, 4] in direction [1, 0].,42.20198168436111
+0,0,73,TOVPlayerAttack,Default Attack against 117,40.99898168436111
+0,2,36,TOVPlayerAttack,Default Attack against 116,40.59618168436111
+0,2,32,TOVPlayerAttack,Default Attack against 115,40.57878168436111
+0,0,69,TOVPlayerAttack,Default Attack against 115,41.00798168436111
+0,2,32,TOVPlayerAttack,Default Attack against 116,40.66278168436111
+0,0,69,TOVPlayerAttack,Default Attack against 117,43.08198168436111
+0,0,69,TOVPlayerMove,Moved from tile [9, 4] in direction [1, 0].,43.09195021293163
+0,1,44,TOVPlayerAttack,Default Attack against 122,44.11415021293163
+0,1,44,TOVPlayerAttack,Default Attack against 120,44.12315021293163
+0,0,69,TOVPlayerAttack,Default Attack against 121,43.10095021293163
+0,1,44,TOVPlayerAttack,Default Attack against 121,44.13215021293163
+0,1,44,TOVPlayerAttack,Default Attack against 120,44.21615021293163
+0,0,58,TOVPlayerAttack,Default Attack against 120,43.18495021293163
+0,1,44,TOVPlayerAttack,Default Attack against 122,46.20615021293163
+0,0,58,TOVPlayerMove,Moved from tile [9, 3] in direction [0, -1].,45.26886466471676
+0,2,9,TOVPlayerAttack,Default Attack against 86,44.56381466471676
+0,1,44,TOVPlayerAttack,Default Attack against 87,46.21606466471676
+0,1,44,TOVPlayerAttack,Default Attack against 86,46.30006466471676
+0,1,44,TOVPlayerAttack,Default Attack against 86,46.30006466471676
+0,2,9,TOVPlayerAttack,Default Attack against 87,46.56281466471676
+0,0,42,TOVPlayerMove,Moved from tile [10, 3] in direction [1, 0].,47.10943212055883
+0,1,40,TOVPlayerAttack,Default Attack against 90,48.38063212055883
+0,1,40,TOVPlayerAttack,Default Attack against 90,48.464632120558825
+0,0,42,TOVPlayerAttack,Default Attack against 91,47.11843212055883
+0,1,40,TOVPlayerAttack,Default Attack against 91,50.45363212055882
+0,0,42,TOVPlayerMove,Moved from tile [10, 3] in direction [0, -1].,49.18243212055882
+0,2,2,TOVPlayerMove,Moved from tile [10, 3] in direction [0, 1].,48.486432120558824
+0,1,40,TOVPlayerMove,Moved from tile [10, 2] in direction [0, 1].,50.453864664716754
+0,0,42,TOVPlayerMove,Moved from tile [10, 4] in direction [1, 0].,49.182664664716754
+0,2,2,TOVPlayerMove,Moved from tile [10, 4] in direction [0, 1].,48.486664664716756
+0,1,40,TOVPlayerMove,Moved from tile [11, 2] in direction [1, 0].,50.96363212055883
+0,1,40,TOVPlayerMove,Moved from tile [11, 1] in direction [0, -1].,50.47386466471676
+0,2,2,TOVPlayerAttack,Default Attack against 44,48.50666466471676
+0,0,42,TOVPlayerAttack,Default Attack against 44,51.16266466471676
+0,2,2,TOVPlayerMove,Moved from tile [11, 1] in direction [1, 0].,50.55066466471676
+0,1,40,TOVPlayerMove,Moved from tile [11, 1] in direction [0, 1].,52.44286466471676
+0,0,42,TOVPlayerMove,Moved from tile [12, 1] in direction [1, 0].,51.672750212931625
+0,2,2,TOVPlayerMove,Moved from tile [11, 2] in direction [0, 1].,51.06043212055883
+0,1,40,TOVPlayerMove,Moved from tile [12, 1] in direction [1, 0].,52.952950212931626
+0,0,42,TOVPlayerMove,Moved from tile [12, 2] in direction [0, -1].,51.682664664716754
+0,2,75,TOVPlayerMove,Moved from tile [12, 2] in direction [1, 0].,51.050864664716755
+0,1,85,TOVPlayerMove,Moved from tile [12, 0] in direction [0, 1].,52.62298168436111
+0,0,85,TOVPlayerMove,Moved from tile [13, 2] in direction [0, 1].,52.34095021293163
+0,2,75,TOVPlayerMove,Moved from tile [12, 3] in direction [-1, 0].,51.06063212055883
+0,0,85,TOVPlayerMove,Moved from tile [12, 4] in direction [0, 1].,51.37086466471676
+0,1,85,TOVPlayerAttack,Default Attack against 127,52.66286466471676
+0,1,83,TOVPlayerAttack,Default Attack against 129,52.68186466471676
+0,1,83,TOVPlayerAttack,Default Attack against 129,52.76586466471676
+0,2,75,TOVPlayerAttack,Default Attack against 128,51.07086466471676
+0,0,73,TOVPlayerAttack,Default Attack against 127,51.37986466471676
+0,1,81,TOVPlayerAttack,Default Attack against 128,54.764864664716754
+0,0,73,TOVPlayerMove,Moved from tile [12, 4] in direction [1, 0].,53.443864664716756
+0,2,75,TOVPlayerMove,Moved from tile [12, 4] in direction [0, 1].,53.13486466471676
+0,1,81,TOVPlayerMove,Moved from tile [13, 4] in direction [1, 0].,54.77495021293163
+0,2,75,TOVPlayerMove,Moved from tile [14, 4] in direction [1, 0].,53.15498168436111
+0,0,73,TOVPlayerAttack,Default Attack against 135,53.46398168436111
+0,0,73,TOVPlayerAttack,Default Attack against 133,53.47298168436111
+0,0,73,TOVPlayerAttack,Default Attack against 134,53.48198168436111
+0,1,76,TOVPlayerAttack,Default Attack against 135,54.80998168436111
+0,1,68,TOVPlayerAttack,Default Attack against 133,54.93398168436111
+0,0,73,TOVPlayerAttack,Default Attack against 133,53.56598168436111
+0,1,68,TOVPlayerAttack,Default Attack against 134,56.913981684361104
+0,0,73,TOVPlayerMove,Moved from tile [14, 4] in direction [0, 1].,55.629981684361105
+0,2,56,TOVPlayerMove,Moved from tile [14, 4] in direction [0, 1].,55.14398168436111
+0,1,68,TOVPlayerMove,Moved from tile [14, 5] in direction [0, 1].,56.92398168436111
+0,2,56,TOVPlayerMove,Moved from tile [14, 6] in direction [0, 1].,55.16395021293163
+0,0,73,TOVPlayerAttack,Default Attack against 201,55.64995021293163
+0,1,66,TOVPlayerAttack,Default Attack against 200,56.94395021293163
+0,1,66,TOVPlayerAttack,Default Attack against 201,57.02795021293163
+0,2,49,TOVPlayerAttack,Default Attack against 200,57.03290021293163
+0,0,73,TOVPlayerMove,Moved from tile [14, 7] in direction [0, 1].,57.65898168436111
+0,1,66,TOVPlayerAttack,Default Attack against 229,59.11198168436111
+0,2,49,TOVPlayerAttack,Default Attack against 228,57.04293168436111
+0,2,49,TOVPlayerAttack,Default Attack against 228,57.12693168436111
+0,1,62,TOVPlayerAttack,Default Attack against 229,59.14098168436111
+0,0,51,TOVPlayerAttack,Default Attack against 230,57.66798168436111
+0,1,62,TOVPlayerAttack,Default Attack against 230,61.129981684361105
+0,0,51,TOVPlayerMove,Moved from tile [14, 7] in direction [-1, 0].,59.73198168436111
+0,2,49,TOVPlayerMove,Moved from tile [14, 7] in direction [-1, 0].,59.190931684361104
+0,1,62,TOVPlayerMove,Moved from tile [13, 7] in direction [-1, 0].,61.13995021293163
+0,2,49,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,59.21081466471676
+0,0,51,TOVPlayerAttack,Default Attack against 224,59.75186466471676
+0,1,62,TOVPlayerAttack,Default Attack against 224,63.13986466471676
+0,2,49,TOVPlayerMove,Moved from tile [12, 8] in direction [0, 1].,61.21990021293163
+0,0,51,TOVPlayerAttack,Default Attack against 251,61.83595021293163
+0,1,62,TOVPlayerAttack,Default Attack against 251,65.12995021293165
+0,0,51,TOVPlayerMove,Moved from tile [12, 8] in direction [0, 1].,63.89995021293163
+0,2,49,TOVPlayerMove,Moved from tile [12, 8] in direction [-1, 0].,63.208900212931624
+0,1,62,TOVPlayerMove,Moved from tile [12, 9] in direction [-1, 0].,65.13998168436112
+0,2,49,TOVPlayerMove,Moved from tile [13, 9] in direction [1, 0].,63.228943262053
+0,0,51,TOVPlayerAttack,Default Attack against 279,63.919993262053005
+0,1,62,TOVPlayerAttack,Default Attack against 278,65.149993262053
+0,1,62,TOVPlayerAttack,Default Attack against 279,65.158993262053
+0,2,39,TOVPlayerAttack,Default Attack against 280,63.181943262053004
+0,0,43,TOVPlayerAttack,Default Attack against 278,63.766543262053005
+0,0,43,TOVPlayerAttack,Default Attack against 280,63.850543262053
+0,0,43,TOVPlayerAttack,Default Attack against 280,63.850543262053
+0,1,50,TOVPlayerAttack,Default Attack against 280,65.22799326205299
+0,2,39,TOVPlayerAttack,Default Attack against 279,65.255943262053
+0,1,50,TOVPlayerMove,Moved from tile [14, 9] in direction [1, 0].,67.31199752124782
+0,0,43,TOVPlayerAttack,Default Attack against 283,65.85054752124782
+0,1,50,TOVPlayerAttack,Default Attack against 283,69.28099752124781
+0,0,43,TOVPlayerMove,Moved from tile [14, 9] in direction [-1, 0].,67.89454752124782
+0,2,39,TOVPlayerMove,Moved from tile [14, 9] in direction [0, 1].,67.22594752124782
+0,1,50,TOVPlayerMove,Moved from tile [13, 9] in direction [0, -1].,69.290993262053
+0,0,43,TOVPlayerMove,Moved from tile [14, 10] in direction [1, 0].,67.884543262053
+0,2,39,TOVPlayerMove,Moved from tile [14, 8] in direction [-1, 0].,67.225943262053
+0,1,50,TOVPlayerMove,Moved from tile [14, 9] in direction [0, 1].,69.28099752124781
+0,0,43,TOVPlayerMove,Moved from tile [13, 10] in direction [0, -1].,67.89453168436111
+0,2,39,TOVPlayerMove,Moved from tile [14, 9] in direction [-1, 0].,67.22594752124782
+0,1,50,TOVPlayerMove,Moved from tile [14, 8] in direction [-1, 0].,69.28099326205299
+0,0,43,TOVPlayerMove,Moved from tile [12, 10] in direction [-1, 0].,67.90450021293164
+0,2,39,TOVPlayerMove,Moved from tile [13, 9] in direction [0, 1].,67.235943262053
+0,1,50,TOVPlayerMove,Moved from tile [13, 8] in direction [1, 0].,69.29098168436111
+0,0,43,TOVPlayerMove,Moved from tile [12, 11] in direction [-1, 0].,67.89450021293163
+0,2,39,TOVPlayerMove,Moved from tile [14, 9] in direction [-1, 0].,67.22594752124782
+0,1,50,TOVPlayerMove,Moved from tile [12, 8] in direction [-1, 0].,69.30095021293164
+0,0,43,TOVPlayerMove,Moved from tile [11, 11] in direction [0, -1].,67.90450021293164
+0,2,39,TOVPlayerMove,Moved from tile [13, 9] in direction [-1, 0].,67.235943262053
+0,1,50,TOVPlayerMove,Moved from tile [12, 7] in direction [0, 1].,69.31086466471676
+0,2,39,TOVPlayerMove,Moved from tile [12, 6] in direction [0, -1].,67.26558212055883
+0,0,43,TOVPlayerAttack,Default Attack against 196,67.93418212055883
+0,1,50,TOVPlayerAttack,Default Attack against 196,69.32063212055883
+0,1,43,TOVPlayerAttack,Default Attack against 195,69.20218212055883
+0,2,39,TOVPlayerAttack,Default Attack against 195,69.25458212055884
+0,1,43,TOVPlayerMove,Moved from tile [12, 6] in direction [-1, 0].,71.26653168436113
+0,0,39,TOVPlayerMove,Moved from tile [12, 6] in direction [0, 1].,69.97493168436112
+0,2,39,TOVPlayerMove,Moved from tile [11, 6] in direction [-1, 0].,70.06490021293163
+0,0,39,TOVPlayerMove,Moved from tile [11, 7] in direction [0, 1].,69.99493168436112
+0,2,39,TOVPlayerAttack,Default Attack against 219,70.07493168436112
+0,1,36,TOVPlayerAttack,Default Attack against 220,71.27918168436112
+0,1,36,TOVPlayerAttack,Default Attack against 221,71.36518168436112
+0,2,38,TOVPlayerAttack,Default Attack against 220,72.05978168436111
+0,1,36,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,73.43118168436112
+0,0,33,TOVPlayerMove,Moved from tile [11, 7] in direction [0, -1].,72.02253168436113
+0,2,38,TOVPlayerMove,Moved from tile [10, 7] in direction [0, 1].,71.25978168436112
+0,1,36,TOVPlayerMove,Moved from tile [11, 6] in direction [0, 1].,73.44115021293163
+0,2,38,TOVPlayerMove,Moved from tile [11, 5] in direction [0, -1].,71.27966466471676
+0,0,33,TOVPlayerUseCard,Played the card: null,72.04241466471677
+0,1,36,TOVPlayerAttack,Default Attack against 165,73.45106466471677
+0,1,36,TOVPlayerAttack,Default Attack against 165,73.53706466471677
+0,2,12,TOVPlayerUseCard,Played the card: null,71.08466466471677
+0,0,26,TOVPlayerAttack,Default Attack against 166,72.00406466471676
+0,1,29,TOVPlayerAttack,Default Attack against 167,73.52481466471677
+0,1,29,TOVPlayerAttack,Default Attack against 167,73.52481466471677
+0,2,4,TOVPlayerAttack,Default Attack against 166,72.97206466471677
+0,1,29,TOVPlayerMove,Moved from tile [11, 5] in direction [-1, 0].,75.56081466471677
+0,0,26,TOVPlayerMove,Moved from tile [11, 5] in direction [0, -1].,74.04006466471677
+0,2,4,TOVPlayerMove,Moved from tile [10, 5] in direction [1, 0].,72.98215021293163
+0,1,29,TOVPlayerMove,Moved from tile [11, 4] in direction [0, 1].,75.57058212055883
+0,0,26,TOVPlayerMove,Moved from tile [12, 5] in direction [-1, 0].,74.03015021293163
+0,2,4,TOVPlayerMove,Moved from tile [10, 6] in direction [-1, 0].,72.99218168436111
+0,1,29,TOVPlayerMove,Moved from tile [10, 4] in direction [0, 1].,75.58081466471677
+0,0,26,TOVPlayerMove,Moved from tile [11, 5] in direction [0, -1].,74.04006466471677
+0,2,4,TOVPlayerMove,Moved from tile [10, 7] in direction [0, -1].,73.00218168436112
+0,1,29,TOVPlayerMove,Moved from tile [10, 3] in direction [0, 1].,75.59058212055884
+0,0,26,TOVPlayerMove,Moved from tile [11, 4] in direction [0, 1].,74.04983212055882
+0,2,4,TOVPlayerMove,Moved from tile [10, 8] in direction [-1, 0].,73.01215021293163
+0,1,29,TOVPlayerMove,Moved from tile [10, 9] in direction [0, 1].,75.61081466471677
+0,2,4,TOVPlayerAttack,Default Attack against 272,73.02206466471677
+0,0,22,TOVPlayerAttack,Default Attack against 272,74.05966466471676
+0,0,22,TOVPlayerUseCard,Played the card: null,74.05966466471676
+0,0,22,TOVPlayerAttack,Default Attack against 273,74.14566466471676
+0,1,27,TOVPlayerAttack,Default Attack against 271,77.53741466471676
+0,0,22,TOVPlayerMove,Moved from tile [10, 9] in direction [0, 1].,76.15166466471676
+0,2,1,TOVPlayerMove,Moved from tile [10, 9] in direction [0, 1].,74.99881466471678
+0,1,27,TOVPlayerMove,Moved from tile [10, 10] in direction [0, 1].,77.52718212055882
+0,0,22,TOVPlayerMove,Moved from tile [10, 10] in direction [-1, 0].,76.1417816843611
+0,2,1,TOVPlayerMove,Moved from tile [10, 10] in direction [-1, 0].,74.98893168436112
+0,1,27,TOVPlayerMove,Moved from tile [9, 10] in direction [0, 1].,78.33750021293163
+0,0,22,TOVPlayerMove,Moved from tile [9, 10] in direction [0, -1].,76.15175021293163
+0,2,1,TOVPlayerMove,Moved from tile [10, 11] in direction [0, 1].,74.97890021293165
+0,1,27,TOVPlayerMove,Moved from tile [9, 9] in direction [-1, 0].,77.54753168436112
+0,0,22,TOVPlayerMove,Moved from tile [9, 11] in direction [1, 0].,76.14166466471676
+0,2,1,TOVPlayerMove,Moved from tile [9, 11] in direction [-1, 0].,74.98881466471677
+0,1,27,TOVPlayerMove,Moved from tile [10, 9] in direction [0, -1].,77.53754326205299
+0,0,22,TOVPlayerMove,Moved from tile [8, 11] in direction [0, -1].,76.65143212055882
+0,2,1,TOVPlayerMove,Moved from tile [9, 10] in direction [-1, 0].,74.99890021293164
+0,1,27,TOVPlayerMove,Moved from tile [10, 8] in direction [0, 1].,77.54753168436112
+0,0,22,TOVPlayerMove,Moved from tile [7, 11] in direction [-1, 0].,76.65166466471676
+0,2,75,TOVPlayerMove,Moved from tile [9, 11] in direction [0, 1].,75.47886466471677
+0,1,81,TOVPlayerMove,Moved from tile [9, 8] in direction [-1, 0].,77.82395021293163
+0,0,80,TOVPlayerMove,Moved from tile [7, 12] in direction [-1, 0].,77.44563212055883
+0,2,75,TOVPlayerMove,Moved from tile [8, 11] in direction [0, 1].,75.48863212055883
+0,1,81,TOVPlayerMove,Moved from tile [8, 8] in direction [0, -1].,77.83386466471677
+0,0,80,TOVPlayerMove,Moved from tile [7, 13] in direction [0, -1].,76.43586466471677
+0,2,75,TOVPlayerMove,Moved from tile [8, 10] in direction [-1, 0].,75.49886466471678
+0,1,81,TOVPlayerMove,Moved from tile [8, 7] in direction [-1, 0].,77.84395021293163
+0,0,80,TOVPlayerMove,Moved from tile [6, 13] in direction [0, 1].,76.42595021293164
+0,2,75,TOVPlayerMove,Moved from tile [7, 10] in direction [0, 1].,75.49895021293165
+0,1,81,TOVPlayerMove,Moved from tile [8, 8] in direction [-1, 0].,77.83386466471677
+0,0,80,TOVPlayerMove,Moved from tile [6, 14] in direction [-1, 0].,76.41598168436111
+0,2,75,TOVPlayerMove,Moved from tile [6, 10] in direction [1, 0].,75.98886466471677
+0,1,81,TOVPlayerMove,Moved from tile [7, 8] in direction [0, -1].,77.83363212055883
+0,0,80,TOVPlayerMove,Moved from tile [7, 14] in direction [-1, 0].,76.42595021293164
+0,2,75,TOVPlayerMove,Moved from tile [6, 9] in direction [-1, 0].,75.49886466471678
+0,1,81,TOVPlayerMove,Moved from tile [6, 8] in direction [-1, 0].,78.62395021293163
+0,0,80,TOVPlayerMove,Moved from tile [6, 14] in direction [0, 1].,76.41598168436111
+0,2,75,TOVPlayerMove,Moved from tile [5, 9] in direction [-1, 0].,75.98863212055883
+0,1,81,TOVPlayerMove,Moved from tile [6, 9] in direction [0, 1].,77.81386466471677
+0,0,80,TOVPlayerMove,Moved from tile [5, 14] in direction [0, 1].,76.40598168436112
+0,2,75,TOVPlayerMove,Moved from tile [5, 10] in direction [-1, 0].,75.72886466471677
+0,1,81,TOVPlayerMove,Moved from tile [6, 10] in direction [0, -1].,78.30395021293164
+0,0,80,TOVPlayerMove,Moved from tile [4, 14] in direction [0, 1].,76.39595021293164
+0,2,75,TOVPlayerMove,Moved from tile [5, 9] in direction [-1, 0].,75.98863212055883
+0,1,81,TOVPlayerMove,Moved from tile [6, 11] in direction [0, 1].,78.04395021293163
+0,0,80,TOVPlayerMove,Moved from tile [3, 14] in direction [0, -1].,76.38586466471676
+0,2,75,TOVPlayerMove,Moved from tile [5, 10] in direction [-1, 0].,75.72886466471677
+0,1,81,TOVPlayerMove,Moved from tile [6, 10] in direction [1, 0].,78.30395021293164
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,76.37563212055883
+0,2,75,TOVPlayerMove,Moved from tile [6, 10] in direction [-1, 0].,75.98895021293164
+0,1,81,TOVPlayerMove,Moved from tile [5, 10] in direction [1, 0].,78.04386466471676
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [0, -1].,76.86586466471677
+0,2,75,TOVPlayerMove,Moved from tile [7, 10] in direction [1, 0].,75.49895021293165
+0,1,81,TOVPlayerMove,Moved from tile [5, 9] in direction [-1, 0].,78.30363212055883
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,76.37563212055883
+0,2,75,TOVPlayerMove,Moved from tile [6, 10] in direction [1, 0].,75.98898168436112
+0,1,81,TOVPlayerMove,Moved from tile [4, 9] in direction [-1, 0].,78.59399326205299
+0,0,80,TOVPlayerMove,Moved from tile [3, 14] in direction [0, 1].,76.38586466471676
+0,2,75,TOVPlayerMove,Moved from tile [5, 10] in direction [0, -1].,75.728993262053
+0,1,81,TOVPlayerMove,Moved from tile [4, 10] in direction [-1, 0].,78.28398168436112
+0,0,80,TOVPlayerMove,Moved from tile [3, 13] in direction [-1, 0].,76.39563212055883
+0,2,75,TOVPlayerMove,Moved from tile [4, 10] in direction [1, 0].,75.96898168436113
+0,1,81,TOVPlayerMove,Moved from tile [3, 10] in direction [0, -1].,77.77395021293164
+0,0,80,TOVPlayerMove,Moved from tile [4, 13] in direction [0, 1].,76.40586466471677
+0,2,75,TOVPlayerMove,Moved from tile [4, 9] in direction [0, -1].,75.478993262053
+0,1,81,TOVPlayerMove,Moved from tile [3, 11] in direction [1, 0].,78.26386466471676
+0,0,80,TOVPlayerMove,Moved from tile [4, 12] in direction [0, -1].,76.91586466471676
+0,2,75,TOVPlayerMove,Moved from tile [5, 9] in direction [-1, 0].,75.98899752124782
+0,1,81,TOVPlayerMove,Moved from tile [3, 10] in direction [1, 0].,77.77395021293164
+0,0,80,TOVPlayerMove,Moved from tile [3, 12] in direction [1, 0].,76.90563212055883
+0,2,75,TOVPlayerMove,Moved from tile [6, 9] in direction [-1, 0].,75.498993262053
+0,1,81,TOVPlayerMove,Moved from tile [4, 10] in direction [-1, 0].,78.283993262053
+0,0,80,TOVPlayerMove,Moved from tile [2, 12] in direction [0, -1].,77.44563212055883
+0,2,75,TOVPlayerMove,Moved from tile [5, 9] in direction [0, -1].,75.98899752124782
+0,1,81,TOVPlayerMove,Moved from tile [4, 9] in direction [-1, 0].,77.79399752124782
+0,0,80,TOVPlayerMove,Moved from tile [2, 11] in direction [0, 1].,76.90586466471677
+0,2,75,TOVPlayerMove,Moved from tile [4, 9] in direction [0, 1].,75.47899752124782
+0,1,81,TOVPlayerMove,Moved from tile [4, 10] in direction [0, 1].,78.283993262053
+0,0,80,TOVPlayerMove,Moved from tile [2, 12] in direction [-1, 0].,76.64563212055883
+0,2,75,TOVPlayerMove,Moved from tile [4, 10] in direction [0, -1].,75.968993262053
+0,1,81,TOVPlayerMove,Moved from tile [3, 10] in direction [0, 1].,77.77398168436112
+0,0,80,TOVPlayerMove,Moved from tile [2, 11] in direction [0, 1].,76.90586466471677
+0,2,75,TOVPlayerMove,Moved from tile [4, 11] in direction [0, 1].,75.70898168436112
+0,1,81,TOVPlayerMove,Moved from tile [3, 11] in direction [0, 1].,78.26395021293163
+0,0,80,TOVPlayerMove,Moved from tile [2, 12] in direction [-1, 0].,76.64563212055883
+0,2,75,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,75.94895021293163
+0,1,81,TOVPlayerMove,Moved from tile [2, 11] in direction [-1, 0].,78.25386466471677
+0,0,80,TOVPlayerMove,Moved from tile [3, 12] in direction [-1, 0].,76.90586466471677
+0,2,75,TOVPlayerMove,Moved from tile [3, 12] in direction [1, 0].,75.93886466471677
+0,1,81,TOVPlayerMove,Moved from tile [1, 11] in direction [1, 0].,77.99395021293164
+0,0,80,TOVPlayerMove,Moved from tile [4, 12] in direction [-1, 0].,76.91595021293163
+0,2,75,TOVPlayerMove,Moved from tile [4, 12] in direction [0, -1].,75.94895021293163
+0,1,81,TOVPlayerMove,Moved from tile [0, 11] in direction [0, -1].,78.23398168436111
+0,0,80,TOVPlayerMove,Moved from tile [4, 11] in direction [0, 1].,76.67598168436112
+0,2,75,TOVPlayerMove,Moved from tile [4, 11] in direction [-1, 0].,75.70898168436112
+0,1,81,TOVPlayerMove,Moved from tile [0, 12] in direction [-1, 0].,77.97395021293164
+0,0,80,TOVPlayerMove,Moved from tile [3, 11] in direction [0, 1].,76.91595021293163
+0,2,75,TOVPlayerMove,Moved from tile [3, 11] in direction [0, 1].,75.94895021293163
+0,1,81,TOVPlayerMove,Moved from tile [0, 13] in direction [1, 0].,78.21386466471677
+0,0,80,TOVPlayerMove,Moved from tile [3, 12] in direction [0, 1].,76.90586466471677
+0,2,75,TOVPlayerMove,Moved from tile [4, 11] in direction [-1, 0].,75.70898168436112
+0,1,81,TOVPlayerMove,Moved from tile [0, 14] in direction [0, 1].,77.70395021293163
+0,0,80,TOVPlayerMove,Moved from tile [2, 12] in direction [1, 0].,76.64563212055883
+0,2,75,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,75.94895021293163
+0,1,81,TOVPlayerMove,Moved from tile [1, 14] in direction [0, -1].,78.21386466471677
+0,0,80,TOVPlayerMove,Moved from tile [3, 12] in direction [1, 0].,76.90586466471677
+0,2,75,TOVPlayerMove,Moved from tile [4, 11] in direction [0, 1].,75.70898168436112
+0,1,81,TOVPlayerMove,Moved from tile [2, 14] in direction [0, 1].,77.72363212055883
+0,0,80,TOVPlayerMove,Moved from tile [3, 13] in direction [1, 0].,76.39563212055883
+0,2,75,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,75.94895021293163
+0,1,81,TOVPlayerMove,Moved from tile [3, 14] in direction [0, 1].,77.73386466471676
+0,0,80,TOVPlayerMove,Moved from tile [4, 13] in direction [-1, 0].,76.40586466471677
+0,2,75,TOVPlayerMove,Moved from tile [4, 13] in direction [0, -1].,75.43886466471677
+0,1,81,TOVPlayerMove,Moved from tile [2, 14] in direction [0, 1].,77.72363212055883
+0,0,80,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,76.91595021293163
+0,2,75,TOVPlayerMove,Moved from tile [4, 14] in direction [0, 1].,75.42895021293164
+0,1,81,TOVPlayerMove,Moved from tile [3, 14] in direction [-1, 0].,77.73386466471676
+0,0,80,TOVPlayerMove,Moved from tile [4, 13] in direction [-1, 0].,76.40586466471677
+0,2,75,TOVPlayerMove,Moved from tile [3, 14] in direction [0, 1].,75.41886466471676
+0,1,81,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,77.72363212055883
+0,0,80,TOVPlayerMove,Moved from tile [4, 14] in direction [-1, 0].,76.39595021293164
+0,2,75,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,75.40863212055883
+0,1,81,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,78.21386466471677
+0,0,80,TOVPlayerMove,Moved from tile [3, 14] in direction [1, 0].,76.38586466471676
+0,2,75,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,75.89886466471677
+0,1,81,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,77.72363212055883
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [0, -1].,76.37599966453737
+0,2,75,TOVPlayerMove,Moved from tile [0, 14] in direction [0, -1].,75.38899995460007
+0,1,81,TOVPlayerMove,Moved from tile [2, 13] in direction [0, -1].,79.03399908811802
+0,0,80,TOVPlayerMove,Moved from tile [2, 13] in direction [-1, 0].,76.88599908811803
+0,2,75,TOVPlayerMove,Moved from tile [0, 13] in direction [1, 0].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [1, 13] in direction [0, -1].,77.97399966453737
+0,0,80,TOVPlayerMove,Moved from tile [3, 13] in direction [1, 0].,76.39599752124782
+0,2,75,TOVPlayerMove,Moved from tile [0, 12] in direction [1, 0].,75.65899966453738
+0,1,81,TOVPlayerMove,Moved from tile [2, 13] in direction [0, 1].,78.23399908811803
+0,0,80,TOVPlayerMove,Moved from tile [4, 13] in direction [1, 0].,76.405993262053
+0,2,75,TOVPlayerMove,Moved from tile [0, 13] in direction [0, 1].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [3, 13] in direction [0, 1].,77.74399752124782
+0,0,80,TOVPlayerMove,Moved from tile [4, 14] in direction [0, -1].,76.39599752124782
+0,2,75,TOVPlayerMove,Moved from tile [0, 14] in direction [-1, 0].,75.38899995460007
+0,1,81,TOVPlayerMove,Moved from tile [3, 12] in direction [1, 0].,78.253993262053
+0,0,80,TOVPlayerMove,Moved from tile [3, 14] in direction [-1, 0].,76.38599908811803
+0,2,75,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [2, 12] in direction [0, -1].,77.99399752124782
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [0, -1].,76.37599966453737
+0,2,75,TOVPlayerMove,Moved from tile [1, 13] in direction [-1, 0].,75.65899966453738
+0,1,81,TOVPlayerMove,Moved from tile [2, 11] in direction [1, 0].,78.25399908811804
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [1, 0].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [2, 13] in direction [0, -1].,75.91899908811803
+0,1,81,TOVPlayerMove,Moved from tile [3, 11] in direction [0, -1].,78.26399752124782
+0,0,80,TOVPlayerMove,Moved from tile [1, 13] in direction [0, 1].,76.62599966453737
+0,2,75,TOVPlayerMove,Moved from tile [2, 12] in direction [0, 1].,75.67899752124782
+0,1,81,TOVPlayerMove,Moved from tile [3, 12] in direction [0, -1].,78.253993262053
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [2, 11] in direction [-1, 0].,75.93899908811804
+0,1,81,TOVPlayerMove,Moved from tile [2, 12] in direction [1, 0].,77.99399752124782
+0,0,80,TOVPlayerMove,Moved from tile [0, 14] in direction [0, 1].,76.35599995460007
+0,2,75,TOVPlayerMove,Moved from tile [3, 11] in direction [1, 0].,75.94899752124782
+0,1,81,TOVPlayerMove,Moved from tile [2, 13] in direction [0, 1].,78.23399908811803
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [0, 1].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [3, 12] in direction [-1, 0].,75.938993262053
+0,1,81,TOVPlayerMove,Moved from tile [2, 14] in direction [0, 1].,77.72399966453737
+0,0,80,TOVPlayerMove,Moved from tile [0, 14] in direction [-1, 0].,76.35599995460007
+0,2,75,TOVPlayerMove,Moved from tile [3, 13] in direction [1, 0].,75.42899752124782
+0,1,81,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,78.2139998765902
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [2, 13] in direction [1, 0].,75.91899908811803
+0,1,81,TOVPlayerMove,Moved from tile [0, 14] in direction [0, 1].,77.70399995460006
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [1, 0].,76.37599966453737
+0,2,75,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,75.40899966453738
+0,1,81,TOVPlayerMove,Moved from tile [1, 14] in direction [1, 0].,78.2139998765902
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [1, 0].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [3, 14] in direction [-1, 0].,75.41899908811803
+0,1,81,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,77.72399966453737
+0,0,80,TOVPlayerMove,Moved from tile [0, 14] in direction [0, -1].,76.35599995460007
+0,2,75,TOVPlayerMove,Moved from tile [2, 14] in direction [0, -1].,75.40899966453738
+0,1,81,TOVPlayerMove,Moved from tile [2, 13] in direction [-1, 0].,78.23399908811803
+0,0,80,TOVPlayerMove,Moved from tile [0, 13] in direction [1, 0].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [1, 14] in direction [1, 0].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [3, 13] in direction [0, -1].,77.74399752124782
+0,0,80,TOVPlayerMove,Moved from tile [1, 13] in direction [0, 1].,76.62599966453737
+0,2,75,TOVPlayerMove,Moved from tile [1, 13] in direction [0, 1].,75.65899966453738
+0,1,81,TOVPlayerMove,Moved from tile [3, 14] in direction [-1, 0].,77.73399908811803
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [1, 0].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [0, 13] in direction [1, 0].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [4, 14] in direction [1, 0].,77.74399752124782
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,76.37599966453737
+0,2,75,TOVPlayerMove,Moved from tile [1, 13] in direction [1, 0].,75.65899966453738
+0,1,81,TOVPlayerMove,Moved from tile [3, 14] in direction [0, 1].,77.73399908811803
+0,0,80,TOVPlayerMove,Moved from tile [3, 14] in direction [0, -1].,76.38599908811803
+0,2,75,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [3, 13] in direction [1, 0].,77.74399752124782
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [1, 0].,76.37599966453737
+0,2,75,TOVPlayerMove,Moved from tile [2, 14] in direction [1, 0].,75.40899966453738
+0,1,81,TOVPlayerMove,Moved from tile [4, 13] in direction [1, 0].,77.753993262053
+0,0,80,TOVPlayerMove,Moved from tile [3, 14] in direction [0, -1].,76.38599908811803
+0,2,75,TOVPlayerMove,Moved from tile [3, 14] in direction [-1, 0].,75.41899908811803
+0,1,81,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,78.26398168436111
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [0, 1].,76.37599966453737
+0,2,75,TOVPlayerMove,Moved from tile [4, 14] in direction [1, 0].,75.42899752124782
+0,1,81,TOVPlayerMove,Moved from tile [4, 13] in direction [0, -1].,77.753993262053
+0,0,80,TOVPlayerMove,Moved from tile [3, 14] in direction [0, -1].,76.38599908811803
+0,2,75,TOVPlayerMove,Moved from tile [4, 13] in direction [0, -1].,75.438993262053
+0,1,81,TOVPlayerMove,Moved from tile [4, 12] in direction [-1, 0].,78.26398168436111
+0,0,80,TOVPlayerMove,Moved from tile [3, 13] in direction [0, 1].,76.39599752124782
+0,2,75,TOVPlayerMove,Moved from tile [3, 13] in direction [1, 0].,75.42899752124782
+0,1,81,TOVPlayerMove,Moved from tile [4, 13] in direction [-1, 0].,77.753993262053
+0,0,80,TOVPlayerMove,Moved from tile [4, 13] in direction [0, -1].,76.405993262053
+0,2,75,TOVPlayerMove,Moved from tile [2, 13] in direction [-1, 0].,75.91899908811803
+0,1,81,TOVPlayerMove,Moved from tile [4, 12] in direction [0, 1].,78.26398168436111
+0,0,80,TOVPlayerMove,Moved from tile [3, 13] in direction [-1, 0].,76.39599752124782
+0,2,75,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,75.40899966453738
+0,1,81,TOVPlayerMove,Moved from tile [3, 12] in direction [-1, 0].,78.253993262053
+0,0,80,TOVPlayerMove,Moved from tile [2, 13] in direction [1, 0].,76.88599908811803
+0,2,75,TOVPlayerMove,Moved from tile [1, 14] in direction [0, 1].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,78.26398168436111
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [1, 0].,76.37599966453737
+0,2,75,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,75.40899966453738
+0,1,81,TOVPlayerMove,Moved from tile [5, 12] in direction [-1, 0].,78.02395021293164
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [0, 1].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [5, 13] in direction [-1, 0].,78.26398168436111
+0,0,80,TOVPlayerMove,Moved from tile [0, 14] in direction [-1, 0].,76.35599995460007
+0,2,75,TOVPlayerMove,Moved from tile [0, 14] in direction [1, 0].,75.38899995460007
+0,1,81,TOVPlayerMove,Moved from tile [4, 13] in direction [0, -1].,77.753993262053
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [-1, 0].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [0, 13] in direction [-1, 0].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [3, 13] in direction [0, 1].,77.74399752124782
+0,0,80,TOVPlayerMove,Moved from tile [0, 14] in direction [0, 1].,76.35599995460007
+0,2,75,TOVPlayerMove,Moved from tile [0, 14] in direction [0, -1].,75.38899995460007
+0,1,81,TOVPlayerMove,Moved from tile [3, 14] in direction [1, 0].,77.73399908811803
+0,0,80,TOVPlayerMove,Moved from tile [0, 13] in direction [1, 0].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [1, 14] in direction [1, 0].,75.8989998765902
+0,1,81,TOVPlayerMove,Moved from tile [4, 14] in direction [1, 0].,77.74399752124782
+0,0,80,TOVPlayerMove,Moved from tile [1, 13] in direction [0, -1].,76.62599966453737
+0,2,75,TOVPlayerMove,Moved from tile [2, 14] in direction [0, 1].,75.40899966453738
+0,1,81,TOVPlayerMove,Moved from tile [4, 13] in direction [0, -1].,77.753993262053
+0,0,80,TOVPlayerMove,Moved from tile [1, 14] in direction [0, -1].,76.8659998765902
+0,2,75,TOVPlayerMove,Moved from tile [2, 13] in direction [1, 0].,75.91899908811803
+0,1,81,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,78.26398168436111
+0,0,80,TOVPlayerMove,Moved from tile [2, 14] in direction [-1, 0].,76.37599966453737
+0,2,75,TOVPlayerMove,Moved from tile [3, 13] in direction [0, -1].,75.42899752124782
+0,1,81,TOVPlayerMove,Moved from tile [3, 12] in direction [-1, 0].,78.253993262053
+0,0,80,TOVPlayerMove,Moved from tile [2, 13] in direction [0, 1].,76.88599908811803
+0,2,75,TOVPlayerMove,Moved from tile [2, 13] in direction [0, -1].,75.91899908811803
+0,1,81,TOVPlayerMove,Moved from tile [3, 13] in direction [-1, 0].,77.74399752124782
+0,0,80,TOVPlayerMove,Moved from tile [2, 12] in direction [0, -1].,76.64599752124782
+0,2,75,TOVPlayerMove,Moved from tile [1, 13] in direction [0, -1].,75.65899966453738
+0,1,81,TOVPlayerMove,Moved from tile [3, 12] in direction [0, 1].,78.253993262053
+0,1,81,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,78.26398168436111
+1,2,100,TOVPlayerMove,Moved from tile [0, 0] in direction [0, 1].,-0.05000091188196556
+1,1,100,TOVPlayerMove,Moved from tile [0, 0] in direction [1, 0].,-0.05000091188196556
+1,0,100,TOVPlayerMove,Moved from tile [0, 1] in direction [1, 0].,-0.04000247875217667
+1,2,100,TOVPlayerMove,Moved from tile [1, 0] in direction [0, -1].,-0.04000247875217667
+1,1,100,TOVPlayerMove,Moved from tile [1, 0] in direction [1, 0].,-0.04000247875217667
+1,0,100,TOVPlayerMove,Moved from tile [0, 0] in direction [1, 0].,-0.05000091188196556
+1,2,100,TOVPlayerMove,Moved from tile [2, 0] in direction [0, 1].,0.4699932620530009
+1,1,100,TOVPlayerMove,Moved from tile [2, 0] in direction [1, 0].,0.4699932620530009
+1,0,100,TOVPlayerMove,Moved from tile [0, 1] in direction [1, 0].,-0.04000247875217667
+1,2,100,TOVPlayerMove,Moved from tile [3, 0] in direction [0, 1].,0.22998168436111127
+1,1,100,TOVPlayerMove,Moved from tile [3, 0] in direction [0, 1].,-0.020018315638888735
+1,0,100,TOVPlayerMove,Moved from tile [0, 2] in direction [0, 1].,-0.030000911881965554
+1,2,100,TOVPlayerMove,Moved from tile [3, 1] in direction [0, -1].,0.9899502129316321
+1,0,100,TOVPlayerMove,Moved from tile [3, 2] in direction [0, 1].,-1.831563888873418E-5
+1,2,100,TOVPlayerUseCard,Played the card: null,0.9999816843611112
+1,1,100,TOVPlayerUseCard,Played the card: null,-1.831563888873418E-5
+1,0,100,TOVPlayerAttack,Default Attack against 3224826,-1.831563888873418E-5
+1,1,100,TOVPlayerAttack,Default Attack against 3224826,1.9749816843611112
+1,0,100,TOVPlayerMove,Moved from tile [3, 2] in direction [1, 0].,2.0499816843611116
+1,2,87,TOVPlayerMove,Moved from tile [3, 2] in direction [-1, 0].,2.9699816843611115
+1,1,100,TOVPlayerMove,Moved from tile [4, 2] in direction [0, -1].,1.984950212931632
+1,0,100,TOVPlayerMove,Moved from tile [2, 2] in direction [1, 0].,2.039993262053001
+1,2,87,TOVPlayerMove,Moved from tile [3, 1] in direction [0, -1].,1.9599502129316322
+1,1,100,TOVPlayerMove,Moved from tile [5, 2] in direction [1, 0].,2.4948646647167636
+1,0,100,TOVPlayerMove,Moved from tile [6, 2] in direction [1, 0].,2.079632120558829
+1,2,87,TOVPlayerUseCard,Played the card: null,1.9996321205588286
+1,1,100,TOVPlayerUseCard,Played the card: null,2.0046321205588287
+1,1,94,TOVPlayerUseCard,Played the card: null,2.034632120558829
+1,1,94,TOVPlayerUseCard,Played the card: null,2.034632120558829
+1,2,74,TOVPlayerAttack,Default Attack against 3224831,1.9996321205588286
+1,0,100,TOVPlayerAttack,Default Attack against 3224832,2.079632120558829
+1,0,100,TOVPlayerUseCard,Played the card: null,2.079632120558829
+1,0,100,TOVPlayerAttack,Default Attack against 3224831,2.0846321205588287
+1,0,100,TOVPlayerUseCard,Played the card: null,2.0846321205588287
+1,0,100,TOVPlayerAttack,Default Attack against 3224832,2.164632120558829
+1,1,94,TOVPlayerAttack,Default Attack against 3224831,4.029632120558829
+1,2,71,TOVPlayerMove,Moved from tile [6, 3] in direction [0, 1].,4.504632120558829
+1,0,100,TOVPlayerAttack,Default Attack against 3224862,4.744632120558829
+1,0,99,TOVPlayerAttack,Default Attack against 3224861,4.749632120558829
+1,2,71,TOVPlayerAttack,Default Attack against 3224862,4.509632120558829
+1,0,99,TOVPlayerAttack,Default Attack against 3224861,4.754632120558829
+1,0,99,TOVPlayerAttack,Default Attack against 3224861,4.834632120558829
+1,0,99,TOVPlayerAttack,Default Attack against 3224861,4.834632120558829
+1,1,92,TOVPlayerAttack,Default Attack against 3224861,4.549632120558829
+1,1,91,TOVPlayerAttack,Default Attack against 3224861,4.5546321205588285
+1,2,70,TOVPlayerAttack,Default Attack against 3224861,4.5146321205588285
+1,0,98,TOVPlayerAttack,Default Attack against 3224862,4.834632120558829
+1,1,91,TOVPlayerAttack,Default Attack against 3224862,6.544632120558829
+1,0,98,TOVPlayerMove,Moved from tile [7, 3] in direction [1, 0].,6.414864664716763
+1,0,98,TOVPlayerAttack,Default Attack against 3224865,6.419864664716763
+1,2,61,TOVPlayerAttack,Default Attack against 3224865,6.019864664716763
+1,0,98,TOVPlayerAttack,Default Attack against 3224866,6.424864664716763
+1,1,91,TOVPlayerAttack,Default Attack against 3224865,6.054864664716763
+1,1,91,TOVPlayerAttack,Default Attack against 3224865,6.054864664716763
+1,2,61,TOVPlayerAttack,Default Attack against 3224866,8.004864664716765
+1,1,91,TOVPlayerMove,Moved from tile [7, 3] in direction [0, 1].,8.114864664716764
+1,0,89,TOVPlayerMove,Moved from tile [7, 3] in direction [-1, 0].,8.484864664716765
+1,2,61,TOVPlayerMove,Moved from tile [7, 4] in direction [0, 1].,8.50463212055883
+1,1,91,TOVPlayerMove,Moved from tile [6, 3] in direction [0, 1].,8.60463212055883
+1,0,89,TOVPlayerMove,Moved from tile [7, 4] in direction [0, -1].,8.98463212055883
+1,2,61,TOVPlayerMove,Moved from tile [7, 5] in direction [0, 1].,8.014864664716765
+1,0,89,TOVPlayerMove,Moved from tile [7, 6] in direction [0, 1].,8.504950212931632
+1,1,91,TOVPlayerAttack,Default Attack against 3224944,8.134950212931631
+1,2,61,TOVPlayerAttack,Default Attack against 3224944,8.024950212931632
+1,2,55,TOVPlayerAttack,Default Attack against 3224944,8.029950212931631
+1,0,89,TOVPlayerAttack,Default Attack against 3224944,10.499950212931632
+1,0,89,TOVPlayerMove,Moved from tile [6, 6] in direction [-1, 0].,10.509864664716764
+1,1,91,TOVPlayerAttack,Default Attack against 3224941,10.139864664716765
+1,2,55,TOVPlayerAttack,Default Attack against 3224941,12.099864664716764
+1,2,55,TOVPlayerMove,Moved from tile [5, 6] in direction [-1, 0].,12.609950212931631
+1,1,91,TOVPlayerAttack,Default Attack against 3224938,12.719950212931632
+1,0,81,TOVPlayerAttack,Default Attack against 3224938,13.014950212931632
+1,0,81,TOVPlayerAttack,Default Attack against 3224938,13.019950212931631
+1,1,89,TOVPlayerAttack,Default Attack against 3224938,14.724950212931631
+1,2,55,TOVPlayerMove,Moved from tile [4, 6] in direction [-1, 0].,14.114864664716764
+1,1,89,TOVPlayerAttack,Default Attack against 3224935,14.234864664716763
+1,0,81,TOVPlayerAttack,Default Attack against 3224935,14.599864664716764
+1,0,79,TOVPlayerAttack,Default Attack against 3224935,14.604864664716764
+1,1,89,TOVPlayerAttack,Default Attack against 3224935,16.22986466471676
+1,1,89,TOVPlayerMove,Moved from tile [4, 5] in direction [0, -1].,16.73995021293163
+1,0,79,TOVPlayerAttack,Default Attack against 3224908,17.184950212931632
+1,2,55,TOVPlayerAttack,Default Attack against 3224908,16.619950212931634
+1,2,55,TOVPlayerAttack,Default Attack against 3224908,16.624950212931633
+1,0,79,TOVPlayerAttack,Default Attack against 3224908,19.179950212931633
+1,0,79,TOVPlayerMove,Moved from tile [4, 4] in direction [0, -1].,18.939864664716765
+1,1,83,TOVPlayerAttack,Default Attack against 3224881,18.524864664716763
+1,2,48,TOVPlayerAttack,Default Attack against 3224881,18.569664664716765
+1,2,44,TOVPlayerAttack,Default Attack against 3224880,18.553064664716764
+1,0,79,TOVPlayerAttack,Default Attack against 3224880,18.944864664716764
+1,1,83,TOVPlayerAttack,Default Attack against 3224881,20.499864664716764
+1,0,94,TOVPlayerMove,Moved from tile [4, 4] in direction [1, 0].,20.74486466471676
+1,2,86,TOVPlayerMove,Moved from tile [4, 4] in direction [0, 1].,20.259864664716762
+1,1,95,TOVPlayerMove,Moved from tile [5, 4] in direction [-1, 0].,21.23963212055883
+1,0,94,TOVPlayerMove,Moved from tile [4, 5] in direction [1, 0].,20.754950212931632
+1,2,86,TOVPlayerMove,Moved from tile [3, 4] in direction [0, 1].,20.269993262053
+1,1,95,TOVPlayerMove,Moved from tile [6, 4] in direction [0, 1].,21.039950212931636
+1,0,94,TOVPlayerMove,Moved from tile [4, 6] in direction [0, -1].,20.76486466471676
+1,0,94,TOVPlayerMove,Moved from tile [3, 6] in direction [-1, 0].,20.774950212931632
+1,2,86,TOVPlayerUseCard,Played the card: null,20.289950212931632
+1,1,95,TOVPlayerUseCard,Played the card: null,20.279950212931634
+1,1,93,TOVPlayerAttack,Default Attack against 3224931,20.296950212931634
+1,2,76,TOVPlayerUseCard,Played the card: null,20.289950212931632
+1,0,86,TOVPlayerAttack,Default Attack against 3224932,20.774950212931632
+1,1,85,TOVPlayerUseCard,Played the card: null,20.336950212931633
+1,1,83,TOVPlayerAttack,Default Attack against 3224932,20.353950212931633
+1,0,78,TOVPlayerAttack,Default Attack against 3224931,20.774950212931632
+1,1,83,TOVPlayerAttack,Default Attack against 3224931,20.360950212931634
+1,2,76,TOVPlayerAttack,Default Attack against 3224932,22.286950212931632
+1,2,76,TOVPlayerMove,Moved from tile [2, 6] in direction [-1, 0].,22.29698168436111
+1,0,78,TOVPlayerAttack,Default Attack against 3224927,22.85698168436111
+1,1,83,TOVPlayerAttack,Default Attack against 3224928,22.44298168436111
+1,1,75,TOVPlayerAttack,Default Attack against 3224928,22.48998168436111
+1,1,75,TOVPlayerAttack,Default Attack against 3224927,22.49698168436111
+1,0,77,TOVPlayerAttack,Default Attack against 3224927,22.86398168436111
+1,1,68,TOVPlayerAttack,Default Attack against 3224928,24.59398168436111
+1,0,77,TOVPlayerMove,Moved from tile [2, 6] in direction [-1, 0].,24.925981684361112
+1,2,76,TOVPlayerMove,Moved from tile [2, 6] in direction [0, 1].,24.28398168436111
+1,1,68,TOVPlayerMove,Moved from tile [1, 6] in direction [0, 1].,24.583993262053
+1,0,77,TOVPlayerMove,Moved from tile [2, 7] in direction [1, 0].,24.935950212931633
+1,1,68,TOVPlayerMove,Moved from tile [2, 8] in direction [0, 1].,24.613864664716765
+1,0,77,TOVPlayerAttack,Default Attack against 3224977,24.945864664716765
+1,0,77,TOVPlayerAttack,Default Attack against 3224977,24.952864664716763
+1,1,55,TOVPlayerAttack,Default Attack against 3224978,24.685864664716764
+1,2,76,TOVPlayerAttack,Default Attack against 3224978,24.303864664716762
+1,0,77,TOVPlayerAttack,Default Attack against 3224978,24.959864664716765
+1,1,55,TOVPlayerAttack,Default Attack against 3224977,26.672864664716766
+1,0,77,TOVPlayerMove,Moved from tile [2, 8] in direction [-1, 0].,27.021864664716766
+1,2,71,TOVPlayerMove,Moved from tile [2, 8] in direction [0, 1].,26.365864664716764
+1,1,55,TOVPlayerMove,Moved from tile [1, 8] in direction [-1, 0].,26.682950212931633
+1,2,71,TOVPlayerMove,Moved from tile [1, 9] in direction [0, 1].,26.385864664716763
+1,1,55,TOVPlayerAttack,Default Attack against 3224999,26.692864664716765
+1,0,77,TOVPlayerAttack,Default Attack against 3224998,27.041864664716766
+1,0,77,TOVPlayerAttack,Default Attack against 3224998,27.048864664716763
+1,0,77,TOVPlayerAttack,Default Attack against 3224999,27.055864664716765
+1,2,67,TOVPlayerAttack,Default Attack against 3224999,26.392864664716765
+1,0,77,TOVPlayerAttack,Default Attack against 3224998,29.117864664716762
+1,2,67,TOVPlayerMove,Moved from tile [1, 9] in direction [0, 1].,28.454864664716766
+1,1,53,TOVPlayerMove,Moved from tile [1, 9] in direction [1, 0].,28.689864664716765
+1,0,77,TOVPlayerMove,Moved from tile [1, 10] in direction [1, 0].,29.62795021293163
+1,0,77,TOVPlayerMove,Moved from tile [2, 10] in direction [1, 0].,29.137864664716762
+1,1,53,TOVPlayerAttack,Default Attack against 3225030,28.709864664716765
+1,2,61,TOVPlayerAttack,Default Attack against 3225031,28.474864664716765
+1,2,61,TOVPlayerAttack,Default Attack against 3225030,28.556864664716763
+1,0,74,TOVPlayerAttack,Default Attack against 3225031,31.134864664716762
+1,2,61,TOVPlayerMove,Moved from tile [3, 10] in direction [1, 0].,30.638632120558828
+1,1,53,TOVPlayerAttack,Default Attack against 3225035,30.716632120558828
+1,0,67,TOVPlayerAttack,Default Attack against 3225034,31.14463212055883
+1,1,52,TOVPlayerAttack,Default Attack against 3225035,30.728632120558828
+1,0,60,TOVPlayerAttack,Default Attack against 3225034,31.15163212055883
+1,1,52,TOVPlayerAttack,Default Attack against 3225035,32.790632120558826
+1,0,60,TOVPlayerMove,Moved from tile [3, 10] in direction [0, 1].,33.21363212055883
+1,2,61,TOVPlayerMove,Moved from tile [3, 10] in direction [1, 0].,32.625632120558826
+1,1,52,TOVPlayerMove,Moved from tile [3, 11] in direction [0, 1].,32.80086466471676
+1,2,61,TOVPlayerMove,Moved from tile [3, 12] in direction [0, 1].,33.14563212055883
+1,0,60,TOVPlayerAttack,Default Attack against 3225080,33.73363212055883
+1,0,60,TOVPlayerAttack,Default Attack against 3225080,33.74063212055883
+1,0,60,TOVPlayerAttack,Default Attack against 3225079,33.747632120558826
+1,2,58,TOVPlayerAttack,Default Attack against 3225079,33.15263212055883
+1,0,60,TOVPlayerAttack,Default Attack against 3225080,35.809632120558824
+1,2,58,TOVPlayerMove,Moved from tile [3, 12] in direction [1, 0].,35.214632120558825
+1,1,51,TOVPlayerMove,Moved from tile [3, 12] in direction [-1, 0].,35.29595021293163
+1,0,60,TOVPlayerMove,Moved from tile [4, 12] in direction [1, 0].,35.31995021293163
+1,0,60,TOVPlayerMove,Moved from tile [5, 12] in direction [1, 0].,35.82986466471676
+1,2,58,TOVPlayerAttack,Default Attack against 3225085,36.03486466471676
+1,1,51,TOVPlayerAttack,Default Attack against 3225084,35.31586466471676
+1,1,44,TOVPlayerAttack,Default Attack against 3225085,35.27806466471676
+1,2,58,TOVPlayerAttack,Default Attack against 3225084,38.03386466471676
+1,2,58,TOVPlayerMove,Moved from tile [5, 11] in direction [0, -1].,37.543632120558826
+1,1,44,TOVPlayerAttack,Default Attack against 3225060,36.86183212055883
+1,0,59,TOVPlayerUseCard,Played the card: null,37.33863212055883
+1,0,59,TOVPlayerUseCard,Played the card: null,37.33863212055883
+1,1,41,TOVPlayerAttack,Default Attack against 3225060,38.829582120558825
+1,0,59,TOVPlayerMove,Moved from tile [5, 11] in direction [0, -1].,39.39263212055883
+1,2,58,TOVPlayerMove,Moved from tile [5, 11] in direction [1, 0].,39.52286466471676
+1,1,41,TOVPlayerMove,Moved from tile [5, 10] in direction [0, 1].,39.33958212055882
+1,0,59,TOVPlayerMove,Moved from tile [6, 11] in direction [1, 0].,40.702993262053
+1,2,58,TOVPlayerMove,Moved from tile [5, 12] in direction [0, -1].,39.212993262053004
+1,1,41,TOVPlayerMove,Moved from tile [6, 10] in direction [1, 0].,40.14993168436111
+1,0,59,TOVPlayerMove,Moved from tile [6, 9] in direction [0, -1].,39.92295021293163
+1,2,58,TOVPlayerAttack,Default Attack against 3225007,39.25295021293163
+1,2,58,TOVPlayerUseCard,Played the card: null,39.25295021293163
+1,0,59,TOVPlayerAttack,Default Attack against 3225006,41.97095021293163
+1,2,58,TOVPlayerMove,Moved from tile [6, 9] in direction [1, 0].,41.30095021293163
+1,1,35,TOVPlayerMove,Moved from tile [6, 9] in direction [0, 1].,42.12770021293163
+1,0,59,TOVPlayerMove,Moved from tile [7, 9] in direction [1, 0].,41.98095021293163
+1,2,58,TOVPlayerMove,Moved from tile [6, 10] in direction [-1, 0].,41.31098168436111
+1,1,83,TOVPlayerMove,Moved from tile [7, 9] in direction [1, 0].,41.04895021293163
+1,0,89,TOVPlayerMove,Moved from tile [6, 9] in direction [0, -1].,41.47095021293163
+1,2,89,TOVPlayerMove,Moved from tile [7, 10] in direction [0, 1].,42.32095021293163
+1,1,83,TOVPlayerMove,Moved from tile [7, 8] in direction [0, -1].,41.03886466471676
+1,0,89,TOVPlayerMove,Moved from tile [6, 10] in direction [0, 1].,41.48098168436111
+1,2,89,TOVPlayerMove,Moved from tile [7, 9] in direction [1, 0].,40.81095021293163
+1,1,83,TOVPlayerMove,Moved from tile [7, 9] in direction [0, -1].,41.04895021293163
+1,0,89,TOVPlayerMove,Moved from tile [7, 10] in direction [0, -1].,41.99095021293163
+1,2,89,TOVPlayerMove,Moved from tile [7, 8] in direction [1, 0].,40.80086466471676
+1,1,83,TOVPlayerMove,Moved from tile [7, 8] in direction [0, 1].,41.03886466471676
+1,0,89,TOVPlayerMove,Moved from tile [8, 10] in direction [0, 1].,41.500864664716765
+1,2,89,TOVPlayerMove,Moved from tile [9, 10] in direction [1, 0].,40.84063212055883
+1,0,92,TOVPlayerUseCard,Played the card: null,41.51063212055883
+1,1,83,TOVPlayerAttack,Default Attack against 3225043,43.058632120558826
+1,0,92,TOVPlayerMove,Moved from tile [9, 10] in direction [1, 0].,43.578864664716754
+1,2,83,TOVPlayerMove,Moved from tile [9, 10] in direction [1, 0].,42.82086466471676
+1,1,83,TOVPlayerMove,Moved from tile [10, 10] in direction [0, 1].,43.85863212055882
+1,0,92,TOVPlayerMove,Moved from tile [10, 10] in direction [0, -1].,43.578864664716754
+1,2,83,TOVPlayerMove,Moved from tile [9, 11] in direction [0, -1].,42.83086466471676
+1,2,83,TOVPlayerMove,Moved from tile [8, 11] in direction [-1, 0].,43.34095021293163
+1,0,92,TOVPlayerUseCard,Played the card: null,44.098950212931626
+1,0,90,TOVPlayerUseCard,Played the card: null,44.098950212931626
+1,0,90,TOVPlayerAttack,Default Attack against 3225066,44.19095021293163
+1,1,80,TOVPlayerAttack,Default Attack against 3225067,44.39395021293163
+1,1,80,TOVPlayerAttack,Default Attack against 3225067,44.48595021293163
+1,0,82,TOVPlayerUseCard,Played the card: null,44.20795021293163
+1,1,80,TOVPlayerAttack,Default Attack against 3225065,46.43595021293163
+1,0,82,TOVPlayerMove,Moved from tile [8, 11] in direction [0, 1].,46.24995021293163
+1,2,79,TOVPlayerMove,Moved from tile [8, 11] in direction [0, -1].,45.290950212931634
+1,1,80,TOVPlayerMove,Moved from tile [8, 12] in direction [1, 0].,45.37586466471676
+1,0,82,TOVPlayerMove,Moved from tile [8, 10] in direction [0, -1].,45.75995021293163
+1,2,79,TOVPlayerMove,Moved from tile [9, 11] in direction [1, 0].,44.80086466471676
+1,1,80,TOVPlayerMove,Moved from tile [8, 11] in direction [1, 0].,45.63595021293163
+1,0,82,TOVPlayerMove,Moved from tile [9, 10] in direction [0, -1].,45.769864664716756
+1,2,79,TOVPlayerMove,Moved from tile [10, 11] in direction [1, 0].,45.31063212055883
+1,1,80,TOVPlayerMove,Moved from tile [8, 10] in direction [1, 0].,45.14595021293163
+1,0,82,TOVPlayerMove,Moved from tile [10, 10] in direction [0, -1].,45.779864664716754
+1,2,79,TOVPlayerMove,Moved from tile [11, 11] in direction [1, 0].,45.870864664716755
+1,1,80,TOVPlayerMove,Moved from tile [8, 9] in direction [0, -1].,45.15586466471676
+1,0,82,TOVPlayerMove,Moved from tile [11, 10] in direction [1, 0].,46.28995021293163
+1,2,79,TOVPlayerMove,Moved from tile [12, 10] in direction [1, 0].,45.09086466471676
+1,0,82,TOVPlayerAttack,Default Attack against 3225048,46.04986466471676
+1,1,80,TOVPlayerAttack,Default Attack against 3225050,45.43586466471676
+1,2,78,TOVPlayerAttack,Default Attack against 3225049,47.174864664716765
+1,1,80,TOVPlayerMove,Moved from tile [12, 9] in direction [0, -1].,47.52986466471676
+1,0,82,TOVPlayerAttack,Default Attack against 3225020,48.14386466471676
+1,2,78,TOVPlayerAttack,Default Attack against 3225021,47.18486466471676
+1,0,82,TOVPlayerAttack,Default Attack against 3225019,50.22786466471676
+1,0,82,TOVPlayerMove,Moved from tile [11, 9] in direction [-1, 0].,50.48786466471676
+1,2,78,TOVPlayerUseCard,Played the card: null,49.52886466471676
+1,1,80,TOVPlayerAttack,Default Attack against 3225016,49.87386466471676
+1,2,78,TOVPlayerAttack,Default Attack against 3225014,51.61286466471676
+1,2,78,TOVPlayerMove,Moved from tile [11, 8] in direction [0, -1].,51.372632120558826
+1,1,80,TOVPlayerAttack,Default Attack against 3224991,51.71763212055883
+1,0,77,TOVPlayerAttack,Default Attack against 3224990,52.23763212055883
+1,1,80,TOVPlayerAttack,Default Attack against 3224989,53.79163212055882
+1,0,94,TOVPlayerMove,Moved from tile [11, 8] in direction [1, 0].,54.061632120558826
+1,2,94,TOVPlayerMove,Moved from tile [11, 8] in direction [-1, 0].,53.196632120558824
+1,1,95,TOVPlayerMove,Moved from tile [12, 8] in direction [0, -1].,55.031632120558825
+1,0,94,TOVPlayerMove,Moved from tile [10, 8] in direction [-1, 0].,54.05163212055883
+1,2,94,TOVPlayerMove,Moved from tile [11, 7] in direction [0, -1].,54.50695021293163
+1,1,95,TOVPlayerMove,Moved from tile [11, 6] in direction [0, -1].,54.06198168436111
+1,0,94,TOVPlayerAttack,Default Attack against 3224951,54.58198168436111
+1,1,95,TOVPlayerAttack,Default Attack against 3224950,56.13798168436111
+1,0,94,TOVPlayerMove,Moved from tile [11, 6] in direction [1, 0].,56.657981684361104
+1,2,94,TOVPlayerMove,Moved from tile [11, 6] in direction [1, 0].,56.4969816843611
+1,1,95,TOVPlayerMove,Moved from tile [12, 6] in direction [1, 0].,55.87795021293163
+1,0,94,TOVPlayerMove,Moved from tile [12, 6] in direction [-1, 0].,56.397950212931626
+1,2,98,TOVPlayerMove,Moved from tile [12, 6] in direction [1, 0].,55.68695021293163
+1,1,98,TOVPlayerMove,Moved from tile [11, 6] in direction [0, 1].,55.63798168436111
+1,0,98,TOVPlayerMove,Moved from tile [13, 6] in direction [0, -1].,57.407864664716755
+1,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [0, -1].,55.446864664716756
+1,1,98,TOVPlayerMove,Moved from tile [11, 5] in direction [0, 1].,55.64798168436111
+1,0,98,TOVPlayerMove,Moved from tile [10, 5] in direction [-1, 0].,56.17795021293163
+1,2,98,TOVPlayerAttack,Default Attack against 3224917,55.21695021293163
+1,1,86,TOVPlayerAttack,Default Attack against 3224916,55.71795021293163
+1,2,98,TOVPlayerAttack,Default Attack against 3224918,57.302950212931634
+1,2,98,TOVPlayerMove,Moved from tile [10, 4] in direction [0, -1].,57.31286466471676
+1,0,95,TOVPlayerAttack,Default Attack against 3224890,58.27386466471676
+1,1,86,TOVPlayerAttack,Default Attack against 3224889,59.78386466471676
+1,0,95,TOVPlayerMove,Moved from tile [10, 4] in direction [0, 1].,60.33986466471676
+1,2,98,TOVPlayerMove,Moved from tile [10, 4] in direction [1, 0].,59.37886466471676
+1,1,86,TOVPlayerMove,Moved from tile [10, 5] in direction [-1, 0].,59.77395021293163
+1,0,95,TOVPlayerMove,Moved from tile [11, 4] in direction [1, 0].,60.349950212931624
+1,2,98,TOVPlayerMove,Moved from tile [9, 4] in direction [1, 0].,59.37895021293163
+1,1,86,TOVPlayerMove,Moved from tile [11, 5] in direction [0, 1].,59.78398168436111
+1,0,95,TOVPlayerMove,Moved from tile [12, 4] in direction [1, 0].,60.85998168436111
+1,2,98,TOVPlayerMove,Moved from tile [13, 4] in direction [1, 0].,59.65898168436111
+1,0,95,TOVPlayerAttack,Default Attack against 3224895,60.61998168436111
+1,1,86,TOVPlayerAttack,Default Attack against 3224896,60.06398168436111
+1,2,98,TOVPlayerAttack,Default Attack against 3224897,61.744981684361115
+1,0,95,TOVPlayerMove,Moved from tile [14, 4] in direction [1, 0].,62.965993262053004
+1,2,98,TOVPlayerAttack,Default Attack against 3224901,62.004993262053006
+1,0,95,TOVPlayerAttack,Default Attack against 3224900,65.041993262053
+1,2,98,TOVPlayerMove,Moved from tile [14, 4] in direction [0, -1].,64.08099326205298
+1,1,86,TOVPlayerMove,Moved from tile [14, 4] in direction [0, -1].,64.38999326205298
+1,0,95,TOVPlayerMove,Moved from tile [14, 3] in direction [0, -1].,64.80199326205299
+1,0,95,TOVPlayerMove,Moved from tile [14, 2] in direction [0, -1].,65.06198168436111
+1,2,98,TOVPlayerAttack,Default Attack against 3224851,64.10098168436112
+1,0,95,TOVPlayerAttack,Default Attack against 3224852,67.14798168436111
+1,0,95,TOVPlayerMove,Moved from tile [13, 2] in direction [-1, 0].,66.90795021293164
+1,2,98,TOVPlayerAttack,Default Attack against 3224847,65.94695021293164
+1,0,87,TOVPlayerAttack,Default Attack against 3224848,68.98395021293165
+1,2,98,TOVPlayerMove,Moved from tile [13, 2] in direction [-1, 0].,68.02295021293165
+1,1,86,TOVPlayerMove,Moved from tile [13, 2] in direction [-1, 0].,68.13995021293164
+1,0,87,TOVPlayerMove,Moved from tile [12, 2] in direction [-1, 0].,69.24386466471677
+1,2,98,TOVPlayerMove,Moved from tile [11, 2] in direction [-1, 0].,67.79263212055884
+1,0,87,TOVPlayerAttack,Default Attack against 3224843,70.74363212055883
+1,1,86,TOVPlayerMove,Moved from tile [11, 1] in direction [0, -1].,70.40986466471676
+1,0,87,TOVPlayerAttack,Default Attack against 3224811,71.25386466471677
+1,2,98,TOVPlayerAttack,Default Attack against 3224813,70.38886466471676
+1,0,87,TOVPlayerAttack,Default Attack against 3224812,73.33986466471676
+1,0,87,TOVPlayerMove,Moved from tile [12, 1] in direction [1, 0].,73.09995021293163
+1,1,82,TOVPlayerAttack,Default Attack against 3224818,72.27595021293163
+1,1,74,TOVPlayerAttack,Default Attack against 3224817,72.41195021293164
+1,2,96,TOVPlayerAttack,Default Attack against 3224816,74.19495021293163
+1,1,74,TOVPlayerMove,Moved from tile [12, 1] in direction [0, 1].,74.46795021293163
+1,0,84,TOVPlayerMove,Moved from tile [12, 1] in direction [0, -1].,75.15595021293163
+1,2,99,TOVPlayerMove,Moved from tile [12, 2] in direction [1, 0].,74.44486466471676
+1,1,93,TOVPlayerMove,Moved from tile [12, 0] in direction [-1, 0].,74.20798168436112
+1,0,96,TOVPlayerMove,Moved from tile [13, 1] in direction [1, 0].,76.39598168436112
+1,2,99,TOVPlayerMove,Moved from tile [11, 2] in direction [0, -1].,73.95463212055883
+1,1,93,TOVPlayerMove,Moved from tile [13, 0] in direction [1, 0].,74.19799326205299
+1,0,96,TOVPlayerMove,Moved from tile [13, 0] in direction [1, 0].,74.88599326205299
+1,2,99,TOVPlayerMove,Moved from tile [12, 2] in direction [0, 1].,74.44486466471676
+1,1,93,TOVPlayerMove,Moved from tile [14, 0] in direction [1, 0].,74.18799752124782
+1,0,96,TOVPlayerMove,Moved from tile [13, 1] in direction [0, 1].,75.39598168436112
+1,2,99,TOVPlayerMove,Moved from tile [13, 2] in direction [1, 0].,74.18495021293164
+1,1,93,TOVPlayerMove,Moved from tile [14, 1] in direction [0, -1].,74.19799326205299
+1,0,96,TOVPlayerMove,Moved from tile [14, 1] in direction [-1, 0].,74.88599326205299
+1,2,99,TOVPlayerMove,Moved from tile [13, 1] in direction [0, 1].,74.43498168436112
+1,1,93,TOVPlayerMove,Moved from tile [13, 1] in direction [0, 1].,74.70798168436112
+1,0,96,TOVPlayerMove,Moved from tile [14, 2] in direction [0, 1].,75.39598168436112
+1,2,99,TOVPlayerMove,Moved from tile [13, 2] in direction [0, 1].,74.18495021293164
+1,1,93,TOVPlayerMove,Moved from tile [13, 2] in direction [-1, 0].,74.45795021293164
+1,0,99,TOVPlayerMove,Moved from tile [14, 3] in direction [0, 1].,74.90599326205299
+1,2,99,TOVPlayerMove,Moved from tile [12, 2] in direction [0, -1].,73.94486466471676
+1,1,98,TOVPlayerMove,Moved from tile [13, 3] in direction [0, -1].,75.20798168436112
+1,0,99,TOVPlayerMove,Moved from tile [14, 2] in direction [1, 0].,74.89598168436112
+1,2,99,TOVPlayerMove,Moved from tile [12, 1] in direction [-1, 0].,73.94495021293163
+1,1,98,TOVPlayerMove,Moved from tile [14, 3] in direction [1, 0].,74.21799326205299
+1,0,99,TOVPlayerMove,Moved from tile [13, 2] in direction [0, 1].,74.89595021293164
+1,2,99,TOVPlayerMove,Moved from tile [13, 1] in direction [0, -1].,73.93498168436112
+1,1,98,TOVPlayerMove,Moved from tile [14, 4] in direction [1, 0].,74.22799326205299
+1,0,99,TOVPlayerMove,Moved from tile [13, 1] in direction [0, -1].,74.89598168436112
+1,2,99,TOVPlayerMove,Moved from tile [14, 1] in direction [-1, 0].,73.924993262053
+1,1,98,TOVPlayerMove,Moved from tile [14, 3] in direction [-1, 0].,74.21799326205299
+1,0,99,TOVPlayerMove,Moved from tile [12, 1] in direction [0, 1].,74.90595021293163
+1,2,99,TOVPlayerMove,Moved from tile [13, 1] in direction [1, 0].,73.93498168436112
+1,1,98,TOVPlayerMove,Moved from tile [14, 4] in direction [0, 1].,74.22799326205299
+1,0,99,TOVPlayerMove,Moved from tile [13, 1] in direction [0, -1].,74.89598168436112
+1,2,99,TOVPlayerMove,Moved from tile [13, 2] in direction [0, 1].,73.93495021293164
+1,1,98,TOVPlayerMove,Moved from tile [14, 3] in direction [1, 0].,74.21799326205299
+1,0,99,TOVPlayerMove,Moved from tile [13, 2] in direction [0, -1].,74.89595021293164
+1,2,99,TOVPlayerMove,Moved from tile [14, 2] in direction [-1, 0].,73.93498168436112
+1,1,98,TOVPlayerMove,Moved from tile [14, 2] in direction [0, -1].,74.20798168436112
+1,0,99,TOVPlayerMove,Moved from tile [12, 2] in direction [0, 1].,74.90586466471676
+1,2,99,TOVPlayerMove,Moved from tile [14, 1] in direction [-1, 0].,73.924993262053
+1,1,98,TOVPlayerMove,Moved from tile [14, 3] in direction [0, 1].,74.21799326205299
+1,0,99,TOVPlayerMove,Moved from tile [11, 2] in direction [0, 1].,74.91563212055883
+1,2,99,TOVPlayerMove,Moved from tile [14, 2] in direction [1, 0].,73.93498168436112
+1,1,98,TOVPlayerMove,Moved from tile [14, 4] in direction [0, 1].,74.22799326205299
+1,0,99,TOVPlayerMove,Moved from tile [12, 2] in direction [0, 1].,74.90586466471676
+1,2,99,TOVPlayerMove,Moved from tile [14, 3] in direction [0, 1].,73.94499326205299
+1,1,98,TOVPlayerMove,Moved from tile [14, 5] in direction [-1, 0].,74.23798168436112
+1,0,99,TOVPlayerMove,Moved from tile [12, 3] in direction [0, 1].,74.89595021293164
+1,2,99,TOVPlayerMove,Moved from tile [13, 3] in direction [0, -1].,73.93498168436112
+1,1,98,TOVPlayerMove,Moved from tile [14, 6] in direction [-1, 0].,74.74795021293163
+1,2,99,TOVPlayerMove,Moved from tile [14, 7] in direction [0, 1].,74.23486466471677
+1,0,99,TOVPlayerAttack,Default Attack against 3224972,75.19586466471677
+1,1,98,TOVPlayerAttack,Default Attack against 3224971,76.48786466471677
+1,0,99,TOVPlayerMove,Moved from tile [14, 7] in direction [0, 1].,77.27186466471677
+1,2,94,TOVPlayerMove,Moved from tile [14, 7] in direction [0, 1].,76.31086466471677
+1,1,98,TOVPlayerMove,Moved from tile [14, 8] in direction [0, 1].,76.74763212055882
+1,1,98,TOVPlayerMove,Moved from tile [14, 9] in direction [0, 1].,76.25763212055882
+1,0,99,TOVPlayerUseCard,Played the card: null,77.04163212055883
+1,0,99,TOVPlayerUseCard,Played the card: null,77.04163212055883
+1,2,88,TOVPlayerUseCard,Played the card: null,76.08063212055883
+1,0,99,TOVPlayerUseCard,Played the card: null,77.04163212055883
+1,0,99,TOVPlayerUseCard,Played the card: null,77.04163212055883
+1,0,99,TOVPlayerUseCard,Played the card: null,77.04163212055883
+1,1,92,TOVPlayerAttack,Default Attack against 3225025,78.15763212055883
+1,0,99,TOVPlayerMove,Moved from tile [14, 9] in direction [-1, 0].,79.00763212055884
+1,2,72,TOVPlayerMove,Moved from tile [14, 9] in direction [-1, 0].,77.95063212055884
+1,1,92,TOVPlayerMove,Moved from tile [13, 9] in direction [0, 1].,78.66763212055882
+1,0,99,TOVPlayerMove,Moved from tile [13, 9] in direction [1, 0].,79.51763212055883
+1,2,72,TOVPlayerMove,Moved from tile [14, 10] in direction [0, 1].,78.74095021293164
+1,1,92,TOVPlayerMove,Moved from tile [14, 9] in direction [-1, 0].,78.15786466471677
+1,0,99,TOVPlayerMove,Moved from tile [13, 10] in direction [-1, 0].,79.50786466471678
+1,2,72,TOVPlayerMove,Moved from tile [13, 10] in direction [-1, 0].,78.45086466471678
+1,1,92,TOVPlayerMove,Moved from tile [13, 9] in direction [1, 0].,78.66763212055882
+1,0,99,TOVPlayerMove,Moved from tile [12, 10] in direction [0, -1].,79.26798168436112
+1,2,72,TOVPlayerMove,Moved from tile [14, 10] in direction [-1, 0].,77.94099752124782
+1,1,92,TOVPlayerMove,Moved from tile [13, 8] in direction [0, -1].,79.22798168436111
+1,0,99,TOVPlayerMove,Moved from tile [11, 10] in direction [0, 1].,79.52795021293164
+1,2,72,TOVPlayerMove,Moved from tile [14, 9] in direction [1, 0].,77.95099752124783
+1,1,92,TOVPlayerMove,Moved from tile [13, 9] in direction [-1, 0].,78.66799326205299
+1,0,99,TOVPlayerMove,Moved from tile [12, 10] in direction [0, 1].,79.26798168436112
+1,2,72,TOVPlayerMove,Moved from tile [13, 9] in direction [0, -1].,78.460993262053
+1,1,92,TOVPlayerMove,Moved from tile [13, 10] in direction [0, 1].,78.657993262053
+1,0,99,TOVPlayerMove,Moved from tile [12, 9] in direction [0, 1].,79.52798168436112
+1,2,72,TOVPlayerMove,Moved from tile [13, 10] in direction [1, 0].,78.450993262053
+1,1,92,TOVPlayerMove,Moved from tile [13, 11] in direction [0, -1].,78.39798168436111
+1,0,99,TOVPlayerMove,Moved from tile [13, 9] in direction [0, -1].,79.517993262053
+1,2,72,TOVPlayerMove,Moved from tile [13, 9] in direction [-1, 0].,78.460993262053
+1,1,92,TOVPlayerMove,Moved from tile [13, 10] in direction [1, 0].,78.657993262053
+1,0,99,TOVPlayerMove,Moved from tile [12, 9] in direction [0, -1].,79.52798168436112
+1,2,72,TOVPlayerMove,Moved from tile [14, 9] in direction [-1, 0].,77.95099752124783
+1,1,92,TOVPlayerMove,Moved from tile [13, 9] in direction [0, -1].,78.66799326205299
+1,0,99,TOVPlayerMove,Moved from tile [11, 9] in direction [0, 1].,79.03795021293165
+1,2,72,TOVPlayerMove,Moved from tile [14, 8] in direction [-1, 0].,78.460993262053
+1,1,92,TOVPlayerMove,Moved from tile [13, 10] in direction [-1, 0].,78.657993262053
+1,0,99,TOVPlayerMove,Moved from tile [10, 9] in direction [1, 0].,79.04786466471677
+1,2,72,TOVPlayerMove,Moved from tile [13, 8] in direction [1, 0].,78.22098168436112
+1,1,92,TOVPlayerMove,Moved from tile [14, 10] in direction [1, 0].,78.14799752124782
+1,0,99,TOVPlayerMove,Moved from tile [11, 9] in direction [0, -1].,79.03795021293165
+1,2,72,TOVPlayerMove,Moved from tile [14, 8] in direction [1, 0].,78.460993262053
+1,1,92,TOVPlayerMove,Moved from tile [14, 9] in direction [0, 1].,78.15799752124782
+1,0,99,TOVPlayerMove,Moved from tile [12, 9] in direction [0, 1].,79.52798168436112
+1,2,72,TOVPlayerMove,Moved from tile [14, 9] in direction [0, 1].,77.95099752124783
+1,1,92,TOVPlayerMove,Moved from tile [14, 10] in direction [-1, 0].,78.14799752124782
+1,0,99,TOVPlayerMove,Moved from tile [12, 10] in direction [0, 1].,79.26798168436112
+1,2,72,TOVPlayerMove,Moved from tile [13, 9] in direction [1, 0].,78.460993262053
+1,1,92,TOVPlayerMove,Moved from tile [14, 11] in direction [0, -1].,78.63799326205299
+1,0,99,TOVPlayerMove,Moved from tile [13, 10] in direction [0, 1].,79.507993262053
+1,2,72,TOVPlayerMove,Moved from tile [13, 8] in direction [-1, 0].,78.22098168436112
+1,1,92,TOVPlayerMove,Moved from tile [14, 12] in direction [1, 0].,78.62798168436112
+1,0,99,TOVPlayerMove,Moved from tile [12, 10] in direction [0, 1].,79.26798168436112
+1,2,72,TOVPlayerMove,Moved from tile [14, 8] in direction [0, -1].,78.460993262053
+1,1,92,TOVPlayerMove,Moved from tile [14, 13] in direction [0, -1].,78.36799326205299
+1,0,99,TOVPlayerMove,Moved from tile [12, 9] in direction [0, 1].,79.52798168436112
+1,2,72,TOVPlayerMove,Moved from tile [14, 7] in direction [1, 0].,78.22099752124782

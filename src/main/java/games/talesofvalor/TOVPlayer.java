@@ -23,6 +23,10 @@ public class TOVPlayer{
     private int deathCount = 0;
     private boolean empowered = false;
     private int damageTaken = 0;
+    private boolean shrineUsedThisTurn = false;
+    private boolean jesterUsedThisTurn = false;
+    private boolean shrineUsedLastTurn = false;
+    private boolean jesterUsedLastTurn = false;
 
     ArrayList<TOVCard> hand = new ArrayList<>();
 
@@ -260,5 +264,41 @@ public class TOVPlayer{
 
     public void setDamage(int i) {
         damage = i;
+    }
+
+    public void setMaxHealth(int maxHealth) {
+        this.maxHealth = maxHealth;
+    }
+
+    public boolean isShrineUsedThisTurn() {
+        return shrineUsedThisTurn;
+    }
+
+    public void setShrineUsedThisTurn(boolean shrineUsedThisTurn) {
+        this.shrineUsedThisTurn = shrineUsedThisTurn;
+    }
+
+    public boolean isJesterUsedThisTurn() {
+        return jesterUsedThisTurn;
+    }
+
+    public void setJesterUsedThisTurn(boolean jesterUsedThisTurn) {
+        this.jesterUsedThisTurn = jesterUsedThisTurn;
+    }
+
+    public boolean isShrineUsedLastTurn() {
+        return shrineUsedLastTurn;
+    }
+
+    public void setShrineUsedLastTurn(boolean shrineUsedLastTurn) {
+        this.shrineUsedLastTurn = shrineUsedLastTurn;
+    }
+
+    public void setJesterUsedLastTurn(boolean jesterUsedLastTurn) {
+        this.jesterUsedLastTurn = jesterUsedLastTurn;
+    }
+
+    public boolean isJesterUsedLastTurn() {
+        return jesterUsedLastTurn;
     }
 }

@@ -1,0 +1,1111 @@
+Game,PlayerID,Health,ActionType,ActionString,HeuristicValue,RoundNum
+0,2,100,TOVPlayerMove,Moved from tile [0, 0] in direction [0, 1].,-0.030006737946999085,1
+0,1,100,TOVPlayerMove,Moved from tile [0, 0] in direction [0, 1].,-0.030006737946999085,2
+0,0,100,TOVPlayerMove,Moved from tile [0, 1] in direction [0, 1].,-0.020018315638888735,3
+0,2,100,TOVPlayerMove,Moved from tile [0, 1] in direction [1, 0].,-0.020018315638888735,4
+0,1,100,TOVPlayerMove,Moved from tile [0, 1] in direction [1, 0].,-0.020018315638888735,5
+0,0,100,TOVPlayerMove,Moved from tile [1, 1] in direction [1, 0].,-0.010049787068367864,6
+0,0,100,TOVPlayerMove,Moved from tile [2, 1] in direction [1, 0].,-1.353352832366127E-4,6
+0,1,100,TOVPlayerAttack,Default Attack against 30,-1.353352832366127E-4,6
+0,2,93,TOVPlayerAttack,Default Attack against 29,-1.353352832366127E-4,6
+0,2,93,TOVPlayerAttack,Default Attack against 30,0.004864664716763388,6
+0,0,100,TOVPlayerAttack,Default Attack against 29,0.004864664716763388,6
+0,2,93,TOVPlayerAttack,Default Attack against 29,0.009864664716763387,6
+0,1,98,TOVPlayerAttack,Default Attack against 30,0.014864664716763386,6
+0,2,93,TOVPlayerAttack,Default Attack against 30,1.9848646647167636,6
+0,1,98,TOVPlayerMove,Moved from tile [2, 1] in direction [1, 0].,2.064864664716764,7
+0,0,91,TOVPlayerMove,Moved from tile [2, 1] in direction [1, 0].,2.0548646647167637,8
+0,2,93,TOVPlayerMove,Moved from tile [3, 1] in direction [1, 0].,1.9949502129316323,9
+0,1,98,TOVPlayerMove,Moved from tile [3, 1] in direction [0, 1].,2.074950212931632,10
+0,0,91,TOVPlayerMove,Moved from tile [3, 1] in direction [0, 1].,2.064950212931632,11
+0,2,93,TOVPlayerMove,Moved from tile [3, 2] in direction [0, 1].,2.504864664716764,12
+0,0,91,TOVPlayerMove,Moved from tile [3, 3] in direction [0, 1].,2.3346321205588287,12
+0,1,98,TOVPlayerAttack,Default Attack against 80,2.344632120558829,12
+0,2,93,TOVPlayerAttack,Default Attack against 82,2.264632120558829,12
+0,2,93,TOVPlayerAttack,Default Attack against 81,2.269632120558829,12
+0,0,72,TOVPlayerAttack,Default Attack against 81,2.3396321205588286,12
+0,2,93,TOVPlayerAttack,Default Attack against 81,2.2746321205588287,12
+0,1,92,TOVPlayerAttack,Default Attack against 80,2.3796321205588287,12
+0,1,92,TOVPlayerAttack,Default Attack against 80,2.4596321205588287,12
+0,0,72,TOVPlayerAttack,Default Attack against 82,2.4196321205588287,12
+0,1,92,TOVPlayerAttack,Default Attack against 82,4.454632120558829,12
+0,0,72,TOVPlayerMove,Moved from tile [3, 3] in direction [-1, 0].,4.489999088118035,13
+0,2,95,TOVPlayerMove,Moved from tile [3, 3] in direction [0, 1].,4.019999088118035,14
+0,2,95,TOVPlayerMove,Moved from tile [4, 3] in direction [1, 0].,4.029997521247823,14
+0,1,98,TOVPlayerAttack,Default Attack against 85,5.014997521247823,14
+0,0,93,TOVPlayerAttack,Default Attack against 86,5.249997521247823,14
+0,0,88,TOVPlayerAttack,Default Attack against 85,5.256997521247823,14
+0,0,88,TOVPlayerAttack,Default Attack against 85,5.338997521247824,14
+0,2,92,TOVPlayerAttack,Default Attack against 86,4.036997521247823,14
+0,0,88,TOVPlayerAttack,Default Attack against 86,7.3359975212478234,14
+0,2,92,TOVPlayerMove,Moved from tile [4, 2] in direction [0, -1].,6.118999088118034,14
+0,0,88,TOVPlayerAttack,Default Attack against 57,7.345999088118035,14
+0,1,97,TOVPlayerAttack,Default Attack against 56,7.026999088118035,14
+0,0,88,TOVPlayerUseCard,Played the card: Taunt,7.352999088118034,14
+0,2,89,TOVPlayerAttack,Default Attack against 56,6.125999088118035,14
+0,2,89,TOVPlayerAttack,Default Attack against 56,6.207999088118035,14
+0,1,93,TOVPlayerAttack,Default Attack against 57,7.046999088118034,14
+0,2,89,TOVPlayerAttack,Default Attack against 57,8.194999088118035,14
+0,1,93,TOVPlayerMove,Moved from tile [4, 2] in direction [0, 1].,9.108999088118036,15
+0,0,85,TOVPlayerMove,Moved from tile [4, 2] in direction [1, 0].,9.339999088118034,16
+0,2,89,TOVPlayerMove,Moved from tile [4, 3] in direction [1, 0].,8.204997521247824,17
+0,2,89,TOVPlayerMove,Moved from tile [5, 3] in direction [1, 0].,8.214993262053001,17
+0,0,85,TOVPlayerAttack,Default Attack against 91,8.359993262053,17
+0,0,77,TOVPlayerAttack,Default Attack against 90,8.366993262053002,17
+0,2,86,TOVPlayerAttack,Default Attack against 90,8.221993262053001,17
+0,0,77,TOVPlayerAttack,Default Attack against 91,8.448993262053001,17
+0,1,87,TOVPlayerAttack,Default Attack against 91,8.358993262053001,17
+0,1,79,TOVPlayerAttack,Default Attack against 89,8.405993262053002,17
+0,0,68,TOVPlayerAttack,Default Attack against 89,8.530993262053002,17
+0,1,79,TOVPlayerAttack,Default Attack against 89,10.402993262053002,17
+0,2,86,TOVPlayerMove,Moved from tile [5, 4] in direction [0, 1].,10.228981684361111,17
+0,0,68,TOVPlayerAttack,Default Attack against 126,10.612981684361111,17
+0,1,79,TOVPlayerAttack,Default Attack against 126,10.412981684361112,17
+0,1,76,TOVPlayerUseCard,Played the card: Taunt,10.427981684361113,17
+0,0,68,TOVPlayerUseCard,Played the card: Taunt,10.694981684361112,17
+0,1,76,TOVPlayerAttack,Default Attack against 125,10.427981684361113,17
+0,2,78,TOVPlayerAttack,Default Attack against 125,10.235981684361112,17
+0,0,68,TOVPlayerAttack,Default Attack against 125,12.691981684361112,17
+0,1,73,TOVPlayerMove,Moved from tile [4, 4] in direction [-1, 0].,12.449993262053,17
+0,0,68,TOVPlayerAttack,Default Attack against 121,12.701993262053001,17
+0,2,71,TOVPlayerAttack,Default Attack against 121,12.317993262053001,17
+0,0,68,TOVPlayerAttack,Default Attack against 121,12.708993262053001,17
+0,2,71,TOVPlayerAttack,Default Attack against 122,12.399993262053002,17
+0,2,71,TOVPlayerAttack,Default Attack against 122,12.406993262053001,17
+0,0,63,TOVPlayerAttack,Default Attack against 122,14.685993262053001,17
+0,2,71,TOVPlayerMove,Moved from tile [4, 4] in direction [0, -1].,14.458993262053003,18
+0,1,61,TOVPlayerMove,Moved from tile [4, 4] in direction [-1, 0].,14.486993262053002,19
+0,0,63,TOVPlayerMove,Moved from tile [4, 3] in direction [-1, 0].,14.695997521247824,20
+0,2,71,TOVPlayerMove,Moved from tile [3, 4] in direction [1, 0].,14.468997521247825,21
+0,1,61,TOVPlayerMove,Moved from tile [3, 4] in direction [-1, 0].,14.496997521247824,22
+0,0,63,TOVPlayerMove,Moved from tile [5, 3] in direction [-1, 0].,14.705993262053001,23
+0,2,71,TOVPlayerMove,Moved from tile [6, 3] in direction [1, 0].,14.488997521247825,23
+0,0,63,TOVPlayerAttack,Default Attack against 96,14.715997521247823,23
+0,1,61,TOVPlayerAttack,Default Attack against 94,14.516997521247823,23
+0,1,55,TOVPlayerAttack,Default Attack against 94,14.628997521247824,23
+0,1,55,TOVPlayerAttack,Default Attack against 95,14.635997521247823,23
+0,0,58,TOVPlayerAttack,Default Attack against 96,14.722997521247825,23
+0,2,66,TOVPlayerAttack,Default Attack against 96,14.495997521247824,23
+0,2,56,TOVPlayerAttack,Default Attack against 95,14.502997521247824,23
+0,0,52,TOVPlayerAttack,Default Attack against 95,16.794997521247822,23
+0,0,52,TOVPlayerMove,Moved from tile [7, 3] in direction [1, 0].,16.804999088118034,23
+0,1,55,TOVPlayerAttack,Default Attack against 100,16.642999088118035,23
+0,1,55,TOVPlayerAttack,Default Attack against 99,16.649999088118033,23
+0,0,45,TOVPlayerAttack,Default Attack against 99,16.660749088118035,23
+0,2,54,TOVPlayerAttack,Default Attack against 100,16.584999088118035,23
+0,1,53,TOVPlayerAttack,Default Attack against 100,16.741999088118035,23
+0,1,53,TOVPlayerAttack,Default Attack against 99,16.741999088118035,23
+0,0,45,TOVPlayerAttack,Default Attack against 101,16.667749088118036,23
+0,2,45,TOVPlayerAttack,Default Attack against 101,16.515749088118035,23
+0,0,45,TOVPlayerAttack,Default Attack against 101,18.664749088118032,23
+0,2,45,TOVPlayerMove,Moved from tile [8, 3] in direction [1, 0].,19.097747521247825,23
+0,0,45,TOVPlayerAttack,Default Attack against 104,19.174747521247824,23
+0,0,42,TOVPlayerAttack,Default Attack against 104,19.239797521247823,23
+0,0,42,TOVPlayerAttack,Default Attack against 106,19.246797521247824,23
+0,1,42,TOVPlayerAttack,Default Attack against 106,19.135797521247824,23
+0,1,33,TOVPlayerAttack,Default Attack against 105,19.131547521247825,23
+0,0,42,TOVPlayerAttack,Default Attack against 105,19.328797521247825,23
+0,1,33,TOVPlayerAttack,Default Attack against 105,21.10854752124782,23
+0,0,42,TOVPlayerMove,Moved from tile [8, 3] in direction [1, 0].,21.38079752124782,24
+0,2,40,TOVPlayerMove,Moved from tile [8, 3] in direction [1, 0].,21.045997521247823,25
+0,1,33,TOVPlayerMove,Moved from tile [9, 3] in direction [1, 0].,21.118543262053,26
+0,0,42,TOVPlayerMove,Moved from tile [9, 3] in direction [0, 1].,21.390793262053,27
+0,2,40,TOVPlayerMove,Moved from tile [9, 3] in direction [0, 1].,21.055993262053,28
+0,1,33,TOVPlayerMove,Moved from tile [9, 4] in direction [0, 1].,21.128531684361107,29
+0,1,33,TOVPlayerMove,Moved from tile [9, 5] in direction [0, 1].,21.138500212931632,29
+0,0,42,TOVPlayerAttack,Default Attack against 153,21.41075021293163,29
+0,2,40,TOVPlayerAttack,Default Attack against 153,21.075950212931634,29
+0,2,42,TOVPlayerUseCard,Played the card: Heal,21.087750212931635,29
+0,0,42,TOVPlayerAttack,Default Attack against 154,21.492750212931632,29
+0,2,42,TOVPlayerAttack,Default Attack against 154,21.094750212931633,29
+0,0,42,TOVPlayerAttack,Default Attack against 154,23.479750212931634,29
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,30
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,31
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,24.637981684361108,32
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,33
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,34
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,35
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,36
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,37
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,38
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,39
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,40
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,41
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,42
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,43
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,44
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,45
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,46
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,47
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,48
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,49
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,50
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,51
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,52
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,53
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,54
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,55
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,56
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,57
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,58
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,59
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,60
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,61
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,62
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,63
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,64
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,65
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,66
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,67
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,68
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,69
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,70
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,71
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,72
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,73
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,74
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,75
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,76
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,77
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,78
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,79
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,80
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,81
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,82
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,83
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,84
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,85
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,86
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,87
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,88
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,89
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,90
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,91
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,92
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,93
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,94
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,95
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,96
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,97
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,98
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,99
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,100
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,101
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,102
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,103
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,104
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,105
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,106
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,107
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,108
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,109
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,110
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,111
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,112
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,113
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,114
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,115
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,116
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,117
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,118
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,119
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,120
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,121
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,122
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,123
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,124
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,125
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,126
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,127
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,128
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,129
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,130
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,131
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,132
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,133
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,134
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,135
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,136
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,137
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,138
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,139
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,140
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,141
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,142
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,143
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,144
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,145
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,146
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,147
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,148
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,149
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,150
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,151
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,152
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,153
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,154
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,155
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,156
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,157
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,158
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,159
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,160
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,161
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,162
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,163
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,164
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,165
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,166
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,167
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,168
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,169
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,170
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,171
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,172
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,173
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,174
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,175
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,176
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,177
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,178
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,179
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,180
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,181
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,182
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,183
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,184
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,185
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,186
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,187
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,188
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,189
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,190
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,191
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,192
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,193
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,194
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,195
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,196
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,197
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,198
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,199
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,200
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,201
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,202
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,203
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,204
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,205
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,206
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,207
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,208
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,209
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,210
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,211
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,212
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,213
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,214
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,215
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,216
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,217
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,218
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,219
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,220
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,221
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,222
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,223
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,224
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,225
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,226
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,227
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,228
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,229
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,230
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,231
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,232
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,233
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,234
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,235
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,236
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,237
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,238
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,239
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,240
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,241
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,242
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,243
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,244
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,245
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,246
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,247
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,248
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,249
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,250
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,251
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,252
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,253
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,254
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,255
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,256
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,257
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,258
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,259
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,260
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,261
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,262
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,263
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,264
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,265
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,266
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,267
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,268
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,269
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,270
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,271
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,272
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,273
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,274
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,275
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,276
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,277
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,278
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,279
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,280
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,281
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,282
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,283
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,284
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,285
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,286
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,287
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,288
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,289
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,290
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,291
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,292
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,293
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,294
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,295
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,296
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,297
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,298
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,299
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,300
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,301
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,302
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,303
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,304
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,305
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,306
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,307
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,308
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,309
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,310
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,311
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,312
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,313
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,314
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,315
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,316
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,317
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,318
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,319
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,320
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,321
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,322
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,323
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,324
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,325
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,326
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,327
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,328
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,329
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,330
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,331
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,332
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,333
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,334
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,335
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,336
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,337
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,338
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,339
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,340
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,341
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,342
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,343
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,344
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,345
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,346
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,347
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,348
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,349
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,350
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,351
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,352
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,353
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,354
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,355
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,356
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,357
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,358
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,359
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,360
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,361
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,362
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,363
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,364
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,365
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,366
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,367
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,368
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,369
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,370
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,371
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,372
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,373
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,374
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,375
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,376
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,377
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,378
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,379
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,380
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,381
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,382
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,383
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,384
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,385
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,386
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,387
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,388
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,389
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,390
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,391
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,392
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,393
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,394
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,395
+0,2,85,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.324950212931633,396
+0,1,82,TOVPlayerMove,Moved from tile [9, 5] in direction [-1, 0].,23.369950212931634,397
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,398
+0,2,85,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.314981684361108,399
+0,1,82,TOVPlayerMove,Moved from tile [8, 5] in direction [1, 0].,23.35998168436111,400
+0,0,85,TOVPlayerMove,Moved from tile [9, 5] in direction [1, 0].,23.647950212931633,401
+0,0,85,TOVPlayerMove,Moved from tile [8, 5] in direction [-1, 0].,23.637981684361108,401
+1,2,100,TOVPlayerMove,Moved from tile [0, 0] in direction [0, 1].,-0.04000247875217667,1
+1,1,100,TOVPlayerMove,Moved from tile [0, 0] in direction [0, 1].,-0.04000247875217667,2
+1,0,100,TOVPlayerMove,Moved from tile [0, 1] in direction [0, 1].,-0.030006737946999085,3
+1,2,100,TOVPlayerMove,Moved from tile [0, 1] in direction [0, 1].,-0.030006737946999085,4
+1,1,100,TOVPlayerMove,Moved from tile [0, 1] in direction [0, 1].,-0.030006737946999085,5
+1,0,100,TOVPlayerMove,Moved from tile [0, 2] in direction [0, 1].,-0.020006737946999087,6
+1,2,100,TOVPlayerMove,Moved from tile [0, 2] in direction [1, 0].,-0.020006737946999087,7
+1,1,100,TOVPlayerMove,Moved from tile [0, 2] in direction [1, 0].,-0.020006737946999087,8
+1,0,100,TOVPlayerMove,Moved from tile [1, 2] in direction [1, 0].,-0.010018315638888735,9
+1,1,100,TOVPlayerMove,Moved from tile [2, 2] in direction [1, 0].,-4.9787068367863945E-5,9
+1,0,96,TOVPlayerAttack,Default Attack against 21411,-4.9787068367863945E-5,9
+1,0,96,TOVPlayerAttack,Default Attack against 21410,0.004950212931632136,9
+1,2,97,TOVPlayerAttack,Default Attack against 21410,-4.9787068367863945E-5,9
+1,0,92,TOVPlayerAttack,Default Attack against 21412,0.08495021293163213,9
+1,1,92,TOVPlayerAttack,Default Attack against 21411,0.044950212931632136,9
+1,0,89,TOVPlayerAttack,Default Attack against 21412,0.08995021293163213,9
+1,1,92,TOVPlayerAttack,Default Attack against 21412,0.04995021293163214,9
+1,1,85,TOVPlayerAttack,Default Attack against 21412,0.16495021293163212,9
+1,0,85,TOVPlayerAttack,Default Attack against 21411,0.09495021293163214,9
+1,1,85,TOVPlayerAttack,Default Attack against 21411,2.159950212931632,9
+1,2,97,TOVPlayerMove,Moved from tile [3, 2] in direction [1, 0].,2.504950212931632,9
+1,0,85,TOVPlayerAttack,Default Attack against 21417,2.674950212931632,9
+1,1,85,TOVPlayerAttack,Default Attack against 21416,2.669950212931632,9
+1,1,85,TOVPlayerUseCard,Played the card: Dazzle,2.669950212931632,9
+1,1,85,TOVPlayerAttack,Default Attack against 21415,2.674950212931632,9
+1,1,85,TOVPlayerAttack,Default Attack against 21415,2.679950212931632,9
+1,1,85,TOVPlayerAttack,Default Attack against 21415,2.759950212931632,9
+1,1,85,TOVPlayerAttack,Default Attack against 21417,2.764950212931632,9
+1,1,85,TOVPlayerAttack,Default Attack against 21417,2.8449502129316318,9
+1,1,85,TOVPlayerAttack,Default Attack against 21416,2.849950212931632,9
+1,2,93,TOVPlayerAttack,Default Attack against 21416,4.489950212931633,9
+1,1,85,TOVPlayerMove,Moved from tile [3, 2] in direction [1, 0].,4.909950212931633,10
+1,0,84,TOVPlayerMove,Moved from tile [3, 2] in direction [1, 0].,4.659950212931633,11
+1,2,93,TOVPlayerMove,Moved from tile [4, 2] in direction [1, 0].,4.249864664716763,12
+1,1,96,TOVPlayerMove,Moved from tile [4, 2] in direction [0, 1].,4.419864664716763,13
+1,0,96,TOVPlayerMove,Moved from tile [5, 2] in direction [1, 0].,4.6796321205588285,13
+1,2,95,TOVPlayerAttack,Default Attack against 21421,5.509632120558829,13
+1,1,96,TOVPlayerAttack,Default Attack against 21422,4.9296321205588285,13
+1,1,96,TOVPlayerUseCard,Played the card: Dazzle,4.9296321205588285,13
+1,1,96,TOVPlayerAttack,Default Attack against 21421,4.934632120558828,13
+1,1,96,TOVPlayerAttack,Default Attack against 21421,5.0146321205588285,13
+1,1,96,TOVPlayerAttack,Default Attack against 21422,5.019632120558828,13
+1,2,95,TOVPlayerAttack,Default Attack against 21422,7.504632120558829,13
+1,1,96,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,7.089981684361111,14
+1,0,96,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,6.684950212931632,14
+1,1,96,TOVPlayerAttack,Default Attack against 21455,7.099950212931632,14
+1,1,96,TOVPlayerAttack,Default Attack against 21455,7.181950212931633,14
+1,1,96,TOVPlayerAttack,Default Attack against 21454,7.1889502129316325,14
+1,0,87,TOVPlayerAttack,Default Attack against 21454,6.691950212931633,14
+1,0,81,TOVPlayerAttack,Default Attack against 21454,6.7739502129316325,14
+1,1,93,TOVPlayerAttack,Default Attack against 21456,7.210950212931633,14
+1,0,81,TOVPlayerAttack,Default Attack against 21456,6.780950212931632,14
+1,1,93,TOVPlayerAttack,Default Attack against 21456,9.197950212931632,14
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,15
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,9.294950212931633,16
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,17
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,18
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,19
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,20
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,21
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,22
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,23
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,24
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,25
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,26
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,27
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,28
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,29
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,30
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,31
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,32
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,33
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,34
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,35
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,36
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,37
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,38
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,39
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,40
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,41
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,42
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,43
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,44
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,45
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,46
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,47
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,48
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,49
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,50
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,51
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,52
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,53
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,54
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,55
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,56
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,57
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,58
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,59
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,60
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,61
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,62
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,63
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,64
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,65
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,66
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,67
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,68
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,69
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,70
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,71
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,72
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,73
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,74
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,75
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,76
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,77
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,78
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,79
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,80
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,81
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,82
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,83
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,84
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,85
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,86
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,87
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,88
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,89
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,90
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,91
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,92
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,93
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,94
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,95
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,96
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,97
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,98
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,99
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,100
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,101
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,102
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,103
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,104
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,105
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,106
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,107
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,108
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,109
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,110
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,111
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,112
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,113
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,114
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,115
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,116
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,117
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,118
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,119
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,120
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,121
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,122
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,123
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,124
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,125
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,126
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,127
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,128
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,129
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,130
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,131
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,132
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,133
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,134
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,135
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,136
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,137
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,138
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,139
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,140
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,141
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,142
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,143
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,144
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,145
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,146
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,147
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,148
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,149
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,150
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,151
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,152
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,153
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,154
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,155
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,156
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,157
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,158
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,159
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,160
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,161
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,162
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,163
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,164
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,165
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,166
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,167
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,168
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,169
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,170
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,171
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,172
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,173
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,174
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,175
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,176
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,177
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,178
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,179
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,180
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,181
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,182
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,183
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,184
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,185
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,186
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,187
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,188
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,189
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,190
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,191
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,192
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,193
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,194
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,195
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,196
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,197
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,198
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,199
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,200
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,201
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,202
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,203
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,204
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,205
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,206
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,207
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,208
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,209
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,210
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,211
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,212
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,213
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,214
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,215
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,216
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,217
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,218
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,219
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,220
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,221
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,222
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,223
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,224
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,225
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,226
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,227
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,228
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,229
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,230
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,231
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,232
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,233
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,234
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,235
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,236
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,237
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,238
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,239
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,240
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,241
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,242
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,243
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,244
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,245
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,246
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,247
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,248
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,249
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,250
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,251
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,252
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,253
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,254
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,255
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,256
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,257
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,258
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,259
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,260
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,261
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,262
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,263
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,264
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,265
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,266
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,267
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,268
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,269
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,270
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,271
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,272
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,273
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,274
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,275
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,276
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,277
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,278
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,279
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,280
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,281
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,282
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,283
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,284
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,285
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,286
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,287
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,288
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,289
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,290
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,291
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,292
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,293
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,294
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,295
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,296
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,297
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,298
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,299
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,300
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,301
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,302
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,303
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,304
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,305
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,306
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,307
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,308
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,309
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,310
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,311
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,312
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,313
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,314
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,315
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,316
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,317
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,318
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,319
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,320
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,321
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,322
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,323
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,324
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,325
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,326
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,327
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,328
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,329
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,330
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,331
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,332
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,333
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,334
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,335
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,336
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,337
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,338
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,339
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,340
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,341
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,342
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,343
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,344
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,345
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,346
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,347
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,348
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,349
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,350
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,351
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,352
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,353
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,354
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,355
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,356
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,357
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,358
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,359
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,360
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,361
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,362
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,363
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,364
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,365
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,366
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,367
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,368
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,369
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,370
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,371
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,372
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,373
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,374
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,375
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,376
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,377
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,378
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,379
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,380
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,381
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,382
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,383
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,384
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,385
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,386
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,387
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,388
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,389
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,390
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,391
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,392
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,393
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,394
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,395
+1,0,81,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.852981684361112,396
+1,2,85,TOVPlayerMove,Moved from tile [5, 2] in direction [0, 1].,8.504981684361113,397
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,398
+1,0,81,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.842950212931632,399
+1,2,85,TOVPlayerMove,Moved from tile [5, 3] in direction [0, -1].,8.494950212931633,400
+1,1,93,TOVPlayerMove,Moved from tile [5, 2] in direction [0, -1].,9.207981684361112,401
+1,1,93,TOVPlayerMove,Moved from tile [5, 3] in direction [0, 1].,9.197950212931632,401
+2,2,100,TOVPlayerMove,Moved from tile [0, 0] in direction [0, 1].,-0.020049787068367863,1
+2,1,100,TOVPlayerMove,Moved from tile [0, 0] in direction [1, 0].,-0.020049787068367863,2
+2,0,100,TOVPlayerMove,Moved from tile [0, 1] in direction [0, 1].,-0.010135335283236614,3
+2,0,100,TOVPlayerMove,Moved from tile [1, 1] in direction [1, 0].,-3.6787944117144236E-4,3
+2,1,100,TOVPlayerAttack,Default Attack against 41837,-3.6787944117144236E-4,3
+2,1,97,TOVPlayerAttack,Default Attack against 41838,0.01963212055882856,3
+2,0,100,TOVPlayerAttack,Default Attack against 41838,0.004632120558828558,3
+2,2,93,TOVPlayerAttack,Default Attack against 41837,-3.6787944117144236E-4,3
+2,1,90,TOVPlayerAttack,Default Attack against 41837,0.059632120558828564,3
+2,1,87,TOVPlayerUseCard,Played the card: Taunt,0.07463212055882855,3
+2,2,93,TOVPlayerAttack,Default Attack against 41838,0.07963212055882855,3
+2,0,100,TOVPlayerAttack,Default Attack against 41838,0.009632120558828557,3
+2,1,84,TOVPlayerAttack,Default Attack against 41839,0.09463212055882855,3
+2,2,86,TOVPlayerAttack,Default Attack against 41839,0.15963212055882856,3
+2,0,100,TOVPlayerAttack,Default Attack against 41839,0.014632120558828557,3
+2,1,84,TOVPlayerAttack,Default Attack against 41839,2.079632120558829,3
+2,0,100,TOVPlayerMove,Moved from tile [1, 1] in direction [0, 1].,2.074950212931632,4
+2,2,82,TOVPlayerMove,Moved from tile [1, 1] in direction [1, 0].,2.144950212931632,5
+2,1,84,TOVPlayerMove,Moved from tile [1, 2] in direction [1, 0].,2.8898646647167636,6
+2,2,82,TOVPlayerMove,Moved from tile [2, 2] in direction [1, 0].,2.164950212931632,6
+2,0,100,TOVPlayerAttack,Default Attack against 41862,2.094950212931632,6
+2,1,84,TOVPlayerAttack,Default Attack against 41862,4.859950212931632,6
+2,0,100,TOVPlayerMove,Moved from tile [2, 2] in direction [0, 1].,4.136950212931632,7
+2,2,82,TOVPlayerMove,Moved from tile [2, 2] in direction [0, 1].,4.131950212931632,8
+2,1,84,TOVPlayerMove,Moved from tile [2, 3] in direction [0, 1].,4.0698646647167624,9
+2,0,100,TOVPlayerMove,Moved from tile [2, 3] in direction [0, 1].,4.146864664716762,10
+2,2,82,TOVPlayerMove,Moved from tile [2, 3] in direction [0, 1].,4.1418646647167625,11
+2,1,84,TOVPlayerMove,Moved from tile [2, 4] in direction [0, 1].,4.079632120558829,12
+2,0,100,TOVPlayerMove,Moved from tile [2, 4] in direction [-1, 0].,4.156864664716763,13
+2,2,82,TOVPlayerMove,Moved from tile [2, 4] in direction [0, 1].,4.151864664716763,14
+2,1,84,TOVPlayerMove,Moved from tile [1, 4] in direction [0, 1].,4.869632120558828,15
+2,0,100,TOVPlayerMove,Moved from tile [2, 5] in direction [0, 1].,4.166864664716763,16
+2,0,100,TOVPlayerMove,Moved from tile [2, 6] in direction [0, 1].,4.176950212931632,16
+2,1,82,TOVPlayerAttack,Default Attack against 41973,4.909950212931633,16
+2,2,82,TOVPlayerAttack,Default Attack against 41973,6.131950212931632,16
+2,1,82,TOVPlayerMove,Moved from tile [2, 6] in direction [0, 1].,6.955950212931632,17
+2,0,100,TOVPlayerMove,Moved from tile [2, 6] in direction [0, 1].,6.147950212931632,18
+2,2,82,TOVPlayerMove,Moved from tile [2, 7] in direction [0, 1].,6.14198168436111,19
+2,1,82,TOVPlayerMove,Moved from tile [2, 7] in direction [0, 1].,6.16598168436111,20
+2,0,100,TOVPlayerMove,Moved from tile [2, 7] in direction [0, 1].,6.15798168436111,21
+2,2,82,TOVPlayerMove,Moved from tile [2, 8] in direction [1, 0].,6.151950212931633,22
+2,1,82,TOVPlayerMove,Moved from tile [2, 8] in direction [1, 0].,6.175950212931633,23
+2,0,100,TOVPlayerMove,Moved from tile [3, 7] in direction [1, 0].,6.167950212931633,24
+2,2,82,TOVPlayerMove,Moved from tile [3, 8] in direction [1, 0].,6.161864664716763,25
+2,1,82,TOVPlayerMove,Moved from tile [4, 8] in direction [1, 0].,6.195950212931632,25
+2,2,82,TOVPlayerAttack,Default Attack against 42024,8.161950212931632,25
+2,0,100,TOVPlayerMove,Moved from tile [4, 9] in direction [0, 1].,8.687864664716765,25
+2,2,82,TOVPlayerAttack,Default Attack against 42059,8.671864664716765,25
+2,0,100,TOVPlayerAttack,Default Attack against 42059,10.678864664716764,25
+2,2,82,TOVPlayerMove,Moved from tile [4, 9] in direction [1, 0].,10.737864664716763,26
+2,1,82,TOVPlayerMove,Moved from tile [4, 9] in direction [1, 0].,10.761864664716764,27
+2,0,100,TOVPlayerMove,Moved from tile [5, 9] in direction [1, 0].,10.438864664716764,28
+2,2,95,TOVPlayerMove,Moved from tile [5, 9] in direction [1, 0].,10.247864664716763,29
+2,1,95,TOVPlayerMove,Moved from tile [5, 9] in direction [0, -1].,10.271864664716764,30
+2,0,100,TOVPlayerMove,Moved from tile [6, 9] in direction [0, -1].,11.678632120558829,31
+2,2,95,TOVPlayerMove,Moved from tile [5, 8] in direction [1, 0].,10.737981684361111,32
+2,1,95,TOVPlayerMove,Moved from tile [5, 8] in direction [1, 0].,10.761981684361112,33
+2,0,100,TOVPlayerMove,Moved from tile [7, 9] in direction [1, 0].,10.988864664716765,34
+2,0,100,TOVPlayerMove,Moved from tile [7, 8] in direction [0, -1].,11.498864664716764,34
+2,1,95,TOVPlayerAttack,Default Attack against 42029,10.781864664716764,34
+2,2,95,TOVPlayerUseCard,Played the card: Dazzle,10.757864664716763,34
+2,2,95,TOVPlayerAttack,Default Attack against 42030,10.770864664716765,34
+2,0,100,TOVPlayerAttack,Default Attack against 42030,13.576864664716766,34
+2,2,95,TOVPlayerMove,Moved from tile [7, 8] in direction [-1, 0].,12.848864664716764,35
+2,1,91,TOVPlayerMove,Moved from tile [7, 8] in direction [-1, 0].,12.791864664716764,36
+2,0,100,TOVPlayerMove,Moved from tile [6, 8] in direction [-1, 0].,12.516950212931633,37
+2,2,98,TOVPlayerMove,Moved from tile [6, 8] in direction [0, -1].,12.338950212931632,38
+2,1,97,TOVPlayerMove,Moved from tile [6, 8] in direction [1, 0].,12.281950212931632,39
+2,0,100,TOVPlayerMove,Moved from tile [6, 7] in direction [1, 0].,13.256864664716765,40
+2,2,98,TOVPlayerMove,Moved from tile [7, 8] in direction [0, 1].,12.348864664716764,41
+2,0,100,TOVPlayerMove,Moved from tile [8, 8] in direction [1, 0].,12.286864664716765,41
+2,1,97,TOVPlayerAttack,Default Attack against 42033,12.301864664716764,41
+2,2,98,TOVPlayerAttack,Default Attack against 42033,14.338864664716764,41
+2,1,97,TOVPlayerMove,Moved from tile [8, 8] in direction [1, 0].,14.369864664716765,42
+2,0,100,TOVPlayerMove,Moved from tile [8, 8] in direction [1, 0].,14.279864664716765,43
+2,2,98,TOVPlayerMove,Moved from tile [9, 8] in direction [1, 0].,14.348632120558829,44
+2,1,97,TOVPlayerMove,Moved from tile [9, 8] in direction [0, -1].,14.37963212055883,45
+2,0,100,TOVPlayerMove,Moved from tile [9, 8] in direction [0, 1].,14.289864664716765,46
+2,0,100,TOVPlayerMove,Moved from tile [10, 8] in direction [1, 0].,14.29963212055883,46
+2,2,98,TOVPlayerAttack,Default Attack against 42038,15.15863212055883,46
+2,0,100,TOVPlayerAttack,Default Attack against 42037,16.381632120558827,46
+2,2,98,TOVPlayerMove,Moved from tile [10, 8] in direction [0, 1].,17.240950212931633,47
+2,1,97,TOVPlayerMove,Moved from tile [10, 7] in direction [0, -1].,17.189864664716765,47
+2,0,100,TOVPlayerAttack,Default Attack against 42007,17.191864664716764,47
+2,0,92,TOVPlayerAttack,Default Attack against 42006,17.285864664716765,47
+2,0,92,TOVPlayerAttack,Default Attack against 42008,17.304864664716764,47
+2,1,91,TOVPlayerAttack,Default Attack against 42008,19.303864664716762,47
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,19.898950212931634,47
+2,1,91,TOVPlayerAttack,Default Attack against 42011,21.803950212931632,47
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,21.992981684361112,47
+2,2,98,TOVPlayerAttack,Default Attack against 42015,21.75098168436111,47
+2,0,92,TOVPlayerAttack,Default Attack against 42014,24.076981684361108,47
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.83498168436111,48
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.80398168436111,49
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,50
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,51
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,52
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,53
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,54
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,55
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,56
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,57
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,58
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,59
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,60
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,61
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,62
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,63
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,64
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,65
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,66
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,67
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,68
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,69
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,70
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,71
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,72
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,73
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,74
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,75
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,76
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,77
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,78
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,79
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,80
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,81
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,82
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,83
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,84
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,85
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,86
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,87
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,88
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,89
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,90
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,91
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,92
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,93
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,94
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,95
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,96
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,97
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,98
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,99
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,100
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,101
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,102
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,103
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,104
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,105
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,106
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,107
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,108
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,109
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,110
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,111
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,112
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,113
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,114
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,115
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,116
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,117
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,118
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,119
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,120
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,121
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,122
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,123
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,124
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,125
+2,2,98,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.03498168436111,126
+2,1,91,TOVPlayerMove,Moved from tile [12, 7] in direction [-1, 0].,23.003981684361108,127
+2,0,92,TOVPlayerMove,Moved from tile [11, 7] in direction [-1, 0].,23.27695021293163,128
+2,2,98,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.034950212931633,129
+2,1,91,TOVPlayerMove,Moved from tile [11, 7] in direction [1, 0].,23.00395021293163,130
+2,0,92,TOVPlayerMove,Moved from tile [12, 7] in direction [1, 0].,23.276981684361107,131
